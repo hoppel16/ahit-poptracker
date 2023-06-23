@@ -1,0 +1,16 @@
+{
+  "name": "ahit Randomizer - AP",
+  "game_name": "A Hat in Time",
+  "package_version": "0.1",
+  "package_uid": "ahit-nep",
+  "platform": "pc",
+  "author": "hoppel16",
+  "variants": {
+    "standard": {
+      "display_name": "Map Tracker",
+      "flags": [
+        "ap"
+      ]
+    }
+  }
+}
