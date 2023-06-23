@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Sprint Hat",
+    "type": "toggle",
+    "img": "images/hats/Sprint_hat_icon.png",
+    "codes": "sprint"
+  },
+  {
+    "name": "Brewer Hat",
+    "type": "toggle",
+    "img": "images/hats/Brewer_hat_icon.png",
+    "codes": "brewer"
+  },
+  {
+    "name": "Ice Hat",
+    "type": "toggle",
+    "img": "images/hats/Ice_hat_icon.png",
+    "codes": "ice"
+  },
+  {
+    "name": "Dweller's Mask",
+    "type": "toggle",
+    "img": "images/hats/Dwellers_mask_icon.png",
+    "codes": "dweller"
+  },
+  {
+    "name": "Time Stop Hat",
+    "type": "toggle",
+    "img": "images/hats/Time_Stop_Hat_icon.png",
+    "codes": "timestop"
+  }
+]
