@@ -29,7 +29,7 @@ Tracker:AddItems("items/items.json")
 -- Maps
 Tracker:AddMaps("maps/maps.json")
 -- Locations
--- Tracker:AddLocations("locations/locations.json")
+Tracker:AddLocations("locations/locations.json")
 -- Tracker:AddLocations("locations/dungeons.json")
 
 -- Layout

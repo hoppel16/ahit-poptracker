@@ -1,0 +1,176 @@
+[
+  {
+    "name": "Mafia Town",
+    "children": [
+      {
+        "name": "Welcome to Mafia Town",
+        "sections": [
+          {
+            "name": "Umbrella",
+            "item_count": 1
+          },
+          {
+            "name": "Time Piece",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 345,
+            "y": 450
+          }
+        ]
+      },
+      {
+        "name": "Barrel Battle",
+        "sections": [
+          {
+            "name": "Time Piece",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 638,
+            "y": 565
+          }
+        ]
+      },
+      {
+        "name": "She Came from Outer Space",
+        "sections": [
+          {
+            "name": "Time Piece",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 410,
+            "y": 160
+          }
+        ]
+      },
+      {
+        "name": "Down with the Mafia",
+        "sections": [
+          {
+            "name": "Time Piece",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 490,
+            "y": 341
+          }
+        ]
+      },
+      {
+        "name": "Cheating the Race",
+        "sections": [
+          {
+            "name": "Time Piece",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 250,
+            "y": 430
+          }
+        ]
+      },
+      {
+        "name": "Heating Up Mafia Town",
+        "sections": [
+          {
+            "name": "Time Piece",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 415,
+            "y": 261
+          }
+        ]
+      },
+      {
+        "name": "The Golden Vault",
+        "sections": [
+          {
+            "name": "Time Piece",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 465,
+            "y": 368
+          }
+        ]
+      },
+      {
+        "name": "Bazaar",
+        "sections": [
+          {
+            "name": "Time Rift",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 370,
+            "y": 510
+          }
+        ]
+      },
+      {
+        "name": "Sewers",
+        "sections": [
+          {
+            "name": "Time Rift",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 675,
+            "y": 305
+          }
+        ]
+      }
+    ,
+      {
+        "name": "Mafia of Cooks",
+        "sections": [
+          {
+            "name": "Time Rift",
+            "item_count": 1
+          },
+          {
+            "name": "Pages",
+            "item_count": 6
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 250,
+            "y": 150
+          }
+        ]
+      }
+    ]
+  }
+]
