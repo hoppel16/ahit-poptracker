@@ -274,7 +274,11 @@
             "item_count": 1
           },
           {
-            "name": "Brewing Crate"
+            "name": "Brewing Crate",
+            "access_rules": [
+              "$brewer"
+            ],
+            "item_count": 1
           }
         ],
         "map_locations": [
@@ -362,22 +366,6 @@
             "map": "mafiaTown",
             "x": 691,
             "y": 41
-          }
-        ]
-      },
-      {
-        "name": "Small Boat",
-        "sections": [
-          {
-            "name": "Yarn",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiaTown",
-            "x": 850,
-            "y": 320
           }
         ]
       },
@@ -486,6 +474,9 @@
       },
       {
         "name": "Top of Ruined Tower",
+        "access_rules": [
+          "$ice"
+        ],
         "sections": [
           {
             "name": "Yarn",
@@ -502,6 +493,9 @@
       },
       {
         "name": "Ice Hat Cage",
+        "access_rules": [
+          "$ice"
+        ],
         "sections": [
           {
             "name": "Yarn",
@@ -518,6 +512,9 @@
       },
       {
         "name": "Hot Air Balloon",
+        "access_rules": [
+          "$ice"
+        ],
         "sections": [
           {
             "name": "Yarn",
@@ -566,6 +563,9 @@
       },
       {
         "name": "Secret Cave",
+        "access_rules": [
+          "$brewer"
+        ],
         "sections": [
           {
             "name": "Relic",
@@ -662,6 +662,9 @@
       },
       {
         "name": "Top of Lighthouse",
+        "access_rules": [
+          "$hookshot"
+        ],
         "sections": [
           {
             "name": "Token",
@@ -694,6 +697,9 @@
       },
       {
         "name": "Clock Tower Chest",
+        "access_rules": [
+          "$hookshot"
+        ],
         "sections": [
           {
             "name": "Token",
