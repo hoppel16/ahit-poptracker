@@ -12,6 +12,7 @@
           {
             "type": "itemgrid",
             "item_margin": "3, 10",
+            "item_size": 5,
             "margin": "0,0",
             "h_alignment": "left",
             "rows": [
@@ -37,6 +38,7 @@
           {
             "type": "itemgrid",
             "item_margin": "3, 10",
+            "item_size": 5,
             "margin": "0,0",
             "h_alignment": "left",
             "rows": [
