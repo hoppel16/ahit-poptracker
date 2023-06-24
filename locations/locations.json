@@ -47,6 +47,9 @@
           },
           {
             "name": "Hallway Brewing Crate",
+            "access_rules": [
+              "$brewer"
+            ],
             "item_count": 1
           },
           {
@@ -55,6 +58,9 @@
           },
           {
             "name": "Secret Room",
+            "access_rules": [
+              "$ice"
+            ],
             "item_count": 1
           },
           {

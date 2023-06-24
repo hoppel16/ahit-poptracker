@@ -32,13 +32,13 @@
   {
     "name": "Hookshot Badge",
     "type": "toggle",
-    "img": "images/hats/time_stop_hat_icon.png",
+    "img": "images/badges/hookshot_badge.png",
     "codes": "hookshot"
   },
   {
     "name": "Scooter Badge",
     "type": "toggle",
-    "img": "images/hats/time_stop_hat_icon.png",
+    "img": "images/badges/scooter_badge.png",
     "codes": "scooter"
   }
 ]

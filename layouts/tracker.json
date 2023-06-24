@@ -17,7 +17,16 @@
               "dock": "left",
               "content": {
                 "type": "layout",
-                "key": "shared_item_grid"
+                "key": "hat_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Badges",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "key": "badge_grid"
               }
             }
           ]
