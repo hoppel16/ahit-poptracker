@@ -48,7 +48,7 @@
           {
             "name": "Hallway Brewing Crate",
             "access_rules": [
-              "$brewer"
+              "brewer"
             ],
             "item_count": 1
           },
@@ -59,7 +59,7 @@
           {
             "name": "Secret Room",
             "access_rules": [
-              "$ice"
+              "ice"
             ],
             "item_count": 1
           },
@@ -282,7 +282,7 @@
           {
             "name": "Brewing Crate",
             "access_rules": [
-              "$brewer"
+              "brewer"
             ],
             "item_count": 1
           }
@@ -394,7 +394,7 @@
       {
         "name": "Above Boats",
         "access_rules": [
-          "$hookshot"
+          "hookshot"
         ],
         "sections": [
           {
@@ -481,7 +481,7 @@
       {
         "name": "Top of Ruined Tower",
         "access_rules": [
-          "$ice"
+          "ice"
         ],
         "sections": [
           {
@@ -500,7 +500,7 @@
       {
         "name": "Ice Hat Cage",
         "access_rules": [
-          "$ice"
+          "ice"
         ],
         "sections": [
           {
@@ -519,7 +519,7 @@
       {
         "name": "Hot Air Balloon",
         "access_rules": [
-          "$ice"
+          "ice"
         ],
         "sections": [
           {
@@ -531,7 +531,7 @@
           {
             "map": "mafiaTown",
             "x": 545,
-            "y": 700
+            "y": 670
           }
         ]
       },
@@ -570,7 +570,7 @@
       {
         "name": "Secret Cave",
         "access_rules": [
-          "$brewer"
+          "brewer"
         ],
         "sections": [
           {
@@ -662,14 +662,14 @@
           {
             "map": "mafiaTown",
             "x": 310,
-            "y": 680
+            "y": 670
           }
         ]
       },
       {
         "name": "Top of Lighthouse",
         "access_rules": [
-          "$hookshot"
+          "hookshot"
         ],
         "sections": [
           {
@@ -704,7 +704,7 @@
       {
         "name": "Clock Tower Chest",
         "access_rules": [
-          "$hookshot"
+          "hookshot"
         ],
         "sections": [
           {
