@@ -28,5 +28,17 @@
     "type": "toggle",
     "img": "images/hats/time_stop_hat_icon.png",
     "codes": "timestop"
+  },
+  {
+    "name": "Hookshot Badge",
+    "type": "toggle",
+    "img": "images/hats/time_stop_hat_icon.png",
+    "codes": "hookshot"
+  },
+  {
+    "name": "Scooter Badge",
+    "type": "toggle",
+    "img": "images/hats/time_stop_hat_icon.png",
+    "codes": "scooter"
   }
 ]
