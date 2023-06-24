@@ -85,6 +85,10 @@
         "sections": [
           {
             "name": "Cheating the Race",
+            "access_rules": [
+              "[timestop], sprint",
+              "timestop"
+            ],
             "item_count": 1
           },
           {
