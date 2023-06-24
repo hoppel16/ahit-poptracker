@@ -55,10 +55,26 @@
         ]
       },
       {
-        "name": "Down with the Mafia",
+        "name": "Mafia HQ",
         "sections": [
           {
             "name": "Time Piece",
+            "item_count": 1
+          },
+          {
+            "name": "Hallway Brewing Crate",
+            "item_count": 1
+          },
+          {
+            "name": "Freezer Chest",
+            "item_count": 1
+          },
+          {
+            "name": "Secret Room",
+            "item_count": 1
+          },
+          {
+            "name": "Bathroom Stall Chest",
             "item_count": 1
           }
         ],
@@ -149,8 +165,7 @@
             "y": 305
           }
         ]
-      }
-    ,
+      },
       {
         "name": "Mafia of Cooks",
         "sections": [
@@ -168,6 +183,141 @@
             "map": "mafiaTown",
             "x": 250,
             "y": 150
+          }
+        ]
+      },
+      {
+        "name": "Red Vault",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 630,
+            "y": 385
+          }
+        ]
+      },
+      {
+        "name": "Dweller Boxes",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 655,
+            "y": 445
+          }
+        ]
+      },
+      {
+        "name": "Old Man",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 540,
+            "y": 285
+          }
+        ]
+      },
+      {
+        "name": "Ledge Chest",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 555,
+            "y": 535
+          }
+        ]
+      },
+      {
+        "name": "Steel Beams",
+        "sections": [
+          {
+            "name": "Nest",
+            "item_count": 1
+          },
+          {
+            "name": "Wood Cage",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 515,
+            "y": 270
+          }
+        ]
+      },
+      {
+        "name": "Blue Vault",
+        "sections": [
+          {
+            "name": "Vault",
+            "item_count": 1
+          },
+          {
+            "name": "Brewing Crate"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 460,
+            "y": 525
+          }
+        ]
+      },
+      {
+        "name": "Beneath Scaffolding",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 450,
+            "y": 260
+          }
+        ]
+      },
+      {
+        "name": "On Scaffolding",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 390,
+            "y": 250
           }
         ]
       }
