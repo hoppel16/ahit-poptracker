@@ -1,7 +1,7 @@
 [
   {
     "name": "mafiaTown",
-    "location_size": 10,
+    "location_size": 15,
     "location_border_thickness": 2,
     "img": "images/maps/MafiaTownMap.png"
   }
