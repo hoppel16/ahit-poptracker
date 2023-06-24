@@ -39,22 +39,6 @@
         ]
       },
       {
-        "name": "She Came from Outer Space",
-        "sections": [
-          {
-            "name": "Time Piece",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiaTown",
-            "x": 410,
-            "y": 160
-          }
-        ]
-      },
-      {
         "name": "Mafia HQ",
         "sections": [
           {
@@ -87,10 +71,14 @@
         ]
       },
       {
-        "name": "Cheating the Race",
+        "name": "Beach Alcove",
         "sections": [
           {
-            "name": "Time Piece",
+            "name": "Cheating the Race",
+            "item_count": 1
+          },
+          {
+            "name": "Yarn",
             "item_count": 1
           }
         ],
@@ -103,10 +91,14 @@
         ]
       },
       {
-        "name": "Heating Up Mafia Town",
+        "name": "Creative Mafia",
         "sections": [
           {
-            "name": "Time Piece",
+            "name": "Heating Up Mafia Town",
+            "item_count": 1
+          },
+          {
+            "name": "She Came from Outer Space",
             "item_count": 1
           }
         ],
@@ -318,6 +310,330 @@
             "map": "mafiaTown",
             "x": 390,
             "y": 250
+          }
+        ]
+      },
+      {
+        "name": "Plaza Under Boxes",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 435,
+            "y": 480
+          }
+        ]
+      },
+      {
+        "name": "Yellow Sphere Building Chest",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 540,
+            "y": 110
+          }
+        ]
+      },
+      {
+        "name": "Cargo Ship",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 691,
+            "y": 41
+          }
+        ]
+      },
+      {
+        "name": "Small Boat",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 850,
+            "y": 320
+          }
+        ]
+      },
+      {
+        "name": "Small Boat",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 850,
+            "y": 320
+          }
+        ]
+      },
+      {
+        "name": "Above Boats",
+        "sections": [
+          {
+            "name": "Relic",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 887,
+            "y": 325
+          }
+        ]
+      },
+      {
+        "name": "Staircase Pon Cluster",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 432,
+            "y": 561
+          }
+        ]
+      },
+      {
+        "name": "Old Man",
+        "sections": [
+          {
+            "name": "Seaside Spaghetti",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 740,
+            "y": 440
+          }
+        ]
+      },
+      {
+        "name": "Palm Tree",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 245,
+            "y": 55
+          }
+        ]
+      },
+      {
+        "name": "Beach Patio",
+        "sections": [
+          {
+            "name": "Freestanding",
+            "item_count": 1
+          },
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 365,
+            "y": 170
+          }
+        ]
+      },
+      {
+        "name": "Top of Ruined Tower",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 280,
+            "y": 350
+          }
+        ]
+      },
+      {
+        "name": "Ice Hat Cage",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 780,
+            "y": 355
+          }
+        ]
+      },
+      {
+        "name": "Hot Air Balloon",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 545,
+            "y": 700
+          }
+        ]
+      },
+      {
+        "name": "Camera Badge",
+        "sections": [
+          {
+            "name": "smile :)",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 780,
+            "y": 580
+          }
+        ]
+      },
+      {
+        "name": "Chest Beneath Aqueduct",
+        "sections": [
+          {
+            "name": "Relic",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 590,
+            "y": 500
+          }
+        ]
+      },
+      {
+        "name": "Chest Beneath Aqueduct",
+        "sections": [
+          {
+            "name": "Relic",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 590,
+            "y": 500
+          }
+        ]
+      },
+      {
+        "name": "Secret Cave",
+        "sections": [
+          {
+            "name": "Relic",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 510,
+            "y": 515
+          }
+        ]
+      },
+      {
+        "name": "Crow Chest",
+        "sections": [
+          {
+            "name": "Relic",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 365,
+            "y": 345
+          }
+        ]
+      },
+      {
+        "name": "Port",
+        "sections": [
+          {
+            "name": "Relic",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 760,
+            "y": 460
+          }
+        ]
+      },
+      {
+        "name": "Docks Chest",
+        "sections": [
+          {
+            "name": "Relic",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiaTown",
+            "x": 273,
+            "y": 630
           }
         ]
       }
