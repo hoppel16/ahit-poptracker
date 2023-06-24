@@ -18,19 +18,14 @@ ScriptHost:LoadScript("scripts/utils.lua")
 -- Logic
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 
--- Custom Items
--- ScriptHost:LoadScript("scripts/custom_items/class.lua")
--- ScriptHost:LoadScript("scripts/custom_items/progressiveTogglePlus.lua")
--- ScriptHost:LoadScript("scripts/custom_items/progressiveTogglePlusWrapper.lua")
-
 -- Items
 Tracker:AddItems("items/items.json")
 
 -- Maps
 Tracker:AddMaps("maps/maps.json")
+
 -- Locations
-Tracker:AddLocations("locations/locations.json")
--- Tracker:AddLocations("locations/dungeons.json")
+Tracker:AddLocations("locations/mafiatown.json")
 
 -- Layout
 Tracker:AddLayouts("layouts/items.json")
