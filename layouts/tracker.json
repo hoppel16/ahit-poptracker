@@ -43,6 +43,16 @@
                   "mafiatown"
                 ]
               }
+            },
+            {
+              "title": "Dead Bird Studio",
+              "icon": "images/icons/Conductor.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "deadbirdstudio"
+                ]
+              }
             }
           ]
         }
