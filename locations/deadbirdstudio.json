@@ -1,0 +1,187 @@
+[
+  {
+    "name": "Dead Bird Studio",
+    "children": [
+      {
+        "name": "Red Building Top",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 160,
+            "y": 230
+          }
+        ]
+      },
+      {
+        "name": "Behind Water Tower",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 360,
+            "y": 320
+          }
+        ]
+      },
+      {
+        "name": "Side of House",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 345,
+            "y": 255
+          }
+        ]
+      },
+      {
+        "name": "Up the Ladder",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 460,
+            "y": 210
+          }
+        ]
+      },
+      {
+        "name": "Tightrope Chest",
+        "sections": [
+          {
+            "name": "Relic",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 567,
+            "y": 527
+          }
+        ]
+      },
+      {
+        "name": "DJ Grooves Sign Chest",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 750,
+            "y": 480
+          }
+        ]
+      },
+      {
+        "name": "Conductor Chest",
+        "sections": [
+          {
+            "name": "Token",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 885,
+            "y": 335
+          }
+        ]
+      },
+      {
+        "name": "Teepee Chest",
+        "sections": [
+          {
+            "name": "Relic",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 900,
+            "y": 200
+          }
+        ]
+      },
+      {
+        "name": "Dead Bird Studio Basement",
+        "sections": [
+          {
+            "name": "Window Platform",
+            "item_count": 1
+          },
+          {
+            "name": "Cardboard Conductor",
+            "item_count": 1
+          },
+          {
+            "name": "Above Conductor Sign",
+            "item_count": 1
+          },
+          {
+            "name": "Logo Wall",
+            "item_count": 1
+          },
+          {
+            "name": "Disco Room",
+            "item_count": 1
+          },
+          {
+            "name": "Small Room",
+            "item_count": 1
+          },
+          {
+            "name": "Vent Pipe",
+            "item_count": 1
+          },
+          {
+            "name": "Tightrope",
+            "item_count": 1
+          },
+          {
+            "name": "Cameras",
+            "item_count": 1
+          },
+          {
+            "name": "Locked Room",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 375,
+            "y": 270
+          }
+        ]
+      }
+    ]
+  }
+]
