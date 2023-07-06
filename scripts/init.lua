@@ -28,6 +28,7 @@ Tracker:AddMaps("maps/maps.json")
 Tracker:AddLocations("locations/mafiatown.json")
 Tracker:AddLocations("locations/deadbirdstudio.json")
 Tracker:AddLocations("locations/basement.json")
+Tracker:AddLocations("locations/subcon.json")
 
 -- Layout
 Tracker:AddLayouts("layouts/items.json")

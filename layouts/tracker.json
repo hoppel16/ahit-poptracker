@@ -63,6 +63,16 @@
                   "basement"
                 ]
               }
+            },
+            {
+              "title": "Subcon Forest",
+              "icon": "images/icons/Snatcher.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "subcon"
+                ]
+              }
             }
           ]
         }
