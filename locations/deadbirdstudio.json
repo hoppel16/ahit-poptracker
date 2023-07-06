@@ -6,8 +6,7 @@
         "name": "Red Building Top",
         "sections": [
           {
-            "name": "Yarn",
-            "item_count": 1
+            "name": "Yarn"
           }
         ],
         "map_locations": [
@@ -22,8 +21,7 @@
         "name": "Behind Water Tower",
         "sections": [
           {
-            "name": "Yarn",
-            "item_count": 1
+            "name": "Yarn"
           }
         ],
         "map_locations": [
@@ -38,8 +36,7 @@
         "name": "Side of House",
         "sections": [
           {
-            "name": "Yarn",
-            "item_count": 1
+            "name": "Yarn"
           }
         ],
         "map_locations": [
@@ -54,8 +51,7 @@
         "name": "Up the Ladder",
         "sections": [
           {
-            "name": "Yarn",
-            "item_count": 1
+            "name": "Yarn"
           }
         ],
         "map_locations": [
@@ -70,8 +66,7 @@
         "name": "Tightrope Chest",
         "sections": [
           {
-            "name": "Relic",
-            "item_count": 1
+            "name": "Relic"
           }
         ],
         "map_locations": [
@@ -86,8 +81,7 @@
         "name": "DJ Grooves Sign Chest",
         "sections": [
           {
-            "name": "Yarn",
-            "item_count": 1
+            "name": "Yarn"
           }
         ],
         "map_locations": [
@@ -102,8 +96,7 @@
         "name": "Conductor Chest",
         "sections": [
           {
-            "name": "Token",
-            "item_count": 1
+            "name": "Token"
           }
         ],
         "map_locations": [
@@ -118,8 +111,7 @@
         "name": "Teepee Chest",
         "sections": [
           {
-            "name": "Relic",
-            "item_count": 1
+            "name": "Relic"
           }
         ],
         "map_locations": [
@@ -131,34 +123,54 @@
         ]
       },
       {
+        "name": "Dead Bird Studio (Rift)",
+        "sections": [
+          {
+            "name": "Time Piece"
+          },
+          {
+            "name": "Pages",
+            "item_count": 8,
+            "clear_as_group": false
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 895,
+            "y": 365
+          }
+        ]
+      },
+      {
         "name": "Murder on the Owl Exrpress",
         "sections": [
           {
-            "name": "Cafeteria",
-            "item_count": 1
+            "name": "Cafeteria"
           },
           {
-            "name": "Luggage Room Top",
-            "item_count": 1
+            "name": "Luggage Room Top"
           },
           {
-            "name": "Luggage Room Bottom",
-            "item_count": 1
+            "name": "Luggage Room Bottom"
           },
           {
             "name": "Raven Suite Room",
             "access_rules": [
               "brewer"
-            ],
-            "item_count": 1
+            ]
           },
           {
-            "name": "Raven Suite Top",
-            "item_count": 1
+            "name": "Raven Suite Top"
           },
           {
-            "name": "Lounge Chest",
-            "item_count": 1
+            "name": "Lounge Chest"
+          },
+          {
+            "name": "Time Rift"
+          },
+          {
+            "name": "Act Completion"
           }
         ],
         "map_locations": [
@@ -173,12 +185,16 @@
         "name": "Picture Perfect",
         "sections": [
           {
-            "name": "Behind Badge Seller",
-            "item_count": 1
+            "name": "Behind Badge Seller"
           },
           {
-            "name": "Hats Buy Building",
-            "item_count": 1
+            "name": "Hats Buy Building"
+          },
+          {
+            "name": "Time Rift"
+          },
+          {
+            "name": "Act Completion"
           }
         ],
         "map_locations": [
