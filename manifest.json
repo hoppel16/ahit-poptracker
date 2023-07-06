@@ -7,10 +7,7 @@
   "author": "hoppel16",
   "variants": {
     "standard": {
-      "display_name": "Map Tracker",
-      "flags": [
-        "ap"
-      ]
+      "display_name": "Map Tracker"
     }
   }
 }

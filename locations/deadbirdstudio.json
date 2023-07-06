@@ -123,6 +123,24 @@
         ]
       },
       {
+        "name": "Act Completion",
+        "sections": [
+          {
+            "name": "Dead Bird Studio"
+          },
+          {
+            "name": "Award Ceremony"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 2900,
+            "y": 775
+          }
+        ]
+      },
+      {
         "name": "Dead Bird Studio (Rift)",
         "sections": [
           {
@@ -143,8 +161,14 @@
         ]
       },
       {
-        "name": "Murder on the Owl Exrpress",
+        "name": "The Conductor's Films",
         "sections": [
+          {
+            "name": "Murder on the Owl Express"
+          },
+          {
+            "name": "Train Rush"
+          },
           {
             "name": "Cafeteria"
           },
@@ -168,9 +192,6 @@
           },
           {
             "name": "Time Rift"
-          },
-          {
-            "name": "Act Completion"
           }
         ],
         "map_locations": [
@@ -182,8 +203,14 @@
         ]
       },
       {
-        "name": "Picture Perfect",
+        "name": "DJ Groove's Films",
         "sections": [
+          {
+            "name": "Picture Perfect"
+          },
+          {
+            "name": "The Big Parade"
+          },
           {
             "name": "Behind Badge Seller"
           },
@@ -192,9 +219,6 @@
           },
           {
             "name": "Time Rift"
-          },
-          {
-            "name": "Act Completion"
           }
         ],
         "map_locations": [
