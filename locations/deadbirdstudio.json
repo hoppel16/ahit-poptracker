@@ -13,8 +13,8 @@
         "map_locations": [
           {
             "map": "deadbirdstudio",
-            "x": 160,
-            "y": 230
+            "x": 360,
+            "y": 320
           }
         ]
       },
@@ -29,8 +29,8 @@
         "map_locations": [
           {
             "map": "deadbirdstudio",
-            "x": 360,
-            "y": 320
+            "x": 850,
+            "y": 615
           }
         ]
       },
@@ -45,8 +45,8 @@
         "map_locations": [
           {
             "map": "deadbirdstudio",
-            "x": 345,
-            "y": 255
+            "x": 810,
+            "y": 400
           }
         ]
       },
@@ -61,8 +61,8 @@
         "map_locations": [
           {
             "map": "deadbirdstudio",
-            "x": 460,
-            "y": 210
+            "x": 1105,
+            "y": 160
           }
         ]
       },
@@ -77,8 +77,8 @@
         "map_locations": [
           {
             "map": "deadbirdstudio",
-            "x": 567,
-            "y": 527
+            "x": 1415,
+            "y": 1360
           }
         ]
       },
@@ -93,8 +93,8 @@
         "map_locations": [
           {
             "map": "deadbirdstudio",
-            "x": 750,
-            "y": 480
+            "x": 1900,
+            "y": 1200
           }
         ]
       },
@@ -109,8 +109,8 @@
         "map_locations": [
           {
             "map": "deadbirdstudio",
-            "x": 885,
-            "y": 335
+            "x": 2270,
+            "y": 610
           }
         ]
       },
@@ -125,84 +125,8 @@
         "map_locations": [
           {
             "map": "deadbirdstudio",
-            "x": 900,
-            "y": 200
-          }
-        ]
-      },
-      {
-        "name": "Dead Bird Studio Basement",
-        "sections": [
-          {
-            "name": "Window Platform",
-            "item_count": 1,
-            "access_rules": [
-              "hookshot"
-            ]
-          },
-          {
-            "name": "Cardboard Conductor",
-            "item_count": 1,
-            "access_rules": [
-              "hookshot"
-            ]
-          },
-          {
-            "name": "Above Conductor Sign",
-            "item_count": 1,
-            "access_rules": [
-              "hookshot"
-            ]
-          },
-          {
-            "name": "Logo Wall",
-            "item_count": 1
-          },
-          {
-            "name": "Disco Room",
-            "item_count": 1,
-            "access_rules": [
-              "hookshot"
-            ]
-          },
-          {
-            "name": "Small Room",
-            "item_count": 1,
-            "access_rules": [
-              "hookshot"
-            ]
-          },
-          {
-            "name": "Vent Pipe",
-            "item_count": 1
-          },
-          {
-            "name": "Tightrope",
-            "item_count": 1,
-            "access_rules": [
-              "hookshot"
-            ]
-          },
-          {
-            "name": "Cameras",
-            "item_count": 1,
-            "access_rules": [
-              "hookshot"
-            ]
-          },
-          {
-            "name": "Locked Room",
-            "item_count": 1,
-            "access_rules": [
-              "hookshot"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 375,
-            "y": 270
+            "x": 2280,
+            "y": 160
           }
         ]
       }
