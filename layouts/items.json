@@ -50,5 +50,31 @@
         ]
       }
     ]
+  },
+  "settings_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "2,2",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "3, 10",
+            "item_size": 5,
+            "margin": "0,0",
+            "h_alignment": "left",
+            "rows": [
+              [
+                "sdj", "pages", "ctrsprint"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

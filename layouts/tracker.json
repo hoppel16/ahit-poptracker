@@ -28,6 +28,15 @@
                 "type": "layout",
                 "key": "badge_grid"
               }
+            },
+            {
+              "type": "group",
+              "header": "Settings",
+              "dock": "Right",
+              "content": {
+                "type": "layout",
+                "key": "settings_grid"
+              }
             }
           ]
         },

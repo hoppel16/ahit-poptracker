@@ -77,7 +77,7 @@
           {
             "name": "Cheating the Race",
             "access_rules": [
-              "[timestop], sprint",
+              "sprint, ctrsprint_on",
               "timestop"
             ]
           },
