@@ -53,6 +53,16 @@
                   "deadbirdstudio"
                 ]
               }
+            },
+            {
+              "title": "DBS Basement",
+              "icon": "images/icons/DJ_Grooves.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "basement"
+                ]
+              }
             }
           ]
         }

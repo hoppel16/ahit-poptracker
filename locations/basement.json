@@ -1,0 +1,191 @@
+[
+  {
+    "name": "DBS Basement",
+    "children": [
+      {
+        "name": "Small Room",
+        "sections": [
+          {
+            "name": "Token",
+            "access_rules": [
+              "hookshot"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "basement",
+            "x": 770,
+            "y": 1360
+          }
+        ]
+      },
+      {
+        "name": "Vent Pipe",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "basement",
+            "x": 1140,
+            "y": 1380
+          }
+        ]
+      },
+      {
+        "name": "Logo Wall",
+        "sections": [
+          {
+            "name": "Yarn",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "basement",
+            "x": 1300,
+            "y": 1280
+          }
+        ]
+      },
+      {
+        "name": "Cardboard Conductor",
+        "sections": [
+          {
+            "name": "Yarn",
+            "access_rules": [
+              "hookshot"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "basement",
+            "x": 300,
+            "y": 1100
+          }
+        ]
+      },
+      {
+        "name": "Above Conductor Sign",
+        "sections": [
+          {
+            "name": "Yarn",
+            "access_rules": [
+              "hookshot"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "basement",
+            "x": 375,
+            "y": 810
+          }
+        ]
+      },
+      {
+        "name": "Tightrope",
+        "sections": [
+          {
+            "name": "Yarn",
+            "access_rules": [
+              "hookshot"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "basement",
+            "x": 500,
+            "y": 835
+          }
+        ]
+      },
+      {
+        "name": "Window Platform",
+        "sections": [
+          {
+            "name": "Yarn",
+            "access_rules": [
+              "hookshot"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "basement",
+            "x": 580,
+            "y": 970
+          }
+        ]
+      },
+      {
+        "name": "Cameras",
+        "sections": [
+          {
+            "name": "Yarn",
+            "access_rules": [
+              "hookshot"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "basement",
+            "x": 310,
+            "y": 1150
+          }
+        ]
+      },
+      {
+        "name": "Disco Room",
+        "sections": [
+          {
+            "name": "Yarn",
+            "access_rules": [
+              "hookshot"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "basement",
+            "x": 805,
+            "y": 325
+          }
+        ]
+      },
+      {
+        "name": "Locked Room",
+        "sections": [
+          {
+            "name": "Relic",
+            "access_rules": [
+              "hookshot"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "basement",
+            "x": 670,
+            "y": 130
+          }
+        ]
+      }
+    ]
+  }
+]
