@@ -2,44 +2,50 @@
   {
     "name": "Sprint Hat",
     "type": "toggle",
-    "img": "images/hats/sprint_hat_icon.png",
+    "img": "images/items/sprint_hat_icon.png",
     "codes": "sprint"
   },
   {
     "name": "Brewer Hat",
     "type": "toggle",
-    "img": "images/hats/brewer_hat_icon.png",
+    "img": "images/items/brewer_hat_icon.png",
     "codes": "brewer"
   },
   {
     "name": "Ice Hat",
     "type": "toggle",
-    "img": "images/hats/ice_hat_icon.png",
+    "img": "images/items/ice_hat_icon.png",
     "codes": "ice"
   },
   {
     "name": "Dweller's Mask",
     "type": "toggle",
-    "img": "images/hats/dwellers_mask_icon.png",
+    "img": "images/items/dwellers_mask_icon.png",
     "codes": "dweller"
   },
   {
     "name": "Time Stop Hat",
     "type": "toggle",
-    "img": "images/hats/time_stop_hat_icon.png",
+    "img": "images/items/time_stop_hat_icon.png",
     "codes": "timestop"
   },
   {
     "name": "Hookshot Badge",
     "type": "toggle",
-    "img": "images/badges/hookshot_badge.png",
+    "img": "images/items/hookshot_badge.png",
     "codes": "hookshot"
   },
   {
     "name": "Scooter Badge",
     "type": "toggle",
-    "img": "images/badges/scooter_badge.png",
+    "img": "images/items/scooter_badge.png",
     "codes": "scooter"
+  },
+  {
+    "name": "Umbrella",
+    "type": "toggle",
+    "img": "images/items/umbrella.png",
+    "codes": "umbrella"
   },
   {
     "name": "SDJ Logic",
@@ -49,47 +55,31 @@
     "stages": [
       {
         "img": "images/settings/sdj_off.png",
-        "codes": "sdj, sdj_on"
+        "codes": "sdj, sdj_off"
       },
       {
         "img": "images/settings/sdj_on.png",
-        "codes": "sdj, sdj_off",
+        "codes": "sdj, sdj_on",
         "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Randomize Pages",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/settings/pages_off.png",
-        "codes": "pages, pages_off"
-      },
-      {
-        "img": "images/settings/pages_on.png",
-        "codes": "pages, pages_on",
-        "inherit_codes": false
-      }
-    ]
+    "name": "Shuffle Storybook Pages",
+    "type": "toggle",
+    "img": "images/settings/pages.png",
+    "codes": "pages"
   },
   {
     "name": "CTR with Sprint Hat",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/settings/ctrsprint_off.png",
-        "codes": "ctrsprint, ctrsprint_off"
-      },
-      {
-        "img": "images/settings/ctrsprint_on.png",
-        "codes": "ctrsprint, ctrsprint_on",
-        "inherit_codes": false
-      }
-    ]
+    "type": "toggle",
+    "img": "images/settings/ctrsprint.png",
+    "codes": "ctrsprint"
+  },
+  {
+    "name": "Shuffle Contracts",
+    "type": "toggle",
+    "img": "images/settings/contract.png",
+    "codes": "contract"
   }
 ]

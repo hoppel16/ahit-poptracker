@@ -13,20 +13,11 @@
           "content": [
             {
               "type": "group",
-              "header": "Hats",
+              "header": "Items",
               "dock": "left",
               "content": {
                 "type": "layout",
-                "key": "hat_grid"
-              }
-            },
-            {
-              "type": "group",
-              "header": "Badges",
-              "dock": "left",
-              "content": {
-                "type": "layout",
-                "key": "badge_grid"
+                "key": "item_grid"
               }
             },
             {

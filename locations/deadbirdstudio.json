@@ -149,7 +149,10 @@
           {
             "name": "Pages",
             "item_count": 8,
-            "clear_as_group": false
+            "clear_as_group": false,
+            "visibility_rules": [
+              "pages"
+            ]
           }
         ],
         "map_locations": [

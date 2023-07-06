@@ -395,6 +395,7 @@
           {
             "name": "Yarn",
             "access_rules": [
+              "sprint, sdj_on",
               "dweller"
             ]
           }
@@ -604,6 +605,14 @@
             "access_rules": [
               "sprint"
             ]
+          },
+          {
+            "name": "Contracts",
+            "item_count": 4,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "contract"
+            ]
           }
         ],
         "map_locations": [
@@ -657,7 +666,12 @@
         "name": "Village",
         "sections": [
           {
-            "name": "Time Rift"
+            "name": "Time Rift",
+            "access_rules": [
+              "brewer",
+              "dweller",
+              "umbrella"
+            ]
           }
         ],
         "map_locations": [
@@ -677,7 +691,10 @@
           {
             "name": "Pages",
             "item_count": 9,
-            "clear_as_group": false
+            "clear_as_group": false,
+            "visibility_rules": [
+              "pages"
+            ]
           }
         ],
         "map_locations": [

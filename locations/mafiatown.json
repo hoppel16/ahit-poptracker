@@ -77,7 +77,7 @@
           {
             "name": "Cheating the Race",
             "access_rules": [
-              "sprint, ctrsprint_on",
+              "sprint, ctrsprint",
               "timestop"
             ]
           },
@@ -165,7 +165,10 @@
           {
             "name": "Pages",
             "item_count": 6,
-            "clear_as_group": false
+            "clear_as_group": false,
+            "visibility_rules": [
+              "pages"
+            ]
           }
         ],
         "map_locations": [
