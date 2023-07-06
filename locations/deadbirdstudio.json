@@ -129,6 +129,65 @@
             "y": 160
           }
         ]
+      },
+      {
+        "name": "Murder on the Owl Exrpress",
+        "sections": [
+          {
+            "name": "Cafeteria",
+            "item_count": 1
+          },
+          {
+            "name": "Luggage Room Top",
+            "item_count": 1
+          },
+          {
+            "name": "Luggage Room Bottom",
+            "item_count": 1
+          },
+          {
+            "name": "Raven Suite Room",
+            "access_rules": [
+              "brewer"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Raven Suite Top",
+            "item_count": 1
+          },
+          {
+            "name": "Lounge Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 1440,
+            "y": 180
+          }
+        ]
+      },
+      {
+        "name": "Picture Perfect",
+        "sections": [
+          {
+            "name": "Behind Badge Seller",
+            "item_count": 1
+          },
+          {
+            "name": "Hats Buy Building",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 1890,
+            "y": 180
+          }
+        ]
       }
     ]
   }
