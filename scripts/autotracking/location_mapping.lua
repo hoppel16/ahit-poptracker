@@ -125,39 +125,38 @@ LOCATION_MAPPING = {
     [323896] = {"@Subcon Forest/Queen Vanessa's Manor/Hall Chest"},
     [325546] = {"@Subcon Forest/Queen Vanessa's Manor/Chandelier"},
 
-    --[[
     -- 330000 range - Alpine Skyline
-    [334856] = {"@Goat Village/Alpine Skyline - Goat Village: Below Hookpoint"},
-    [334855] = {"@Goat Village/Alpine Skyline - Goat Village: Hidden Branch"},
-    [333635] = {"@Alpine Free Roam/Alpine Skyline - Goat Refinery"},
-    [335911] = {"@Alpine Free Roam/Alpine Skyline - Bird Pass Fork"},
-    [335756] = {"@Alpine Free Roam/Alpine Skyline - Yellow Band Hills"},
-    [335561] = {"@Alpine Free Roam/Alpine Skyline - The Purrloined Village: Horned Stone"},
-    [334831] = {"@Alpine Free Roam/Alpine Skyline - The Purrloined Village: Chest Reward"},
-    [334758] = {"@The Birdhouse/Alpine Skyline - The Birdhouse: Triple Crow Chest"},
-    [336497] = {"@The Birdhouse/Alpine Skyline - The Birdhouse: Dweller Platforms Relic"},
-    [336496] = {"@The Birdhouse/Alpine Skyline - The Birdhouse: Brewing Crate House"},
-    [335885] = {"@The Birdhouse/Alpine Skyline - The Birdhouse: Hay Bale"},
-    [335886] = {"@The Birdhouse/Alpine Skyline - The Birdhouse: Alpine Crow Mini-Gauntlet"},
-    [335492] = {"@The Birdhouse/Alpine Skyline - The Birdhouse: Outer Edge"},
+    [334856] = {"@Alpine Skyline/Goat Village/Below Hookpoint"},
+    [334855] = {"@Alpine Skyline/Goat Village/Hidden Branch"},
+    [333635] = {"@Alpine Skyline/Goat Refinery/Yarn"},
+    [335911] = {"@Alpine Skyline/Bird Pass Fork/Yarn"},
+    [335756] = {"@Alpine Skyline/Yellow Band Hills/Yarn"},
+    [335561] = {"@Alpine Skyline/The Purrloined Village: Horned Stone/Token"},
+    [334831] = {"@Alpine Skyline/The Purrloined Village: Chest Reward/Token"},
+    [334758] = {"@Alpine Skyline/The Birdhouse/Triple Crow Chest"},
+    [336497] = {"@Alpine Skyline/The Birdhouse/Dweller Platforms Relic"},
+    [336496] = {"@Alpine Skyline/The Birdhouse/Brewing Crate House"},
+    [335885] = {"@Alpine Skyline/The Birdhouse/Hay Bale"},
+    [335886] = {"@Alpine Skyline/The Birdhouse/Alpine Crow Mini-Gauntlet"},
+    [335492] = {"@Alpine Skyline/The Birdhouse/Outer Edge"},
+    [337058] = {"@Alpine Skyline/Mystifying Time Mesa: Zipline/Token"},
+    [336052] = {"@Alpine Skyline/Mystifying Time Mesa: Gate Puzzle/Relic"},
+    [336311] = {"@Alpine Skyline/Ember Summit/Yarn"},
+    [335448] = {"@Alpine Skyline/The Lava Cake/Center Fence Cage"},
+    [334291] = {"@Alpine Skyline/The Lava Cake/Outer Island Chest"},
+    [335417] = {"@Alpine Skyline/The Lava Cake/Dweller Pillars"},
+    [335418] = {"@Alpine Skyline/The Lava Cake/Top Cake"},
+    [334434] = {"@Alpine Skyline/The Twilight Path/Token"},
+    [336478] = {"@Alpine Skyline/The Twilight Bell/Wide Purple Platform"},
+    [335826] = {"@Alpine Skyline/The Twilight Bell/Ice Platform"},
+    [334760] = {"@Alpine Skyline/Goat Outpost Horn/Yarn"},
+    [334776] = {"@Alpine Skyline/Windy Passage/Yarn"},
+    --[336395] = {"@Alpine Skyline/Alpine Skyline - The Windmill: Time Trial"},
+    [335783] = {"@Alpine Skyline/The Windmill/Entrance"},
+    [335815] = {"@Alpine Skyline/The Windmill/Dropdown"},
+    [335389] = {"@Alpine Skyline/The Windmill/House Window"},
 
-    [337058] = {"@Alpine Free Roam/Alpine Skyline - Mystifying Time Mesa: Zipline"},
-    [336052] = {"@Alpine Free Roam/Alpine Skyline - Mystifying Time Mesa: Gate Puzzle"},
-    [336311] = {"@Alpine Free Roam/Alpine Skyline - Ember Summit"},
-    [335448] = {"@The Lava Cake/Alpine Skyline - The Lava Cake: Center Fence Cage"},
-    [334291] = {"@The Lava Cake/Alpine Skyline - The Lava Cake: Outer Island Chest"},
-    [335417] = {"@The Lava Cake/Alpine Skyline - The Lava Cake: Dweller Pillars"},
-    [335418] = {"@The Lava Cake/Alpine Skyline - The Lava Cake: Top Cake"},
-    [334434] = {"@Alpine Free Roam/Alpine Skyline - The Twilight Path"},
-    [336478] = {"@The Twilight Bell/Alpine Skyline - The Twilight Bell: Wide Purple Platform"},
-    [335826] = {"@The Twilight Bell/Alpine Skyline - The Twilight Bell: Ice Platform"},
-    [334760] = {"@Alpine Free Roam/Alpine Skyline - Goat Outpost Horn"},
-    [334776] = {"@Alpine Free Roam/Alpine Skyline - Windy Passage"},
-    [336395] = {"@The Windmill/Alpine Skyline - The Windmill: Time Trial"},
-    [335783] = {"@The Windmill/Alpine Skyline - The Windmill: Entrance"},
-    [335815] = {"@The Windmill/Alpine Skyline - The Windmill: Dropdown"},
-    [335389] = {"@The Windmill/Alpine Skyline - The Windmill: House Window"},
-
+--[[
     [304108] = {"@Time's End/Time's End - Frozen Item"},
 
     -- 310000 range - Act Completions
@@ -199,18 +198,16 @@ LOCATION_MAPPING = {
 
     [312086] = {"@Subcon Forest/Sleepy Subcon/Time Rift"},
 
-    --[[
-    [311428] = {"@The Birdhouse/Act Completion (The Birdhouse)"},
-    [312509] = {"@The Lava Cake/Act Completion (The Lava Cake)"},
-    [311540] = {"@The Twilight Bell/Act Completion (The Twilight Bell)"},
-    [312263] = {"@The Windmill/Act Completion (The Windmill)"},
-    [312022] = {"@The Illness has Spread/Act Completion (The Illness has Spread)"},
-    [312399] = {"@Time Rift - The Twilight Bell/Act Completion (Time Rift - The Twilight Bell)"},
-    [313335] = {"@Time Rift - Curly Tail Trail/Act Completion (Time Rift - Curly Tail Trail)"},
-    [311777] = {"@Time Rift - Alpine Skyline/Act Completion (Time Rift - Alpine Skyline)"},
+    [311428] = {"@Alpine Skyline/The Birdhouse/Time Piece"},
+    [312509] = {"@Alpine Skyline/The Lava Cake/Time Piece"},
+    [311540] = {"@Alpine Skyline/The Twilight Bell/Time Piece"},
+    [312263] = {"@Alpine Skyline/The Windmill/Time Piece"},
+    [312022] = {"@Alpine Skyline/The Illness has Spread/Time Piece"},
+    [312399] = {"@Alpine Skyline/The Twilight Bell (Rift)/Time Rift"},
+    [313335] = {"@Alpine Skyline/Curly Tail Trail/Time Rift"},
+    [311777] = {"@Alpine Skyline/Alpine Skyline (Rift)/Time Rift"},
 
-    [311872] = {"@Time's End/Act Completion (Time's End - The Finale)"},
-]]--
+    --[311872] = {"@Time's End/Act Completion (Time's End - The Finale)"},
 
     -- Storybook pages
     [345091] = {"@Mafia Town/Mafia of Cooks/Pages"}, --Fish Pile"
@@ -238,13 +235,12 @@ LOCATION_MAPPING = {
     [345329] = {"@Subcon Forest/Sleepy Subcon/Pages"}, --Behind 3rd Rift Gate"
     [345330] = {"@Subcon Forest/Sleepy Subcon/Pages"}, --Frozen Tree"
     [345370] = {"@Subcon Forest/Sleepy Subcon/Pages"}, --Secret Library"
---[[
-    [345016] = {"@Time Rift - Alpine Skyline/Alpine Skyline (Rift) - Page: Entrance Area Hidden Ledge"},
-    [345012] = {"@Time Rift - Alpine Skyline/Alpine Skyline (Rift) - Page: Windmill Island Ledge"},
-    [345015] = {"@Time Rift - Alpine Skyline/Alpine Skyline (Rift) - Page: Waterfall Wooden Pillar"},
-    [345014] = {"@Time Rift - Alpine Skyline/Alpine Skyline (Rift) - Page: Lonely Birdhouse Top"},
-    [345013] = {"@Time Rift - Alpine Skyline/Alpine Skyline (Rift) - Page: Below Aqueduct"},
-]]--
+
+    [345016] = {"@Alpine Skyline/Alpine Skyline (Rift)/Pages"}, --Page: Entrance Area Hidden Ledge
+    [345012] = {"@Alpine Skyline/Alpine Skyline (Rift)/Pages"}, --Page: Windmill Island Ledge
+    [345015] = {"@Alpine Skyline/Alpine Skyline (Rift)/Pages"}, --Page: Waterfall Wooden Pillar
+    [345014] = {"@Alpine Skyline/Alpine Skyline (Rift)/Pages"}, --Page: Lonely Birdhouse Top
+    [345013] = {"@Alpine Skyline/Alpine Skyline (Rift)/Pages"}, --Page: Below Aqueduct
     -- Contracts
     [300200] = {"@Subcon Forest/Snatcher/Contracts"}, --Snatcher's Contract - The Subcon Well"
     [300201] = {"@Subcon Forest/Snatcher/Contracts"}, --Snatcher's Contract - Toilet of Doom"
