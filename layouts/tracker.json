@@ -73,6 +73,16 @@
                   "subcon"
                 ]
               }
+            },
+            {
+              "title": "Alpine Skyline",
+              "icon": "images/icons/Nomad.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "alpine"
+                ]
+              }
             }
           ]
         }
