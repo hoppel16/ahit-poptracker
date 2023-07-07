@@ -403,7 +403,7 @@
         ]
       },
       {
-        "name": "Old Man",
+        "name": "Old Man 2",
         "sections": [
           {
             "name": "Seaside Spaghetti"
@@ -516,6 +516,21 @@
             "map": "mafiatown",
             "x": 780,
             "y": 580
+          }
+        ]
+      },
+      {
+        "name": "Camera Badge 2",
+        "sections": [
+          {
+            "name": "smile :)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 800,
+            "y": 60
           }
         ]
       },

@@ -81,5 +81,11 @@
     "type": "toggle",
     "img": "images/settings/contract.png",
     "codes": "contract"
+  },
+  {
+    "name": "Yarn",
+    "type": "consumable",
+    "img": "images/items/yarn.png",
+    "codes": "yarn"
   }
 ]

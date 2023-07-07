@@ -175,6 +175,24 @@
             "y": 130
           }
         ]
+      },
+      {
+        "name": "Act Completion",
+        "sections": [
+          {
+            "name": "Time Piece",
+            "access_rules": [
+              "hookshot"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "basement",
+            "x": 363,
+            "y": 1800
+          }
+        ]
       }
     ]
   }
