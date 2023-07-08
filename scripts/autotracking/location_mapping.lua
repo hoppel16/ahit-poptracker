@@ -1,7 +1,7 @@
 LOCATION_MAPPING = {
     
-    --[301000] = {"@Spaceship/Spaceship - Rumbi"},
-    --[301001] = {"@Spaceship/Spaceship - Cooking Cat"},
+    [301000] = {"@Spaceship/Guests/Rumbi"},
+    [301001] = {"@Spaceship/Guests/Cooking Cat"},
 
     -- 300000 range - Mafia Town/Batle of the Birds
     [301002] = {"@Mafia Town/Welcome to Mafia Town/Umbrella"},
@@ -156,13 +156,11 @@ LOCATION_MAPPING = {
     [335815] = {"@Alpine Skyline/The Windmill/Dropdown"},
     [335389] = {"@Alpine Skyline/The Windmill/House Window"},
 
---[[
-    [304108] = {"@Time's End/Time's End - Frozen Item"},
+    [304108] = {"@Spaceship/Time's End/Frozen Item"},
 
     -- 310000 range - Act Completions
-    [312758] = {"@Time Rift - Gallery/Act Completion (Time Rift - Gallery)"},
-    [312838] = {"@Time Rift - The Lab/Act Completion (Time Rift - The Lab)"},
-]]--
+    [312758] = {"@Time Rifts/The Gallery/Time Rift"},
+    [312838] = {"@Time Rifts/The Lab/Time Rift"},
 
     [311771] = {"@Mafia Town/Welcome to Mafia Town/Time Piece"},
     [311958] = {"@Mafia Town/Barrel Battle/Time Piece"},
@@ -246,18 +244,17 @@ LOCATION_MAPPING = {
     [300201] = {"@Subcon Forest/Snatcher/Contracts"}, --Snatcher's Contract - Toilet of Doom"
     [300202] = {"@Subcon Forest/Snatcher/Contracts"}, --Snatcher's Contract - Queen Vanessa's Manor"
     [300203] = {"@Subcon Forest/Snatcher/Contracts"}, --Snatcher's Contract - Mail Delivery Service"
---[[
+
     -- shop_locations
-    [301003] = {"@Badge Seller/Badge Seller - Item 1"},
-    [301004] = {"@Badge Seller/Badge Seller - Item 2"},
-    [301005] = {"@Badge Seller/Badge Seller - Item 3"},
-    [301006] = {"@Badge Seller/Badge Seller - Item 4"},
-    [301007] = {"@Badge Seller/Badge Seller - Item 5"},
-    [301008] = {"@Badge Seller/Badge Seller - Item 6"},
-    [301009] = {"@Badge Seller/Badge Seller - Item 7"},
-    [301010] = {"@Badge Seller/Badge Seller - Item 8"},
-    [301011] = {"@Badge Seller/Badge Seller - Item 9"},
-    [301012] = {"@Badge Seller/Badge Seller - Item 10"},
-    [301013] = {"@Spaceship/Mafia Boss Shop Item"}
-]]--
+    [301003] = {"@Shops/Badge Seller/25 Pons Each"},
+    [301004] = {"@Shops/Badge Seller/25 Pons Each"},
+    [301005] = {"@Shops/Badge Seller/25 Pons Each"},
+    [301006] = {"@Shops/Badge Seller/25 Pons Each"},
+    [301007] = {"@Shops/Badge Seller/25 Pons Each"},
+    [301008] = {"@Shops/Badge Seller/25 Pons Each"},
+    [301009] = {"@Shops/Badge Seller/25 Pons Each"},
+    [301010] = {"@Shops/Badge Seller/25 Pons Each"},
+    [301011] = {"@Shops/Badge Seller/25 Pons Each"},
+    [301012] = {"@Shops/Badge Seller/25 Pons Each"},
+    [301013] = {"@Shops/Mafia Boss/12 Time Pieces Required"}
 }
