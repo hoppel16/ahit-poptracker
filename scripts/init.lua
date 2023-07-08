@@ -25,6 +25,7 @@ Tracker:AddItems("items/items.json")
 Tracker:AddMaps("maps/maps.json")
 
 -- Locations
+Tracker:AddLocations("locations/spaceship.json")
 Tracker:AddLocations("locations/mafiatown.json")
 Tracker:AddLocations("locations/deadbirdstudio.json")
 Tracker:AddLocations("locations/basement.json")

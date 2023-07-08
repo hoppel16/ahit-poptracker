@@ -1,0 +1,115 @@
+[
+  {
+    "name": "Spaceship",
+    "children": [
+      {
+        "name": "Guests",
+        "sections": [
+          {
+            "name": "Rumbi"
+          },
+          {
+            "name": "Cooking Cat"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spaceship",
+            "x": 690,
+            "y": 470
+          }
+        ]
+      },
+      {
+        "name": "Times End",
+        "sections": [
+          {
+            "name": "Frozen Item"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spaceship",
+            "x": 675,
+            "y": 640
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Time Rifts",
+    "children": [
+      {
+        "name": "The Gallery",
+        "access_rules": [
+          "brewer"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spaceship",
+            "x": 305,
+            "y": 100
+          }
+        ]
+      },
+      {
+        "name": "The Lab",
+        "sections": [
+          {
+            "name": "Time Rift"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spaceship",
+            "x": 589,
+            "y": 999
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shops",
+    "children": [
+      {
+        "name": "Badge Seller",
+        "sections": [
+          {
+            "name": "25 Pons Each",
+            "item_count": 10,
+            "clear_as_group": false
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spaceship",
+            "x": 760,
+            "y": 550
+          }
+        ]
+      },
+      {
+        "name": "Mafia Boss",
+        "sections": [
+          {
+            "name": "12 Time Pieces Required"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spaceship",
+            "x": 690,
+            "y": 230
+          }
+        ]
+      }
+    ]
+  }
+]

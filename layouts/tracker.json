@@ -35,6 +35,16 @@
           "type": "tabbed",
           "tabs": [
             {
+              "title": "Spaceship",
+              "icon": "images/icons/Rumbi.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "spaceship"
+                ]
+              }
+            },
+            {
               "title": "Mafia Town",
               "icon": "images/icons/Mafia_Goon.png",
               "content": {
