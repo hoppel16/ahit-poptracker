@@ -60,6 +60,9 @@
       },
       {
         "name": "The Lab",
+        "access_rules": [
+          "dweller"
+        ],
         "sections": [
           {
             "name": "Time Rift"
