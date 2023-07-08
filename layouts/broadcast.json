@@ -11,6 +11,10 @@
         "content": [
           {
             "type": "layout",
+            "key": "consumable_grid"
+          },
+          {
+            "type": "layout",
             "key": "item_grid"
           }
         ]
