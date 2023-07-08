@@ -3,13 +3,10 @@
     "name": "Mafia Town",
     "children": [
       {
-        "name": "Welcome to Mafia Town",
+        "name": "Mafia Goon",
         "sections": [
           {
             "name": "Umbrella"
-          },
-          {
-            "name": "Time Piece"
           }
         ],
         "map_locations": [
@@ -21,26 +18,8 @@
         ]
       },
       {
-        "name": "Barrel Battle",
-        "sections": [
-          {
-            "name": "Time Piece"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 638,
-            "y": 565
-          }
-        ]
-      },
-      {
         "name": "Mafia HQ",
         "sections": [
-          {
-            "name": "Time Piece"
-          },
           {
             "name": "Hallway Brewing Crate",
             "access_rules": [
@@ -75,13 +54,6 @@
         "name": "Beach Alcove",
         "sections": [
           {
-            "name": "Cheating the Race",
-            "access_rules": [
-              "sprint, ctrsprint",
-              "timestop"
-            ]
-          },
-          {
             "name": "Yarn"
           }
         ],
@@ -90,39 +62,6 @@
             "map": "mafiatown",
             "x": 250,
             "y": 430
-          }
-        ]
-      },
-      {
-        "name": "Mafia Geek",
-        "sections": [
-          {
-            "name": "Heating Up Mafia Town"
-          },
-          {
-            "name": "She Came from Outer Space"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 415,
-            "y": 261
-          }
-        ]
-      },
-      {
-        "name": "The Golden Vault",
-        "sections": [
-          {
-            "name": "Time Piece"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "mafiatown",
-            "x": 465,
-            "y": 368
           }
         ]
       },

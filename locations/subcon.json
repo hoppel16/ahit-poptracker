@@ -235,12 +235,6 @@
             "access_rules": [
               "hookshot"
             ]
-          },
-          {
-            "name": "Time Piece",
-            "access_rules": [
-              "hookshot"
-            ]
           }
         ],
         "map_locations": [
@@ -581,9 +575,6 @@
           },
           {
             "name": "Chandelier"
-          },
-          {
-            "name": "Time Piece"
           }
         ],
         "map_locations": [
@@ -598,15 +589,6 @@
         "name": "Snatcher",
         "sections": [
           {
-            "name": "Contractual Obligations"
-          },
-          {
-            "name": "Mail Delivery Service",
-            "access_rules": [
-              "sprint"
-            ]
-          },
-          {
             "name": "Contracts",
             "item_count": 4,
             "clear_as_group": false,
@@ -619,27 +601,6 @@
           {
             "map": "subcon",
             "x": 950,
-            "y": 520
-          }
-        ]
-      },
-      {
-        "name": "Boss Arena",
-        "sections": [
-          {
-            "name": "Your Contract has Expired"
-          },
-          {
-            "name": "Toilet of Doom",
-            "access_rules": [
-              "hookshot"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "subcon",
-            "x": 190,
             "y": 520
           }
         ]

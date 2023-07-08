@@ -1,5 +1,155 @@
 [
   {
+    "name": "Act Completions",
+    "children": [
+      {
+        "name": "Mafia Town",
+        "sections": [
+          {
+            "name": "Welcome to Mafia Town"
+          },
+          {
+            "name": "Barrel Battle"
+          },
+          {
+            "name": "She Came from Outer Space"
+          },
+          {
+            "name": "Down with the Mafia"
+          },
+          {
+            "name": "Cheating the Race",
+            "access_rules": [
+              "timestop",
+              "ctrsprint, sprint"
+            ]
+          },
+          {
+            "name": "Heating Up Mafia Town"
+          },
+          {
+            "name": "The Golden Vault"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spaceship",
+            "x": 510,
+            "y": 410
+          }
+        ]
+      },
+      {
+        "name": "Battle of the Birds",
+        "sections":[
+          {
+            "name": "Dead Bird Studio"
+          },
+          {
+            "name": "Murder on the Owl Express"
+          },
+          {
+            "name": "Picture Perfect"
+          },
+          {
+            "name": "Train Rush",
+            "access_rules": [
+              "hookshot"
+            ]
+          },
+          {
+            "name": "The Big Parade"
+          },
+          {
+            "name": "Award Ceremony"
+          },
+          {
+            "name": "Dead Bird Studio Basement",
+            "access_rules": [
+              "hookshot"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spaceship",
+            "x": 610,
+            "y": 130
+          }
+        ]
+      },
+      {
+        "name": "Subcon Forest",
+        "sections":[
+          {
+            "name": "Contractual Obligations"
+          },
+          {
+            "name": "The Subcon Well",
+            "access_rules": [
+              "hookshot"
+            ]
+          },
+          {
+            "name": "Toilet of Doom",
+            "access_rules": [
+              "hookshot"
+            ]
+          },
+          {
+            "name": "Queen Vanessa's Manor"
+          },
+          {
+            "name": "Mail Delivery Service",
+            "access_rules": [
+              "sprint"
+            ]
+          },
+          {
+            "name": "Your Contract has Expired"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spaceship",
+            "x": 390,
+            "y": 765
+          }
+        ]
+      },
+      {
+        "name": "Alpine Skyline",
+        "access_rules": [
+          "hookshot"
+        ],
+        "sections":[
+          {
+            "name": "The Birdhouse"
+          },
+          {
+            "name": "The Lava Cake"
+          },
+          {
+            "name": "The Twilight Bell"
+          },
+          {
+            "name": "The Windmill"
+          },
+          {
+            "name": "The Illness has Spread"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spaceship",
+            "x": 60,
+            "y": 575
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Spaceship",
     "children": [
       {
@@ -22,6 +172,9 @@
       },
       {
         "name": "Time's End",
+        "access_rules": [
+          "brewer, dweller"
+        ],
         "sections": [
           {
             "name": "Frozen Item"

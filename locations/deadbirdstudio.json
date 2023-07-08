@@ -123,24 +123,6 @@
         ]
       },
       {
-        "name": "Act Completion",
-        "sections": [
-          {
-            "name": "Dead Bird Studio"
-          },
-          {
-            "name": "Award Ceremony"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 2900,
-            "y": 775
-          }
-        ]
-      },
-      {
         "name": "Dead Bird Studio (Rift)",
         "sections": [
           {
@@ -164,17 +146,8 @@
         ]
       },
       {
-        "name": "The Conductor's Films",
+        "name": "Murder on the Owl Express",
         "sections": [
-          {
-            "name": "Murder on the Owl Express"
-          },
-          {
-            "name": "Train Rush",
-            "access_rules": [
-              "hookshot"
-            ]
-          },
           {
             "name": "Cafeteria"
           },
@@ -209,14 +182,8 @@
         ]
       },
       {
-        "name": "DJ Groove's Films",
+        "name": "Picture Perfect",
         "sections": [
-          {
-            "name": "Picture Perfect"
-          },
-          {
-            "name": "The Big Parade"
-          },
           {
             "name": "Behind Badge Seller"
           },

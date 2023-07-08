@@ -127,9 +127,6 @@
           },
           {
             "name": "Outer Edge"
-          },
-          {
-            "name": "Time Piece"
           }
         ],
         "map_locations": [
@@ -199,9 +196,6 @@
           },
           {
             "name": "Top Cake"
-          },
-          {
-            "name": "Time Piece"
           }
         ],
         "map_locations": [
@@ -290,9 +284,6 @@
               "sdj_on, sprint",
               "ice"
             ]
-          },
-          {
-            "name": "Time Piece"
           }
         ],
         "map_locations": [
@@ -300,24 +291,6 @@
             "map": "alpine",
             "x": 1274,
             "y": 2330
-          }
-        ]
-      },
-      {
-        "name": "The Illness has Spread",
-        "access_rules": [
-          "hookshot"
-        ],
-        "sections": [
-          {
-            "name": "Time Piece"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "alpine",
-            "x": 1340,
-            "y": 1320
           }
         ]
       },
