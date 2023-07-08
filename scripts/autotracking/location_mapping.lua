@@ -256,5 +256,5 @@ LOCATION_MAPPING = {
     [301010] = {"@Shops/Badge Seller/25 Pons Each"},
     [301011] = {"@Shops/Badge Seller/25 Pons Each"},
     [301012] = {"@Shops/Badge Seller/25 Pons Each"},
-    [301013] = {"@Shops/Mafia Boss/12 Time Pieces Required"}
+    [301013] = {"@Shops/Mafia Boss/25 Pons"}
 }
