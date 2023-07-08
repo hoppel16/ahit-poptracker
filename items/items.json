@@ -87,5 +87,11 @@
     "type": "consumable",
     "img": "images/items/yarn.png",
     "codes": "yarn"
+  },
+  {
+    "name": "Time Piece",
+    "type": "consumable",
+    "img": "images/items/time_piece.png",
+    "codes": "timepiece"
   }
 ]

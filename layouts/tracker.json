@@ -13,6 +13,15 @@
           "content": [
             {
               "type": "group",
+              "header": "Consumables",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "key": "consumable_grid"
+              }
+            },
+            {
+              "type": "group",
               "header": "Items",
               "dock": "left",
               "content": {

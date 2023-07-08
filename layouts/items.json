@@ -1,25 +1,36 @@
 {
+  "consumable_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "2,2",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "3, 10",
+        "item_size": 5,
+        "margin": "15,0",
+        "h_alignment": "left",
+        "rows": [
+          ["timepiece"],
+          ["yarn"]
+        ]
+      }
+    ]
+  },
   "item_grid": {
     "type": "array",
     "orientation": "vertical",
     "margin": "2,2",
     "content": [
       {
-        "type": "array",
-        "orientation": "vertical",
+        "type": "itemgrid",
+        "item_margin": "3, 10",
+        "item_size": 5,
         "margin": "0,0",
-        "content": [
-          {
-            "type": "itemgrid",
-            "item_margin": "3, 10",
-            "item_size": 5,
-            "margin": "0,0",
-            "h_alignment": "left",
-            "rows": [
-              ["sprint", "brewer", "ice", "dweller"],
-              ["timestop", "umbrella", "hookshot", "scooter"]
-            ]
-          }
+        "h_alignment": "left",
+        "rows": [
+          ["sprint", "brewer", "ice", "dweller"],
+          ["timestop", "umbrella", "hookshot", "scooter"]
         ]
       }
     ]
@@ -30,21 +41,14 @@
     "margin": "2,2",
     "content": [
       {
-        "type": "array",
-        "orientation": "vertical",
+        "type": "itemgrid",
+        "item_margin": "3, 10",
+        "item_size": 5,
         "margin": "0,0",
-        "content": [
-          {
-            "type": "itemgrid",
-            "item_margin": "3, 10",
-            "item_size": 5,
-            "margin": "0,0",
-            "h_alignment": "left",
-            "rows": [
-              ["pages", "contract"],
-              ["sdj", "ctrsprint"]
-            ]
-          }
+        "h_alignment": "left",
+        "rows": [
+          ["pages", "contract"],
+          ["sdj", "ctrsprint"]
         ]
       }
     ]
