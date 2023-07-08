@@ -126,8 +126,8 @@ LOCATION_MAPPING = {
     [325546] = {"@Subcon Forest/Queen Vanessa's Manor/Chandelier"},
 
     -- 330000 range - Alpine Skyline
-    [334856] = {"@Alpine Skyline/Goat Village/Below Hookpoint"},
-    [334855] = {"@Alpine Skyline/Goat Village/Hidden Branch"},
+    [334856] = {"@Goat Village/Goat Village/Below Hookpoint"},
+    [334855] = {"@Goat Village/Goat Village/Hidden Branch"},
     [333635] = {"@Alpine Skyline/Goat Refinery/Yarn"},
     [335911] = {"@Alpine Skyline/Bird Pass Fork/Yarn"},
     [335756] = {"@Alpine Skyline/Yellow Band Hills/Yarn"},
