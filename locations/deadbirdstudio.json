@@ -170,7 +170,10 @@
             "name": "Murder on the Owl Express"
           },
           {
-            "name": "Train Rush"
+            "name": "Train Rush",
+            "access_rules": [
+              "hookshot"
+            ]
           },
           {
             "name": "Cafeteria"

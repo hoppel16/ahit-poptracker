@@ -6,10 +6,16 @@
         "name": "Guests",
         "sections": [
           {
-            "name": "Rumbi"
+            "name": "Rumbi",
+            "access_rules": [
+              "timepiece:4"
+            ]
           },
           {
-            "name": "Cooking Cat"
+            "name": "Cooking Cat",
+            "access_rules": [
+              "timepiece:5"
+            ]
           }
         ],
         "map_locations": [
@@ -22,6 +28,9 @@
       },
       {
         "name": "Time's End",
+        "access_rules": [
+          "brewer, dweller"
+        ],
         "sections": [
           {
             "name": "Frozen Item"
@@ -60,6 +69,9 @@
       },
       {
         "name": "The Lab",
+        "access_rules": [
+          "dweller"
+        ],
         "sections": [
           {
             "name": "Time Rift"
@@ -99,7 +111,10 @@
         "name": "Mafia Boss",
         "sections": [
           {
-            "name": "12 Time Pieces Required"
+            "name": "25 Pons",
+            "access_rules": [
+              "timepiece:12"
+            ]
           }
         ],
         "map_locations": [

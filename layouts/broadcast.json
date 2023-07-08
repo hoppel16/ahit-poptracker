@@ -11,7 +11,11 @@
         "content": [
           {
             "type": "layout",
-            "key": "shared_item_grid"
+            "key": "consumable_grid"
+          },
+          {
+            "type": "layout",
+            "key": "item_grid"
           }
         ]
       }

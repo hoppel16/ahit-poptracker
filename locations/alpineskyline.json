@@ -1,6 +1,6 @@
 [
   {
-    "name": "Alpine Skyline",
+    "name": "Goat Village",
     "children": [
       {
         "name": "Goat Village",
@@ -19,7 +19,15 @@
             "y": 1250
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "name": "Alpine Skyline",
+    "access_rules": [
+      "hookshot"
+    ],
+    "children": [
       {
         "name": "Goat Refinery",
         "sections": [
@@ -104,6 +112,7 @@
           {
             "name": "Dweller Platforms Relic",
             "access_rules": [
+              "sdj_on, sprint",
               "dweller"
             ]
           },
@@ -281,6 +290,7 @@
           {
             "name": "Ice Platform",
             "access_rules": [
+              "sdj_on, sprint",
               "ice"
             ]
           },
@@ -335,6 +345,7 @@
       {
         "name": "Curly Tail Trail",
         "access_rules": [
+          "sdj_on, sprint",
           "ice"
         ],
         "sections": [
