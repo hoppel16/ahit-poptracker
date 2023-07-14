@@ -228,7 +228,7 @@
         ]
       },
       {
-        "name": "Windy Summit",
+        "name": "Windy Passage",
         "sections": [
           {
             "name": "Yarn"
@@ -249,10 +249,16 @@
             "name": "Entrance"
           },
           {
+            "name": "Time Trial"
+          },
+          {
             "name": "Dropdown"
           },
           {
             "name": "House Window"
+          },
+          {
+            "name": "Time Piece"
           }
         ],
         "map_locations": [
