@@ -55,31 +55,47 @@
             },
             {
               "title": "Mafia Town",
-              "icon": "images/icons/Mafia_Goon.png",
               "content": {
-                "type": "map",
-                "maps": [
-                  "mafiatown"
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Mafia Town",
+                    "icon": "images/icons/Mafia_Goon.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "mafiatown"
+                      ]
+                    }
+                  }
                 ]
               }
             },
             {
-              "title": "Dead Bird Studio",
-              "icon": "images/icons/Conductor.png",
+              "title": "Battle of the Birds",
               "content": {
-                "type": "map",
-                "maps": [
-                  "deadbirdstudio"
-                ]
-              }
-            },
-            {
-              "title": "DBS Basement",
-              "icon": "images/icons/DJ_Grooves.png",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "basement"
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Dead Bird Studio",
+                    "icon": "images/icons/Conductor.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "deadbirdstudio"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "DBS Basement",
+                    "icon": "images/icons/DJ_Grooves.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "basement"
+                      ]
+                    }
+                  }
                 ]
               }
             },
@@ -101,6 +117,36 @@
                 "maps": [
                   "alpine"
                 ]
+              }
+            },
+            {
+              "title": "Arctic Cruise",
+              "content": {
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Arctic Cruise",
+                    "content": {
+                      "type": "map",
+                      "maps": []
+                    }
+                  },
+                  {
+                    "title": "Rock the Boat",
+                    "content": {
+                      "type": "map",
+                      "maps": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "title": "Nyakuza Metro",
+              "icon": "images/icons/Nomad.png",
+              "content": {
+                "type": "map",
+                "maps": []
               }
             }
           ]
