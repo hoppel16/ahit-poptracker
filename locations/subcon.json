@@ -550,6 +550,42 @@
         ]
       },
       {
+        "name": "Magnet Badge Bush",
+        "sections": [
+          {
+            "name": "Badge",
+            "access_rules": [
+              "brewer"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1590,
+            "y": 650
+          }
+        ]
+      },
+      {
+        "name": "Infinite Yarn Bush",
+        "sections": [
+          {
+            "name": "Yarn",
+            "access_rules": [
+              "brewer"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1060,
+            "y": 790
+          }
+        ]
+      },
+      {
         "name": "Boss Arena Chest",
         "sections": [
           {
