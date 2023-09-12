@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Death Wish",
+    "children": [
+      {
+        "name": "Beat the Heat",
+        "sections": [
+          {
+              "name": "Completion"
+          },
+          {
+              "name": "Bonus Completion"
+          }
+        ],
+        "map_locations": [
+          {
+              "map": "deathwish",
+              "x": 640,
+              "y": 425
+          }
+        ]
+      }
+    ]
+  }
+]
