@@ -184,28 +184,9 @@
               "title": "Time's End",
               "icon": "images/icons/Mustache_Girl.png",
               "content": {
-                "type": "tabbed",
-                "tabs": [
-                  {
-                    "title": "The Attic",
-                    "icon": "images/icons/Mustache_Girl.png",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "attic"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Time's End",
-                    "icon": "images/icons/Mustache_Girl.png",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "finale"
-                      ]
-                    }
-                  }
+                "type": "map",
+                "maps": [
+                  "attic"
                 ]
               }
             },
