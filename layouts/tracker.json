@@ -55,7 +55,7 @@
             },
             {
               "title": "Death Wish",
-              "icon": "images/icons/Snatcher.png",
+              "icon": "images/icons/DeathWish_Stamp.png",
               "content": {
                 "type": "map",
                 "maps": [
@@ -65,6 +65,7 @@
             },
             {
               "title": "Mafia Town",
+              "icon": "images/icons/Mafia_Goon.png",
               "content": {
                 "type": "tabbed",
                 "tabs": [
@@ -80,7 +81,7 @@
                   },
                   {
                     "title": "Mafia HQ",
-                    "icon": "images/icons/Mafia_Goon.png",
+                    "icon": "images/icons/Mafia_Boss.png",
                     "content": {
                       "type": "map",
                       "maps": [
@@ -93,12 +94,13 @@
             },
             {
               "title": "Battle of the Birds",
+              "icon": "images/icons/Bird_Award.png",
               "content": {
                 "type": "tabbed",
                 "tabs": [
                   {
                     "title": "Dead Bird Studio",
-                    "icon": "images/icons/Conductor.png",
+                    "icon": "images/icons/Bird_Award.png",
                     "content": {
                       "type": "map",
                       "maps": [
@@ -128,7 +130,7 @@
                   },
                   {
                     "title": "DBS Basement",
-                    "icon": "images/icons/DJ_Grooves.png",
+                    "icon": "images/icons/HatKid_Detective.png",
                     "content": {
                       "type": "map",
                       "maps": [
@@ -157,7 +159,7 @@
                   },
                   {
                     "title": "Queen Vanessa's Manor",
-                    "icon": "images/icons/Snatcher.png",
+                    "icon": "images/icons/Vanessa.png",
                     "content": {
                       "type": "map",
                       "maps": [
@@ -180,13 +182,13 @@
             },
             {
               "title": "Time's End",
-              "icon": "images/icons/Mu.png",
+              "icon": "images/icons/Mustache_Girl.png",
               "content": {
                 "type": "tabbed",
                 "tabs": [
                   {
                     "title": "The Attic",
-                    "icon": "images/icons/Mu.png",
+                    "icon": "images/icons/Mustache_Girl.png",
                     "content": {
                       "type": "map",
                       "maps": [
@@ -196,7 +198,7 @@
                   },
                   {
                     "title": "Time's End",
-                    "icon": "images/icons/Mu.png",
+                    "icon": "images/icons/Mustache_Girl.png",
                     "content": {
                       "type": "map",
                       "maps": [
@@ -209,11 +211,13 @@
             },
             {
               "title": "Arctic Cruise",
+              "icon": "images/icons/Cruise_Seal.png",
               "content": {
                 "type": "tabbed",
                 "tabs": [
                   {
                     "title": "Arctic Cruise",
+                    "icon": "images/icons/Cruise_Seal.png",
                     "content": {
                       "type": "map",
                       "maps": []
@@ -231,6 +235,7 @@
             },
             {
               "title": "Nyakuza Metro",
+              "icon": "images/icons/Nyakuza_Emblem.png",
               "content": {
                 "type": "map",
                 "maps": []
