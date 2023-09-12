@@ -54,6 +54,16 @@
               }
             },
             {
+              "title": "Death Wish",
+              "icon": "images/icons/Snatcher.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "deathwish"
+                ]
+              }
+            },
+            {
               "title": "Mafia Town",
               "content": {
                 "type": "tabbed",
@@ -65,6 +75,16 @@
                       "type": "map",
                       "maps": [
                         "mafiatown"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Mafia HQ",
+                    "icon": "images/icons/Mafia_Goon.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "mafiahq"
                       ]
                     }
                   }
@@ -87,6 +107,26 @@
                     }
                   },
                   {
+                    "title": "Conductor's Train",
+                    "icon": "images/icons/Conductor.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "train"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "The Moon",
+                    "icon": "images/icons/DJ_Grooves.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "moon"
+                      ]
+                    }
+                  },
+                  {
                     "title": "DBS Basement",
                     "icon": "images/icons/DJ_Grooves.png",
                     "content": {
@@ -103,9 +143,28 @@
               "title": "Subcon Forest",
               "icon": "images/icons/Snatcher.png",
               "content": {
-                "type": "map",
-                "maps": [
-                  "subcon"
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Subcon Forest",
+                    "icon": "images/icons/Snatcher.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "subcon"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Queen Vanessa's Manor",
+                    "icon": "images/icons/Snatcher.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "manor"
+                      ]
+                    }
+                  }
                 ]
               }
             },
@@ -116,6 +175,35 @@
                 "type": "map",
                 "maps": [
                   "alpine"
+                ]
+              }
+            },
+            {
+              "title": "Time's End",
+              "icon": "images/icons/Mu.png",
+              "content": {
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "The Attic",
+                    "icon": "images/icons/Mu.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "attic"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Time's End",
+                    "icon": "images/icons/Mu.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "finale"
+                      ]
+                    }
+                  }
                 ]
               }
             },
@@ -143,7 +231,6 @@
             },
             {
               "title": "Nyakuza Metro",
-              "icon": "images/icons/Nomad.png",
               "content": {
                 "type": "map",
                 "maps": []
