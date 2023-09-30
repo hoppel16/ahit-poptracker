@@ -220,6 +220,10 @@
       },
       {
         "name": "Subcon Well",
+        "access_rules": [
+          "moderate",
+          "hookshot"
+        ],
         "sections": [
           {
             "name": "Hookshot Badge Chest"
@@ -233,12 +237,14 @@
           {
             "name": "On Pipe",
             "access_rules": [
+              "expert",
               "hookshot"
             ]
           },
           {
             "name": "Time Piece",
             "access_rules": [
+              "expert",
               "hookshot"
             ]
           }

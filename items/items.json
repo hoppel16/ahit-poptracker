@@ -93,5 +93,29 @@
     "type": "consumable",
     "img": "images/items/time_piece.png",
     "codes": "timepiece"
+  },
+  {
+    "name": "Difficulty",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/settings/normal.png",
+        "codes": "difficulty, normal"
+      },
+      {
+        "img": "images/settings/moderate.png",
+        "codes": "difficulty, moderate"
+      },
+      {
+        "img": "images/settings/hard.png",
+        "codes": "difficulty, hard"
+      },
+      {
+        "img": "images/settings/expert.png",
+        "codes": "difficulty, expert"
+      }
+    ]
   }
 ]

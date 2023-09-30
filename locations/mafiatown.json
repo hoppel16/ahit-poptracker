@@ -453,6 +453,7 @@
       {
         "name": "Top of Ruined Tower",
         "access_rules": [
+          "moderate",
           "ice"
         ],
         "sections": [
@@ -678,6 +679,7 @@
       {
         "name": "Clock Tower Chest",
         "access_rules": [
+          "moderate",
           "hookshot"
         ],
         "sections": [

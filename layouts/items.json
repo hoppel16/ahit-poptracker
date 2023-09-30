@@ -47,7 +47,7 @@
         "margin": "0,0",
         "h_alignment": "left",
         "rows": [
-          ["pages", "contract"],
+          ["pages", "contract", "difficulty"],
           ["sdj", "ctrsprint"]
         ]
       }

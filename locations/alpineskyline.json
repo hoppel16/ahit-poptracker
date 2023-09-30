@@ -60,6 +60,10 @@
       },
       {
         "name": "Yellow Band Hills",
+        "access_rules": [
+          "brewer",
+          "moderate"
+        ],
         "sections": [
           {
             "name": "Yarn"
@@ -105,6 +109,10 @@
       },
       {
         "name": "Bird House",
+        "access_rules": [
+          "moderate",
+          "brewer"
+        ],
         "sections": [
           {
             "name": "Triple Crow Chest"
@@ -112,6 +120,7 @@
           {
             "name": "Dweller Platforms Relic",
             "access_rules": [
+              "moderate",
               "sdj_on, sprint",
               "dweller"
             ]
