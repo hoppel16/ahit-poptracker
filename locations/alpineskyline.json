@@ -300,16 +300,16 @@
       },
       {
         "name": "The Twilight Bell",
+        "access_rules": [
+          "dweller",
+          "expert"
+        ],
         "sections": [
           {
             "name": "Wide Purple Platform"
           },
           {
-            "name": "Ice Platform",
-            "access_rules": [
-              "sdj_on, sprint",
-              "ice"
-            ]
+            "name": "Ice Platform"
           },
           {
             "name": "Time Piece"
