@@ -55,21 +55,11 @@
   },
   {
     "name": "SDJ Logic",
+    "type": "toggle",
     "codes": "sdj",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/settings/sdj_off.png",
-        "codes": "sdj_off"
-      },
-      {
-        "img": "images/settings/sdj_on.png",
-        "codes": "sdj_on",
-        "inherit_codes": false
-      }
-    ]
+    "img": "images/settings/sdj_on.png",
+    "disabled_img": "images/settings/sdj_off.png",
+    "disabled_img_mods": "none"
   },
   {
     "name": "Shuffle Storybook Pages",
@@ -88,6 +78,26 @@
     "type": "toggle",
     "img": "images/settings/contract.png",
     "codes": "contract"
+  },
+  {
+    "name": "Umbrella Logic",
+    "type": "progressive",
+    "codes": "umbrella_logic",
+    "img": "images/items/umbrella.png",
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/umbrella.png",
+        "img_mods": "@disabled",
+        "codes": "umbrella_off"
+      },
+      {
+        "img": "images/items/umbrella.png",
+        "codes": "umbrella_on",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Shuffle Paintings",

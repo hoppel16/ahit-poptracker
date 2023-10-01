@@ -182,7 +182,8 @@
           {
             "name": "Time Piece",
             "access_rules": [
-              "hookshot"
+              "umbrella_off",
+              "umbrella_on, umbrella"
             ]
           }
         ],

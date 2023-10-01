@@ -330,7 +330,10 @@
         "name": "Subcon Well",
         "access_rules": [
           "moderate",
-          "hookshot"
+          "brewer",
+          "dweller",
+          "umbrella_off",
+          "umbrella_on, umbrella"
         ],
         "sections": [
           {
@@ -368,7 +371,9 @@
       {
         "name": "Queen Vanessa's Manor",
         "access_rules": [
-          "dweller",
+          "dweller, umbrella_off",
+          "dweller, umbrella_on, umbrella",
+          "dweller, brewer",
           "expert"
         ],
         "sections": [

@@ -3,18 +3,13 @@
     "name": "Spaceship",
     "children": [
       {
-        "name": "Guests",
+        "name": "Rumbi",
         "sections": [
           {
-            "name": "Rumbi",
+            "name": "Abuse D:",
             "access_rules": [
-              "timepiece:4"
-            ]
-          },
-          {
-            "name": "Cooking Cat",
-            "access_rules": [
-              "timepiece:5"
+              "timepiece:4, umbrella_off",
+              "timepiece:4, umbrella_on, umbrella"
             ]
           }
         ],

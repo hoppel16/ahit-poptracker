@@ -1,6 +1,6 @@
 [
   {
-    "name": "Dead Bird Studio",
+    "name": "Before Lever",
     "children": [
       {
         "name": "Red Building Top",
@@ -74,69 +74,6 @@
             "map": "deadbirdstudio",
             "x": 1415,
             "y": 1360
-          }
-        ]
-      },
-      {
-        "name": "DJ Grooves Sign Chest",
-        "sections": [
-          {
-            "name": "Yarn"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 1900,
-            "y": 1200
-          }
-        ]
-      },
-      {
-        "name": "Conductor Chest",
-        "sections": [
-          {
-            "name": "Token"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 2270,
-            "y": 610
-          }
-        ]
-      },
-      {
-        "name": "Teepee Chest",
-        "sections": [
-          {
-            "name": "Relic"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 2280,
-            "y": 160
-          }
-        ]
-      },
-      {
-        "name": "Act Completion",
-        "sections": [
-          {
-            "name": "Dead Bird Studio"
-          },
-          {
-            "name": "Award Ceremony"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 2900,
-            "y": 775
           }
         ]
       },
@@ -232,6 +169,79 @@
             "map": "deadbirdstudio",
             "x": 1890,
             "y": 180
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "After Lever",
+    "access_rules": [
+      "umbrella_off",
+      "umbrella_on, umbrella",
+      "umbrella_on, expert"
+    ],
+    "children": [
+      {
+        "name": "DJ Grooves Sign Chest",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 1900,
+            "y": 1200
+          }
+        ]
+      },
+      {
+        "name": "Conductor Chest",
+        "sections": [
+          {
+            "name": "Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 2270,
+            "y": 610
+          }
+        ]
+      },
+      {
+        "name": "Teepee Chest",
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 2280,
+            "y": 160
+          }
+        ]
+      },
+      {
+        "name": "Act Completion",
+        "sections": [
+          {
+            "name": "Dead Bird Studio"
+          },
+          {
+            "name": "Award Ceremony"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 2900,
+            "y": 775
           }
         ]
       }
