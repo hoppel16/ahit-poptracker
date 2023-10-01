@@ -29,8 +29,8 @@
         "margin": "0,0",
         "h_alignment": "left",
         "rows": [
-          ["sprint", "brewer", "ice", "dweller"],
-          ["timestop", "umbrella", "hookshot", "scooter"]
+          ["sprint", "brewer", "ice", "dweller", "paintings"],
+          ["timestop", "umbrella", "hookshot", "scooter", "nobonk"]
         ]
       }
     ]
@@ -47,8 +47,8 @@
         "margin": "0,0",
         "h_alignment": "left",
         "rows": [
-          ["pages", "contract", "difficulty"],
-          ["sdj", "ctrsprint"]
+          ["pages", "contract"],
+          ["sdj", "ctrsprint", "difficulty"]
         ]
       }
     ]

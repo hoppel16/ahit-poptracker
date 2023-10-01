@@ -42,6 +42,12 @@
     "codes": "scooter"
   },
   {
+    "name": "No Bonk Badge",
+    "type": "toggle",
+    "img": "images/items/no_bonk_badge.png",
+    "codes": "nobonk"
+  },
+  {
     "name": "Umbrella",
     "type": "toggle",
     "img": "images/items/umbrella.png",
@@ -49,17 +55,18 @@
   },
   {
     "name": "SDJ Logic",
+    "codes": "sdj",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
     "stages": [
       {
         "img": "images/settings/sdj_off.png",
-        "codes": "sdj, sdj_off"
+        "codes": "sdj_off"
       },
       {
         "img": "images/settings/sdj_on.png",
-        "codes": "sdj, sdj_on",
+        "codes": "sdj_on",
         "inherit_codes": false
       }
     ]
@@ -83,6 +90,39 @@
     "codes": "contract"
   },
   {
+    "name": "Shuffle Paintings",
+    "type": "progressive",
+    "codes": "paintings",
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/paintings_off.png",
+        "codes": "paintings_off"
+      },
+      {
+        "inherit_codes": false,
+        "img": "images/items/no_paintings.png",
+        "codes": "paintings_on, none"
+      },
+      {
+        "inherit_codes": false,
+        "img": "images/items/yellow_painting.png",
+        "codes": "paintings_on, yellow"
+      },
+      {
+        "inherit_codes": false,
+        "img": "images/items/blue_painting.png",
+        "codes": "paintings_on, yellow, blue"
+      },
+      {
+        "inherit_codes": false,
+        "img": "images/items/green_painting.png",
+        "codes": "paintings_on, yellow, blue, green"
+      }
+    ]
+  },
+  {
     "name": "Yarn",
     "type": "consumable",
     "img": "images/items/yarn.png",
@@ -96,25 +136,26 @@
   },
   {
     "name": "Difficulty",
+    "codes": "difficulty",
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
     "stages": [
       {
         "img": "images/settings/normal.png",
-        "codes": "difficulty, normal"
+        "codes": "normal"
       },
       {
         "img": "images/settings/moderate.png",
-        "codes": "difficulty, moderate"
+        "codes": "moderate"
       },
       {
         "img": "images/settings/hard.png",
-        "codes": "difficulty, hard"
+        "codes": "hard"
       },
       {
         "img": "images/settings/expert.png",
-        "codes": "difficulty, expert"
+        "codes": "expert"
       }
     ]
   }
