@@ -121,7 +121,6 @@
             "name": "Dweller Platforms Relic",
             "access_rules": [
               "moderate",
-              "sdj_on, sprint",
               "dweller"
             ]
           },
@@ -312,7 +311,14 @@
             "name": "Ice Platform"
           },
           {
-            "name": "Time Piece"
+            "name": "Time Piece",
+            "access_rules": [
+              "dweller",
+              "brewer, expert",
+              "sprint, expert",
+              "timestop, umbrella_off, expert",
+              "timestop, umbrella_on, umbrella, expert"
+            ]
           }
         ],
         "map_locations": [
@@ -364,7 +370,6 @@
         "name": "Curly Tail Trail",
         "access_rules": [
           "hard, sprint",
-          "sdj_on, sprint",
           "ice"
         ],
         "sections": [

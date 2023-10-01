@@ -54,14 +54,6 @@
     "codes": "umbrella"
   },
   {
-    "name": "SDJ Logic",
-    "type": "toggle",
-    "codes": "sdj",
-    "img": "images/settings/sdj_on.png",
-    "disabled_img": "images/settings/sdj_off.png",
-    "disabled_img_mods": "none"
-  },
-  {
     "name": "Shuffle Storybook Pages",
     "type": "toggle",
     "img": "images/settings/pages.png",

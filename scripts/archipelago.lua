@@ -139,23 +139,31 @@ function onClear(slot_data)
         end
     end
 
-    if slot_data['SDJLogic'] then
-        local obj = Tracker:FindObjectForCode("sdj")
-        local stage = slot_data['SDJLogic']
+    if slot_data['ShuffleSubconPaintings'] then
+        local obj = Tracker:FindObjectForCode("paintings")
+        local stage = slot_data['ShuffleSubconPaintings']
         if obj then
-            obj.CurrentStage = stage
+            obj.CurrentStage = obj.CurrentStage + 1
         end
     end
 
-    if slot_data['CTRWithSprint'] then
-        local obj = Tracker:FindObjectForCode("ctrsprint")
-        local val = slot_data['CTRWithSprint']
+    if slot_data['UmbrellaLogic'] then
+        local obj = Tracker:FindObjectForCode("umbrella_logic")
+        local val = slot_data['UmbrellaLogic']
         if obj then
             obj.Active = val
         end
     end
 
-    -- ahit important slot_data veriables
+    -- if slot_data['CTRWithSprint'] then --not slot data, can't autotrack
+    --     local obj = Tracker:FindObjectForCode("ctrsprint")
+    --     local val = slot_data['CTRWithSprint']
+    --     if obj then
+    --         obj.Active = val
+    --     end
+    -- end
+
+    -- ahit important slot_data variables
     --[[ 
     slot_data["RandomizeHatOrder"]  --not handling this atm, assuming it's on
     ["Hat5"]
