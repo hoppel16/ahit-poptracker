@@ -583,7 +583,6 @@
             "name": "Yarn",
             "access_rules": [
               "hard, sprint",
-              "sprint, sdj_on",
               "dweller"
             ]
           }
