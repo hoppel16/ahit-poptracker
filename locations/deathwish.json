@@ -6,10 +6,10 @@
         "name": "Beat the Heat",
         "sections": [
           {
-              "name": "Completion"
+              "name": "Main Objective"
           },
           {
-              "name": "Bonus Completion"
+              "name": "All Clear"
           }
         ],
         "map_locations": [
