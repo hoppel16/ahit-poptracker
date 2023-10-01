@@ -166,6 +166,11 @@
       },
       {
         "name": "Mystifying Time Mesa: Gate Puzzle",
+        "access_rules": [
+          "sprint",
+          "timestop",
+          "hard"
+        ],
         "sections": [
           {
             "name": "Relic"
@@ -339,6 +344,7 @@
       {
         "name": "The Twilight Bell (Rift)",
         "access_rules": [
+          "hard, sprint, scooter",
           "dweller"
         ],
         "sections": [
@@ -357,6 +363,7 @@
       {
         "name": "Curly Tail Trail",
         "access_rules": [
+          "hard, sprint",
           "sdj_on, sprint",
           "ice"
         ],

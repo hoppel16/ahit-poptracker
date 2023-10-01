@@ -148,6 +148,10 @@
       },
       {
         "name": "Boss Arena Chest",
+        "access_rules": [
+          "hookshot",
+          "hard, nobonk"
+        ],
         "sections": [
           {
             "name": "Yarn"
@@ -566,6 +570,7 @@
           {
             "name": "Yarn",
             "access_rules": [
+              "hard, sprint",
               "sprint, sdj_on",
               "dweller"
             ]

@@ -29,7 +29,8 @@
       {
         "name": "Time's End",
         "access_rules": [
-          "brewer, dweller"
+          "brewer, dweller, hookshot",
+          "brewer, dweller, hard"
         ],
         "sections": [
           {
