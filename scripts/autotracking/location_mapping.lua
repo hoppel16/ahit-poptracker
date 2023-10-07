@@ -1,7 +1,7 @@
 LOCATION_MAPPING = {
     
-    [301000] = {"@Spaceship/Guests/Rumbi"},
-    [301001] = {"@Spaceship/Guests/Cooking Cat"},
+    [301000] = {"@Spaceship/Rumbi/Abuse D:"},
+    -- [301001] = {"@Spaceship/Guests/Cooking Cat"},
 
     -- 300000 range - Mafia Town/Batle of the Birds
     [301002] = {"@Mafia Town/Welcome to Mafia Town/Umbrella"},

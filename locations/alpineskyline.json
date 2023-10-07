@@ -19,30 +19,39 @@
             "y": 1250
           }
         ]
-      }
-    ]
-  },
-  {
-    "name": "Alpine Skyline",
-    "access_rules": [
-      "hookshot"
-    ],
-    "children": [
+      },
       {
-        "name": "Goat Refinery",
+        "name": "Alpine Skyline (Rift)",
         "sections": [
           {
-            "name": "Yarn"
+            "name": "Time Rift"
+          },
+          {
+            "name": "Pages",
+            "item_count": 5,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "pages"
+            ]
           }
         ],
         "map_locations": [
           {
             "map": "alpine",
-            "x": 1245,
-            "y": 860
+            "x": 1450,
+            "y": 1350
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "name": "Birdhouse Zipline",
+    "access_rules": [
+      "hookshot, ziplines_off",
+      "hookshot, ziplines_on, birdzipline"
+    ],
+    "children": [
       {
         "name": "Bird Pass Fork",
         "sections": [
@@ -147,7 +156,91 @@
             "y": 1328
           }
         ]
+      }
+    ]
+  },
+  {
+    "name": "Twilight Bell Zipline",
+    "access_rules": [
+      "hookshot, ziplines_off",
+      "hookshot, ziplines_on, bellzipline"
+    ],
+    "children": [
+      {
+        "name": "The Twilight Path",
+        "sections": [
+          {
+            "name": "Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1080,
+            "y": 1745
+          }
+        ]
       },
+      {
+        "name": "The Twilight Bell (Rift)",
+        "access_rules": [
+          "hard, sprint, scooter",
+          "dweller"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1230,
+            "y": 2190
+          }
+        ]
+      },
+      {
+        "name": "The Twilight Bell",
+        "access_rules": [
+          "dweller",
+          "expert"
+        ],
+        "sections": [
+          {
+            "name": "Wide Purple Platform"
+          },
+          {
+            "name": "Ice Platform"
+          },
+          {
+            "name": "Time Piece",
+            "access_rules": [
+              "dweller",
+              "brewer, expert",
+              "sprint, expert",
+              "timestop, umbrella_off, expert",
+              "timestop, umbrella_on, umbrella, expert"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1274,
+            "y": 2330
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lava Cake Zipline",
+    "access_rules": [
+      "hookshot, ziplines_off",
+      "hookshot, ziplines_on, cakezipline"
+    ],
+    "children": [
       {
         "name": "Mystifying Time Mesa: Zipline",
         "sections": [
@@ -224,7 +317,16 @@
             "y": 180
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "name": "Windmill Zipline",
+    "access_rules": [
+      "hookshot, ziplines_off",
+      "hookshot, ziplines_on, windmillzipline"
+    ],
+    "children": [
       {
         "name": "Goat Outpost Horn",
         "sections": [
@@ -256,6 +358,25 @@
         ]
       },
       {
+        "name": "Curly Tail Trail",
+        "access_rules": [
+          "hard, sprint",
+          "ice"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 2815,
+            "y": 770
+          }
+        ]
+      },
+      {
         "name": "The Windmill",
         "sections": [
           {
@@ -281,58 +402,35 @@
             "y": 1360
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "name": "Alpine Skyline",
+    "access_rules": [
+      "hookshot"
+    ],
+    "children": [
       {
-        "name": "The Twilight Path",
+        "name": "Goat Refinery",
         "sections": [
           {
-            "name": "Token"
+            "name": "Yarn"
           }
         ],
         "map_locations": [
           {
             "map": "alpine",
-            "x": 1080,
-            "y": 1745
-          }
-        ]
-      },
-      {
-        "name": "The Twilight Bell",
-        "access_rules": [
-          "dweller",
-          "expert"
-        ],
-        "sections": [
-          {
-            "name": "Wide Purple Platform"
-          },
-          {
-            "name": "Ice Platform"
-          },
-          {
-            "name": "Time Piece",
-            "access_rules": [
-              "dweller",
-              "brewer, expert",
-              "sprint, expert",
-              "timestop, umbrella_off, expert",
-              "timestop, umbrella_on, umbrella, expert"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "alpine",
-            "x": 1274,
-            "y": 2330
+            "x": 1245,
+            "y": 860
           }
         ]
       },
       {
         "name": "The Illness has Spread",
         "access_rules": [
-          "hookshot"
+          "hookshot, ziplines_off",
+          "hookshot, ziplines_on, birdzipline, cakezipline, windmillzipline"
         ],
         "sections": [
           {
@@ -344,67 +442,6 @@
             "map": "alpine",
             "x": 1340,
             "y": 1320
-          }
-        ]
-      },
-      {
-        "name": "The Twilight Bell (Rift)",
-        "access_rules": [
-          "hard, sprint, scooter",
-          "dweller"
-        ],
-        "sections": [
-          {
-            "name": "Time Rift"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "alpine",
-            "x": 1230,
-            "y": 2190
-          }
-        ]
-      },
-      {
-        "name": "Curly Tail Trail",
-        "access_rules": [
-          "hard, sprint",
-          "ice"
-        ],
-        "sections": [
-          {
-            "name": "Time Rift"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "alpine",
-            "x": 2815,
-            "y": 770
-          }
-        ]
-      },
-      {
-        "name": "Alpine Skyline (Rift)",
-        "sections": [
-          {
-            "name": "Time Rift"
-          },
-          {
-            "name": "Pages",
-            "item_count": 5,
-            "clear_as_group": false,
-            "visibility_rules": [
-              "pages"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "alpine",
-            "x": 1450,
-            "y": 1350
           }
         ]
       }

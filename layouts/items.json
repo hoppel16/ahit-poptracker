@@ -29,8 +29,8 @@
         "margin": "0,0",
         "h_alignment": "left",
         "rows": [
-          ["sprint", "brewer", "ice", "dweller", "paintings"],
-          ["timestop", "umbrella", "hookshot", "scooter", "nobonk"]
+          ["sprint", "brewer", "ice", "dweller", "timestop"],
+          ["paintings", "umbrella", "hookshot", "scooter", "nobonk"]
         ]
       }
     ]
@@ -48,7 +48,25 @@
         "h_alignment": "left",
         "rows": [
           ["pages", "contract", "umbrella_logic"],
-          ["ctrsprint", "difficulty"]
+          ["ctrsprint", "difficulty", "ziplines_logic"]
+        ]
+      }
+    ]
+  },
+  "ziplines_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "2,2",
+    "content": [
+      {
+        "type": "itemgrid",
+        "itme_margin": "3, 10",
+        "item_size": 5,
+        "margin": "0, 0",
+        "h_alignment": "left",
+        "rows": [
+          ["bellzipline", "birdzipline"],
+          ["windmillzipline", "cakezipline"]
         ]
       }
     ]

@@ -76,4 +76,10 @@ ITEM_MAPPING = {
     [300202] = {"Snatcher's Contract - Queen Vanessa's Manor", "toggle"},
     [300203] = {"Snatcher's Contract - Mail Delivery Service", "toggle"}
 ]]--
+
+    -- Ziplines
+    [300204] = {"birdzipline", "toggle"},
+    [300205] = {"cakezipline", "toggle"},
+    [300206] = {"windmillzipline", "toggle"},
+    [300207] = {"bellzipline", "toggle"},
 }

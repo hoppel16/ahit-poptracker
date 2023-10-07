@@ -75,7 +75,6 @@
     "name": "Umbrella Logic",
     "type": "progressive",
     "codes": "umbrella_logic",
-    "img": "images/items/umbrella.png",
     "loop": false,
     "allow_disabled": false,
     "stages": [
@@ -160,5 +159,48 @@
         "codes": "expert"
       }
     ]
+  },
+  {
+    "name": "Shuffle Ziplines",
+    "type": "progressive",
+    "codes": "ziplines_logic",
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/settings/ziplines.png",
+        "img_mods": "@disabled",
+        "codes": "ziplines_off"
+      },
+      {
+        "img": "images/settings/ziplines.png",
+        "codes": "ziplines_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Twilight Bell Zipline",
+    "type": "toggle",
+    "img": "images/ziplines/bell_zipline.png",
+    "codes": "bellzipline"
+  },
+  {
+    "name": "Birdhouse Zipline",
+    "type": "toggle",
+    "img": "images/ziplines/bird_zipline.png",
+    "codes": "birdzipline"
+  },
+  {
+    "name": "Lava Cake Zipline",
+    "type": "toggle",
+    "img": "images/ziplines/cake_zipline.png",
+    "codes": "cakezipline"
+  },
+  {
+    "name": "Windmill Zipline",
+    "type": "toggle",
+    "img": "images/ziplines/windmill_zipline.png",
+    "codes": "windmillzipline"
   }
 ]
