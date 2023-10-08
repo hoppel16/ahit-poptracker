@@ -60,7 +60,7 @@
     "content": [
       {
         "type": "itemgrid",
-        "itme_margin": "3, 10",
+        "item_margin": "3, 10",
         "item_size": 5,
         "margin": "0, 0",
         "h_alignment": "left",
