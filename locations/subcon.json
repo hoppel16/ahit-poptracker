@@ -171,7 +171,12 @@
         "name": "Boss Arena",
         "sections": [
           {
-            "name": "Your Contract has Expired"
+            "name": "Your Contract has Expired",
+            "access_rules": [
+              "umbrella_off",
+              "umbrella_on, expert",
+              "umbrella_on, umbrella"
+            ]
           },
           {
             "name": "Toilet of Doom",
@@ -371,9 +376,10 @@
       {
         "name": "Queen Vanessa's Manor",
         "access_rules": [
-          "dweller, umbrella_off",
-          "dweller, umbrella_on, umbrella",
-          "dweller, brewer",
+          "dweller",
+          "brewer",
+          "umbrella_off",
+          "umbrella_on, umbrella",
           "expert"
         ],
         "sections": [
@@ -421,6 +427,7 @@
           {
             "name": "Time Rift",
             "access_rules": [
+              "expert",
               "brewer",
               "dweller",
               "umbrella"
@@ -519,7 +526,8 @@
           {
             "name": "Relic",
             "access_rules": [
-              "hookshot"
+              "hookshot",
+              "expert"
             ]
           }
         ],
@@ -577,11 +585,30 @@
         ]
       },
       {
+        "name": "Infinite Yarn Bush",
+        "sections": [
+          {
+            "name": "Yarn",
+            "access_rules": [
+              "brewer"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1060,
+            "y": 790
+          }
+        ]
+      },
+      {
         "name": "Long Tree Climb Chest",
         "sections": [
           {
             "name": "Yarn",
             "access_rules": [
+              "expert",
               "hard, sprint",
               "dweller"
             ]
@@ -669,10 +696,7 @@
         "name": "Dweller Platforming Tree A",
         "sections": [
           {
-            "name": "Yarn",
-            "access_rules": [
-              "dweller"
-            ]
+            "name": "Yarn"
           }
         ],
         "map_locations": [
@@ -686,7 +710,8 @@
       {
         "name": "Dweller",
         "access_rules": [
-          "dweller"
+          "dweller",
+          "expert"
         ],
         "sections": [
           {
@@ -705,11 +730,30 @@
         ]
       },
       {
+        "name": "Magnet Badge Bush",
+        "sections": [
+          {
+            "name": "Yarn",
+            "access_rules": [
+              "brewer"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1595,
+            "y": 635
+          }
+        ]
+      },
+      {
         "name": "Tall Tree Hookshot Swing",
         "sections": [
           {
             "name": "Yarn",
             "access_rules": [
+              "expert",
               "dweller, hookshot"
             ]
           }
@@ -756,10 +800,7 @@
         "name": "Green and Purple Dweller Rocks",
         "sections": [
           {
-            "name": "Yarn",
-            "access_rules": [
-              "dweller"
-            ]
+            "name": "Yarn"
           }
         ],
         "map_locations": [

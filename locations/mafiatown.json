@@ -99,7 +99,10 @@
         "name": "Mafia Geek",
         "sections": [
           {
-            "name": "Heating Up Mafia Town"
+            "name": "Heating Up Mafia Town",
+            "access_rules": [
+              "umbrella"
+            ]
           },
           {
             "name": "She Came from Outer Space"

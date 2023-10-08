@@ -30,6 +30,9 @@
         "sections": [
           {
             "name": "Frozen Item"
+          },
+          {
+            "name": "Time Piece"
           }
         ],
         "map_locations": [
@@ -107,7 +110,7 @@
         "name": "Mafia Boss",
         "sections": [
           {
-            "name": "25 Pons",
+            "name": "Scammed",
             "access_rules": [
               "timepiece:12"
             ]

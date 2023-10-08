@@ -6,10 +6,7 @@
         "name": "Small Room",
         "sections": [
           {
-            "name": "Token",
-            "access_rules": [
-              "hookshot"
-            ]
+            "name": "Token"
           }
         ],
         "map_locations": [
@@ -182,8 +179,7 @@
           {
             "name": "Time Piece",
             "access_rules": [
-              "umbrella_off",
-              "umbrella_on, umbrella"
+              "hookshot"
             ]
           }
         ],

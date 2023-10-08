@@ -170,7 +170,11 @@
         "name": "The Twilight Path",
         "sections": [
           {
-            "name": "Token"
+            "name": "Token",
+            "access_rules": [
+              "dweller",
+              "expert"
+            ]
           }
         ],
         "map_locations": [
@@ -184,6 +188,7 @@
       {
         "name": "The Twilight Bell (Rift)",
         "access_rules": [
+          "expert",
           "hard, sprint, scooter",
           "dweller"
         ],
@@ -216,10 +221,8 @@
           {
             "name": "Time Piece",
             "access_rules": [
-              "dweller",
               "brewer, expert",
               "sprint, expert",
-              "timestop, umbrella_off, expert",
               "timestop, umbrella_on, umbrella, expert"
             ]
           }
@@ -243,6 +246,11 @@
     "children": [
       {
         "name": "Mystifying Time Mesa: Zipline",
+        "access_rules": [
+          "sprint",
+          "timestop",
+          "hard"
+        ],
         "sections": [
           {
             "name": "Token"
@@ -360,6 +368,7 @@
       {
         "name": "Curly Tail Trail",
         "access_rules": [
+          "expert",
           "hard, sprint",
           "ice"
         ],
