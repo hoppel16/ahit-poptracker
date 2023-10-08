@@ -248,15 +248,15 @@ LOCATION_MAPPING = {
     [300203] = {"@Subcon Forest/Snatcher/Contracts"}, --Snatcher's Contract - Mail Delivery Service"
 
     -- shop_locations
-    [301003] = {"@Shops/Badge Seller/25 Pons Each"},
-    [301004] = {"@Shops/Badge Seller/25 Pons Each"},
-    [301005] = {"@Shops/Badge Seller/25 Pons Each"},
-    [301006] = {"@Shops/Badge Seller/25 Pons Each"},
-    [301007] = {"@Shops/Badge Seller/25 Pons Each"},
-    [301008] = {"@Shops/Badge Seller/25 Pons Each"},
-    [301009] = {"@Shops/Badge Seller/25 Pons Each"},
-    [301010] = {"@Shops/Badge Seller/25 Pons Each"},
-    [301011] = {"@Shops/Badge Seller/25 Pons Each"},
-    [301012] = {"@Shops/Badge Seller/25 Pons Each"},
-    [301013] = {"@Shops/Mafia Boss/25 Pons"}
+    [301003] = {"@Shops/Badge Seller/Scammed"},
+    [301004] = {"@Shops/Badge Seller/Scammed"},
+    [301005] = {"@Shops/Badge Seller/Scammed"},
+    [301006] = {"@Shops/Badge Seller/Scammed"},
+    [301007] = {"@Shops/Badge Seller/Scammed"},
+    [301008] = {"@Shops/Badge Seller/Scammed"},
+    [301009] = {"@Shops/Badge Seller/Scammed"},
+    [301010] = {"@Shops/Badge Seller/Scammed"},
+    [301011] = {"@Shops/Badge Seller/Scammed"},
+    [301012] = {"@Shops/Badge Seller/Scammed"},
+    [301013] = {"@Shops/Mafia Boss/Scammed"}
 }
