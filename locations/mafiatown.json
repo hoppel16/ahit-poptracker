@@ -77,8 +77,10 @@
           {
             "name": "Cheating the Race",
             "access_rules": [
-              "sprint, ctrsprint",
-              "timestop"
+              "withtimestop, timestop",
+              "withscooter, sprint, scooter",
+              "withsprint, sprint",
+              "withnothing"
             ]
           },
           {

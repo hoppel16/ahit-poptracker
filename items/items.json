@@ -61,9 +61,28 @@
   },
   {
     "name": "CTR with Sprint Hat",
-    "type": "toggle",
-    "img": "images/settings/ctrsprint.png",
-    "codes": "ctrsprint"
+    "type": "progressive",
+    "codes": "ctrsprint",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/settings/with_timestop.png",
+        "codes": "withtimestop"
+      },
+      {
+        "img": "images/settings/with_scooter.png",
+        "codes": "withscooter"
+      },
+      {
+        "img": "images/settings/with_sprint.png",
+        "codes": "withsprint"
+      },
+      {
+        "img": "images/settings/with_nothing.png",
+        "codes": "withnothing"
+      }
+    ]
   },
   {
     "name": "Shuffle Contracts",
