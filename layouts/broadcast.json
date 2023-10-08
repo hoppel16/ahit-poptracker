@@ -16,6 +16,10 @@
           {
             "type": "layout",
             "key": "item_grid"
+          },
+          {
+            "type": "layout",
+            "key": "ziplines_grid"
           }
         ]
       }
