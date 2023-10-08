@@ -147,6 +147,14 @@ function onClear(slot_data)
         end
     end
 
+    if slot_data['ShuffleAlpineZiplines'] then
+        local obj = Tracker:FindObjectForCode("ziplines_logic")
+        local stage = slot_data['ShuffleAlpineZiplines']
+        if obj then
+            obj.CurrentStage = obj.CurrentStage + 1
+        end
+    end
+
     if slot_data['UmbrellaLogic'] then
         local obj = Tracker:FindObjectForCode("umbrella_logic")
         local val = slot_data['UmbrellaLogic']
@@ -155,13 +163,21 @@ function onClear(slot_data)
         end
     end
 
-    -- if slot_data['CTRWithSprint'] then --not slot data, can't autotrack
-    --     local obj = Tracker:FindObjectForCode("ctrsprint")
-    --     local val = slot_data['CTRWithSprint']
-    --     if obj then
-    --         obj.Active = val
-    --     end
-    -- end
+    if slot_data['LogicDifficulty'] then
+        local obj = Tracker:FindObjectForCode("difficulty")
+        local val = slot_data['LogicDifficulty']
+        if obj then
+            obj.CurrentStage = val + 1
+        end
+    end
+
+    if slot_data['CTRLogic'] then
+        local obj = Tracker:FindObjectForCode("ctrlogic")
+        local val = slot_data['CTRLogic']
+        if obj then
+            obj.CurrentStage = val
+        end
+    end
 
     -- ahit important slot_data variables
     --[[ 

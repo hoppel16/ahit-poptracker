@@ -48,7 +48,7 @@
         "h_alignment": "left",
         "rows": [
           ["pages", "contract", "umbrella_logic"],
-          ["ctrsprint", "difficulty", "ziplines_logic"]
+          ["ctrlogic", "difficulty", "ziplines_logic"]
         ]
       }
     ]

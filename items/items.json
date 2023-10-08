@@ -62,7 +62,7 @@
   {
     "name": "CTR with Sprint Hat",
     "type": "progressive",
-    "codes": "ctrsprint",
+    "codes": "ctrlogic",
     "loop": true,
     "allow_disabled": false,
     "stages": [
