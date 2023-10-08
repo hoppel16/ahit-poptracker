@@ -733,7 +733,7 @@
         "name": "Magnet Badge Bush",
         "sections": [
           {
-            "name": "Yarn",
+            "name": "Badge",
             "access_rules": [
               "brewer"
             ]
