@@ -98,12 +98,12 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/items/umbrella.png",
+        "img": "images/settings/umbrella_logic.png",
         "img_mods": "@disabled",
         "codes": "umbrella_off"
       },
       {
-        "img": "images/items/umbrella.png",
+        "img": "images/settings/umbrella_logic.png",
         "codes": "umbrella_on",
         "inherit_codes": false
       }
