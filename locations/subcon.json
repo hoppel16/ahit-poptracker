@@ -3,6 +3,68 @@
     "name": "Subcon Forest",
     "children": [
       {
+        "name": "Snatcher",
+        "sections": [
+          {
+            "name": "Mail Delivery Service",
+            "access_rules": [
+              "sprint"
+            ]
+          },
+          {
+            "name": "Contracts",
+            "item_count": 4,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "contract"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 950,
+            "y": 520
+          }
+        ]
+      },
+      {
+        "name": "Badge Seller",
+        "sections": [
+          {
+            "name": "Scammed",
+            "ref": "Mafia Town/Badge Seller/Scammed"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1130,
+            "y": 500
+          },
+          {
+            "map": "subcon",
+            "x": 540,
+            "y": 475
+          }
+        ]
+      },
+      {
+        "name": "Giant Mushroom Climb",
+        "sections": [
+          {
+            "name": "Don't Fall~"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1123,
+            "y": 455
+          }
+        ]
+      },
+      {
         "name": "Cherry Bomb Bone Cage",
         "sections": [
           {
@@ -79,6 +141,78 @@
             "y": 500
           }
         ]
+      }
+    ]
+  },
+  {
+    "name": "Yellow Firewall",
+    "access_rules": [
+      "paintings_off",
+      "paintings_on, yellow",
+      "moderate, nobonk",
+      "expert"
+    ],
+    "children": [
+      {
+        "name": "Contractual Obligations",
+        "sections": [
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 400,
+            "y": 515
+          }
+        ]
+      },
+      {
+        "name": "Boss Arena Chest",
+        "access_rules": [
+          "hookshot",
+          "hard, nobonk",
+          "expert"
+        ],
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 75,
+            "y": 580
+          }
+        ]
+      },
+      {
+        "name": "Boss Arena",
+        "sections": [
+          {
+            "name": "Your Contract has Expired",
+            "access_rules": [
+              "umbrella_off",
+              "umbrella_on, expert",
+              "umbrella_on, umbrella"
+            ]
+          },
+          {
+            "name": "Toilet of Doom",
+            "access_rules": [
+              "hookshot"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 190,
+            "y": 520
+          }
+        ]
       },
       {
         "name": "Snatcher Statue Chest",
@@ -96,17 +230,17 @@
         ]
       },
       {
-        "name": "Giant Mushroom Climb",
+        "name": "Ice Cube Shack",
         "sections": [
           {
-            "name": "Don't Fall~"
+            "name": "Token"
           }
         ],
         "map_locations": [
           {
             "map": "subcon",
-            "x": 1123,
-            "y": 455
+            "x": 1205,
+            "y": 150
           }
         ]
       },
@@ -220,6 +354,13 @@
       },
       {
         "name": "Subcon Well",
+        "access_rules": [
+          "moderate",
+          "brewer",
+          "dweller",
+          "umbrella_off",
+          "umbrella_on, umbrella"
+        ],
         "sections": [
           {
             "name": "Hookshot Badge Chest"
@@ -233,12 +374,14 @@
           {
             "name": "On Pipe",
             "access_rules": [
+              "expert",
               "hookshot"
             ]
           },
           {
             "name": "Time Piece",
             "access_rules": [
+              "expert",
               "hookshot"
             ]
           }
@@ -252,17 +395,89 @@
         ]
       },
       {
-        "name": "Ice Cube Shack",
+        "name": "Queen Vanessa's Manor",
+        "access_rules": [
+          "dweller",
+          "brewer",
+          "umbrella_off",
+          "umbrella_on, umbrella",
+          "expert"
+        ],
         "sections": [
           {
-            "name": "Token"
+            "name": "Rooftop"
+          },
+          {
+            "name": "Cellar"
+          },
+          {
+            "name": "Bedroom Chest"
+          },
+          {
+            "name": "Hall Chest"
+          },
+          {
+            "name": "Chandelier"
+          },
+          {
+            "name": "Time Piece"
           }
         ],
         "map_locations": [
           {
             "map": "subcon",
-            "x": 1205,
-            "y": 150
+            "x": 720,
+            "y": 900
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Blue Firewall",
+    "access_rules": [
+      "paintings_off",
+      "paintings_on, blue",
+      "moderate, nobonk",
+      "expert"
+    ],
+    "children": [
+      {
+        "name": "Village",
+        "sections": [
+          {
+            "name": "Time Rift",
+            "access_rules": [
+              "expert",
+              "brewer",
+              "dweller",
+              "umbrella"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1600,
+            "y": 700
+          }
+        ]
+      },
+      {
+        "name": "Pipe",
+        "sections": [
+          {
+            "name": "Time Rift",
+            "access_rules": [
+              "hookshot"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 888,
+            "y": 750
           }
         ]
       },
@@ -332,7 +547,8 @@
           {
             "name": "Relic",
             "access_rules": [
-              "hookshot"
+              "hookshot",
+              "expert"
             ]
           }
         ],
@@ -390,12 +606,31 @@
         ]
       },
       {
+        "name": "Infinite Yarn Bush",
+        "sections": [
+          {
+            "name": "Yarn",
+            "access_rules": [
+              "brewer"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1060,
+            "y": 790
+          }
+        ]
+      },
+      {
         "name": "Long Tree Climb Chest",
         "sections": [
           {
             "name": "Yarn",
             "access_rules": [
-              "sprint, sdj_on",
+              "expert",
+              "hard, sprint",
               "dweller"
             ]
           }
@@ -405,6 +640,40 @@
             "map": "subcon",
             "x": 1385,
             "y": 855
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Green Firewall",
+    "access_rules": [
+      "paintings_off",
+      "paintings_on, green",
+      "moderate",
+      "expert"
+    ],
+    "children": [
+      {
+        "name": "Sleepy Subcon",
+        "sections": [
+          {
+            "name": "Time Rift"
+          },
+          {
+            "name": "Pages",
+            "item_count": 9,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "pages"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1570,
+            "y": 245
           }
         ]
       },
@@ -448,10 +717,7 @@
         "name": "Dweller Platforming Tree A",
         "sections": [
           {
-            "name": "Yarn",
-            "access_rules": [
-              "dweller"
-            ]
+            "name": "Yarn"
           }
         ],
         "map_locations": [
@@ -465,7 +731,8 @@
       {
         "name": "Dweller",
         "access_rules": [
-          "dweller"
+          "dweller",
+          "expert"
         ],
         "sections": [
           {
@@ -484,11 +751,30 @@
         ]
       },
       {
+        "name": "Magnet Badge Bush",
+        "sections": [
+          {
+            "name": "Badge",
+            "access_rules": [
+              "brewer"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1595,
+            "y": 635
+          }
+        ]
+      },
+      {
         "name": "Tall Tree Hookshot Swing",
         "sections": [
           {
             "name": "Yarn",
             "access_rules": [
+              "expert",
               "dweller, hookshot"
             ]
           }
@@ -535,10 +821,7 @@
         "name": "Green and Purple Dweller Rocks",
         "sections": [
           {
-            "name": "Yarn",
-            "access_rules": [
-              "dweller"
-            ]
+            "name": "Yarn"
           }
         ],
         "map_locations": [
@@ -546,198 +829,6 @@
             "map": "subcon",
             "x": 1355,
             "y": 85
-          }
-        ]
-      },
-      {
-        "name": "Magnet Badge Bush",
-        "sections": [
-          {
-            "name": "Badge",
-            "access_rules": [
-              "brewer"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "subcon",
-            "x": 1590,
-            "y": 650
-          }
-        ]
-      },
-      {
-        "name": "Infinite Yarn Bush",
-        "sections": [
-          {
-            "name": "Yarn",
-            "access_rules": [
-              "brewer"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "subcon",
-            "x": 1060,
-            "y": 790
-          }
-        ]
-      },
-      {
-        "name": "Boss Arena Chest",
-        "sections": [
-          {
-            "name": "Yarn"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "subcon",
-            "x": 75,
-            "y": 580
-          }
-        ]
-      },
-      {
-        "name": "Queen Vanessa's Manor",
-        "sections": [
-          {
-            "name": "Rooftop"
-          },
-          {
-            "name": "Cellar"
-          },
-          {
-            "name": "Bedroom Chest"
-          },
-          {
-            "name": "Hall Chest"
-          },
-          {
-            "name": "Chandelier"
-          },
-          {
-            "name": "Time Piece"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "subcon",
-            "x": 720,
-            "y": 900
-          }
-        ]
-      },
-      {
-        "name": "Snatcher",
-        "sections": [
-          {
-            "name": "Contractual Obligations"
-          },
-          {
-            "name": "Mail Delivery Service",
-            "access_rules": [
-              "sprint"
-            ]
-          },
-          {
-            "name": "Contracts",
-            "item_count": 4,
-            "clear_as_group": false,
-            "visibility_rules": [
-              "contract"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "subcon",
-            "x": 950,
-            "y": 520
-          }
-        ]
-      },
-      {
-        "name": "Boss Arena",
-        "sections": [
-          {
-            "name": "Your Contract has Expired"
-          },
-          {
-            "name": "Toilet of Doom",
-            "access_rules": [
-              "hookshot"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "subcon",
-            "x": 190,
-            "y": 520
-          }
-        ]
-      },
-      {
-        "name": "Pipe",
-        "sections": [
-          {
-            "name": "Time Rift",
-            "access_rules": [
-              "hookshot"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "subcon",
-            "x": 888,
-            "y": 750
-          }
-        ]
-      },
-      {
-        "name": "Village",
-        "sections": [
-          {
-            "name": "Time Rift",
-            "access_rules": [
-              "brewer",
-              "dweller",
-              "umbrella"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "subcon",
-            "x": 1600,
-            "y": 700
-          }
-        ]
-      },
-      {
-        "name": "Sleepy Subcon",
-        "sections": [
-          {
-            "name": "Time Rift"
-          },
-          {
-            "name": "Pages",
-            "item_count": 9,
-            "clear_as_group": false,
-            "visibility_rules": [
-              "pages"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "subcon",
-            "x": 1570,
-            "y": 245
           }
         ]
       }

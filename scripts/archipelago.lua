@@ -139,23 +139,47 @@ function onClear(slot_data)
         end
     end
 
-    if slot_data['SDJLogic'] then
-        local obj = Tracker:FindObjectForCode("sdj")
-        local stage = slot_data['SDJLogic']
+    if slot_data['ShuffleSubconPaintings'] then
+        local obj = Tracker:FindObjectForCode("paintings")
+        local stage = slot_data['ShuffleSubconPaintings']
         if obj then
             obj.CurrentStage = stage
         end
     end
 
-    if slot_data['CTRWithSprint'] then
-        local obj = Tracker:FindObjectForCode("ctrsprint")
-        local val = slot_data['CTRWithSprint']
+    if slot_data['ShuffleAlpineZiplines'] then
+        local obj = Tracker:FindObjectForCode("ziplines_logic")
+        local stage = slot_data['ShuffleAlpineZiplines']
+        if obj then
+            obj.CurrentStage = stage
+        end
+    end
+
+    if slot_data['UmbrellaLogic'] then
+        local obj = Tracker:FindObjectForCode("umbrella_logic")
+        local val = slot_data['UmbrellaLogic']
         if obj then
             obj.Active = val
         end
     end
 
-    -- ahit important slot_data veriables
+    if slot_data['LogicDifficulty'] then
+        local obj = Tracker:FindObjectForCode("difficulty")
+        local val = slot_data['LogicDifficulty']
+        if obj then
+            obj.CurrentStage = val + 1
+        end
+    end
+
+    if slot_data['CTRLogic'] then
+        local obj = Tracker:FindObjectForCode("ctrlogic")
+        local val = slot_data['CTRLogic']
+        if obj then
+            obj.CurrentStage = val
+        end
+    end
+
+    -- ahit important slot_data variables
     --[[ 
     slot_data["RandomizeHatOrder"]  --not handling this atm, assuming it's on
     ["Hat5"]

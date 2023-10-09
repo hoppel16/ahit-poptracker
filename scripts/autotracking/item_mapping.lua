@@ -5,6 +5,15 @@ ITEM_MAPPING = {
     [300001] = {"yarn", "consumable"},
     [300002] = {"timepiece", "consumable"},
 
+    [300003] = {"paintings", "progressive"},
+
+    -- Hats - for hat items only
+    [300049] = {"sprint", "toggle"},
+    [300049] = {"brewer", "toggle"},
+    [300049] = {"ice", "toggle"},
+    [300049] = {"dweller", "toggle"},
+    [300049] = {"timestop", "toggle"},
+
     -- Relics
 --[[
     [300006] = {"Relic (Burger Patty)", "toggle"},
@@ -27,7 +36,7 @@ ITEM_MAPPING = {
     -- [300026] = {"Hover Badge", "toggle"},
     [300027] = {"hookshot", "toggle"},
     -- [300028] = {"Item Magnet Badge", "toggle"},
-    -- [300029] = {"No Bonk Badge", "toggle"},
+    [300029] = {"nobonk", "toggle"},
     -- [300030] = {"Compass Badge", "toggle"},
     [300031] = {"scooter", "toggle"},
     -- [300043] = {"Badge Pin", "toggle"},
@@ -67,4 +76,10 @@ ITEM_MAPPING = {
     [300202] = {"Snatcher's Contract - Queen Vanessa's Manor", "toggle"},
     [300203] = {"Snatcher's Contract - Mail Delivery Service", "toggle"}
 ]]--
+
+    -- Ziplines
+    [300204] = {"birdzipline", "toggle"},
+    [300205] = {"cakezipline", "toggle"},
+    [300206] = {"windmillzipline", "toggle"},
+    [300207] = {"bellzipline", "toggle"},
 }

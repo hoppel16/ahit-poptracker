@@ -77,8 +77,10 @@
           {
             "name": "Cheating the Race",
             "access_rules": [
-              "sprint, ctrsprint",
-              "timestop"
+              "withtimestop, timestop",
+              "withscooter, sprint, scooter",
+              "withsprint, sprint",
+              "withnothing"
             ]
           },
           {
@@ -97,7 +99,10 @@
         "name": "Mafia Geek",
         "sections": [
           {
-            "name": "Heating Up Mafia Town"
+            "name": "Heating Up Mafia Town",
+            "access_rules": [
+              "umbrella"
+            ]
           },
           {
             "name": "She Came from Outer Space"
@@ -138,6 +143,23 @@
             "map": "mafiatown",
             "x": 370,
             "y": 510
+          }
+        ]
+      },
+      {
+        "name": "Badge Seller",
+        "sections": [
+          {
+            "name": "Scammed",
+            "item_count": 10,
+            "clear_as_group": false
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 590,
+            "y": 190
           }
         ]
       },
@@ -372,6 +394,7 @@
       {
         "name": "Above Boats",
         "access_rules": [
+          "expert",
           "hookshot"
         ],
         "sections": [
@@ -453,11 +476,16 @@
       {
         "name": "Top of Ruined Tower",
         "access_rules": [
+          "moderate",
           "ice"
         ],
         "sections": [
           {
             "name": "Yarn"
+          },
+          {
+            "name": "Badge Seller",
+            "ref":"Mafia Town/Badge Seller/Scammed"
           }
         ],
         "map_locations": [
@@ -678,6 +706,7 @@
       {
         "name": "Clock Tower Chest",
         "access_rules": [
+          "moderate",
           "hookshot"
         ],
         "sections": [

@@ -6,10 +6,7 @@
         "name": "Small Room",
         "sections": [
           {
-            "name": "Token",
-            "access_rules": [
-              "hookshot"
-            ]
+            "name": "Token"
           }
         ],
         "map_locations": [

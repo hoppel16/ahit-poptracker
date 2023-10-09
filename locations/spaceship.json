@@ -3,18 +3,13 @@
     "name": "Spaceship",
     "children": [
       {
-        "name": "Guests",
+        "name": "Rumbi",
         "sections": [
           {
-            "name": "Rumbi",
+            "name": "Abuse D:",
             "access_rules": [
-              "timepiece:4"
-            ]
-          },
-          {
-            "name": "Cooking Cat",
-            "access_rules": [
-              "timepiece:5"
+              "timepiece:4, umbrella_off",
+              "timepiece:4, umbrella_on, umbrella"
             ]
           }
         ],
@@ -29,11 +24,15 @@
       {
         "name": "Time's End",
         "access_rules": [
-          "brewer, dweller"
+          "brewer, dweller, hookshot",
+          "brewer, dweller, hard"
         ],
         "sections": [
           {
             "name": "Frozen Item"
+          },
+          {
+            "name": "Time Piece"
           }
         ],
         "map_locations": [
@@ -91,27 +90,10 @@
     "name": "Shops",
     "children": [
       {
-        "name": "Badge Seller",
-        "sections": [
-          {
-            "name": "25 Pons Each",
-            "item_count": 10,
-            "clear_as_group": false
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "spaceship",
-            "x": 760,
-            "y": 550
-          }
-        ]
-      },
-      {
         "name": "Mafia Boss",
         "sections": [
           {
-            "name": "25 Pons",
+            "name": "Scammed",
             "access_rules": [
               "timepiece:12"
             ]

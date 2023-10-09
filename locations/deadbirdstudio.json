@@ -1,7 +1,23 @@
 [
   {
-    "name": "Dead Bird Studio",
+    "name": "Before Lever",
     "children": [
+      {
+        "name": "Badge Seller",
+        "sections": [
+          {
+            "name": "Scammed",
+            "ref": "Mafia Town/Badge Seller/Scammed"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 50,
+            "y": 660
+          }
+        ]
+      },
       {
         "name": "Red Building Top",
         "sections": [
@@ -63,84 +79,6 @@
         ]
       },
       {
-        "name": "Tightrope Chest",
-        "sections": [
-          {
-            "name": "Relic"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 1415,
-            "y": 1360
-          }
-        ]
-      },
-      {
-        "name": "DJ Grooves Sign Chest",
-        "sections": [
-          {
-            "name": "Yarn"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 1900,
-            "y": 1200
-          }
-        ]
-      },
-      {
-        "name": "Conductor Chest",
-        "sections": [
-          {
-            "name": "Token"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 2270,
-            "y": 610
-          }
-        ]
-      },
-      {
-        "name": "Teepee Chest",
-        "sections": [
-          {
-            "name": "Relic"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 2280,
-            "y": 160
-          }
-        ]
-      },
-      {
-        "name": "Act Completion",
-        "sections": [
-          {
-            "name": "Dead Bird Studio"
-          },
-          {
-            "name": "Award Ceremony"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 2900,
-            "y": 775
-          }
-        ]
-      },
-      {
         "name": "Dead Bird Studio (Rift)",
         "sections": [
           {
@@ -160,6 +98,29 @@
             "map": "deadbirdstudio",
             "x": 895,
             "y": 365
+          }
+        ]
+      },
+      {
+        "name": "Act Completion",
+        "sections": [
+          {
+            "name": "Dead Bird Studio",
+            "access_rules": [
+              "umbrella_off",
+              "umbrella_on, umbrella",
+              "umbrella_on, expert"
+            ]
+          },
+          {
+            "name": "Award Ceremony"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 2900,
+            "y": 775
           }
         ]
       },
@@ -215,7 +176,10 @@
             "name": "Picture Perfect"
           },
           {
-            "name": "The Big Parade"
+            "name": "The Big Parade",
+            "access_rules": [
+              "umbrella"
+            ]
           },
           {
             "name": "Behind Badge Seller"
@@ -232,6 +196,76 @@
             "map": "deadbirdstudio",
             "x": 1890,
             "y": 180
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "After Lever",
+    "access_rules": [
+      "umbrella_off",
+      "umbrella_on, umbrella",
+      "umbrella_on, expert"
+    ],
+    "children": [
+      {
+        "name": "DJ Grooves Sign Chest",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 1900,
+            "y": 1200
+          }
+        ]
+      },
+      {
+        "name": "Tightrope Chest",
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 1415,
+            "y": 1360
+          }
+        ]
+      },
+      {
+        "name": "Conductor Chest",
+        "sections": [
+          {
+            "name": "Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 2270,
+            "y": 610
+          }
+        ]
+      },
+      {
+        "name": "Teepee Chest",
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 2280,
+            "y": 160
           }
         ]
       }
