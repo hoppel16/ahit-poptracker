@@ -143,7 +143,7 @@ function onClear(slot_data)
         local obj = Tracker:FindObjectForCode("paintings")
         local stage = slot_data['ShuffleSubconPaintings']
         if obj then
-            obj.CurrentStage = obj.CurrentStage + 1
+            obj.CurrentStage = stage
         end
     end
 
@@ -151,7 +151,7 @@ function onClear(slot_data)
         local obj = Tracker:FindObjectForCode("ziplines_logic")
         local stage = slot_data['ShuffleAlpineZiplines']
         if obj then
-            obj.CurrentStage = obj.CurrentStage + 1
+            obj.CurrentStage = stage
         end
     end
 

@@ -3,6 +3,22 @@
     "name": "Before Lever",
     "children": [
       {
+        "name": "Badge Seller",
+        "sections": [
+          {
+            "name": "Scammed",
+            "ref": "Mafia Town/Badge Seller/Scammed"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 50,
+            "y": 660
+          }
+        ]
+      },
+      {
         "name": "Red Building Top",
         "sections": [
           {

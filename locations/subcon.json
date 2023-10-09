@@ -29,7 +29,28 @@
         ]
       },
       {
-        "name": "Giant Tree Climb",
+        "name": "Badge Seller",
+        "sections": [
+          {
+            "name": "Scammed",
+            "ref": "Mafia Town/Badge Seller/Scammed"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1130,
+            "y": 500
+          },
+          {
+            "map": "subcon",
+            "x": 540,
+            "y": 475
+          }
+        ]
+      },
+      {
+        "name": "Giant Mushroom Climb",
         "sections": [
           {
             "name": "Don't Fall~"

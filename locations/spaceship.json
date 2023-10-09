@@ -90,23 +90,6 @@
     "name": "Shops",
     "children": [
       {
-        "name": "Badge Seller",
-        "sections": [
-          {
-            "name": "Scammed",
-            "item_count": 10,
-            "clear_as_group": false
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "spaceship",
-            "x": 760,
-            "y": 550
-          }
-        ]
-      },
-      {
         "name": "Mafia Boss",
         "sections": [
           {

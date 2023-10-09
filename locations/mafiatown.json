@@ -147,6 +147,23 @@
         ]
       },
       {
+        "name": "Badge Seller",
+        "sections": [
+          {
+            "name": "Scammed",
+            "item_count": 10,
+            "clear_as_group": false
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 590,
+            "y": 190
+          }
+        ]
+      },
+      {
         "name": "Sewers",
         "sections": [
           {
@@ -465,6 +482,10 @@
         "sections": [
           {
             "name": "Yarn"
+          },
+          {
+            "name": "Badge Seller",
+            "ref":"Mafia Town/Badge Seller/Scammed"
           }
         ],
         "map_locations": [
