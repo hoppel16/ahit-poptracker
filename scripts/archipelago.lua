@@ -4,7 +4,39 @@ ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 CUR_INDEX = -1
 --SLOT_DATA = nil
 
+-- Setup for auto map switching
 map_key = ""
+
+map_table = {
+    hub_spaceship = "Spaceship",
+
+    mafia_town = "Mafia Town",
+    mafia_town_night = "Mafia Town",
+    mafia_town_lava = "Mafia Town",
+    mafia_hq = "Mafia Town",
+    mafia_town_dw_ufo = "Mafia Town",
+
+    deadbirdstudio = "Dead Bird Studio",
+    chapter3_murder = "Dead Bird Studio",
+    themoon = "Dead Bird Studio",
+    trainwreck_selfdestruct = "Dead Bird Studio",
+    dead_cinema = "Dead Bird Studio",
+
+    deadbirdbasement = "Dead Bird Basement",
+    djgrooves_boss = "Dead Bird Basement",
+
+    subconforest = "Subcon Forest",
+    subcon_cave = "Subcon Forest",
+    vanessa_manor = "Subcon Forest",
+
+    alpsandsails = "Alpine Skyline",
+
+    -- placeholders for the DLC
+    -- ship_main = "Boat",
+    -- ship_sinking = "Boat",
+
+    -- DLC_Metro = "Nyakuza Metro"
+}
 
 --I initialise HatOrder in onClear but need to read the table during item checks
 HatOrder = {}
@@ -284,8 +316,14 @@ function onLocation(location_id, location_name)
 end
 
 --called when map is changed
-function onMapChange(key, value, old)
-    print("got  " .. key .. " = " .. tostring(value) .. " (was " .. tostring(old) .. ")")
+function onMapChange(key, current_map, previous_map)
+    internal_map_name = map_table[current_map]
+    
+    if internal_map_name == nil then
+        print("Could not find map name; Setting to Spaceship")
+        internal_map_name = "Spaceship"
+    end
+    Tracker:UiHint("ActivateTab", internal_map_name)
 end
 
 --called when Get("events") returns
@@ -295,9 +333,7 @@ end
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddRetrievedHandler(map_key, onMapChange)
 Archipelago:AddSetReplyHandler(map_key, onMapChange)
--- Archipelago:AddRetrievedHandler(string.format("ahit_currentmap_%s", Archipelago.PlayerNumber), onMapChange)
--- Archipelago:AddSetReplyHandler(string.format("ahit_currentmap_%s", Archipelago.PlayerNumber), onMapChange)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
-Archipelago:AddSetReplyHandler("event handler", onEvent)
+--Archipelago:AddSetReplyHandler("event handler", onEvent)
 --Archipelago:AddRetrievedHandler("event launch handler", onEventsLaunch)
