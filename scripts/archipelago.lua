@@ -115,13 +115,10 @@ function onClear(slot_data)
     --reset HatOrder
     HatOrder = {}
 
-    print("AUTO MAP SWITCHING -------------------------")
     map_key = string.format("ahit_currentmap_%s", Archipelago.PlayerNumber)
 
-    print(map_key)
     Archipelago:SetNotify({map_key})
     Archipelago:Get({map_key})
-    print("AUTO MAP SWITCHING -------------------------")
 
     if slot_data == nil  then
         print("welp")
