@@ -2,17 +2,17 @@
 -- first value is the code of the target item and the second is the item type (currently only "toggle", "progressive" and "toggle" but feel free to expand for your needs!)
 -- here are the SM items as an example: https://github.com/Cyb3RGER/sm_ap_tracker/blob/main/scripts/autotracking/item_mapping.lua
 ITEM_MAPPING = {
-    [300001] = {"yarn", "consumable"},
-    [300002] = {"timepiece", "consumable"},
+    [2000300001] = {"yarn", "consumable"},
+    [2000300002] = {"timepiece", "consumable"},
 
-    [300003] = {"paintings", "progressive"},
+    [2000300003] = {"paintings", "progressive"},
 
     -- Hats - for hat items only
-    [300049] = {"sprint", "toggle"},
-    [300049] = {"brewer", "toggle"},
-    [300049] = {"ice", "toggle"},
-    [300049] = {"dweller", "toggle"},
-    [300049] = {"timestop", "toggle"},
+    [2000300049] = {"sprint", "toggle"},
+    [2000300050] = {"brewer", "toggle"},
+    [2000300051] = {"ice", "toggle"},
+    [2000300052] = {"dweller", "toggle"},
+    [2000300053] = {"timestop", "toggle"},
 
     -- Relics
 --[[
@@ -34,16 +34,16 @@ ITEM_MAPPING = {
     -- [300024] = {"Projectile Badge", "toggle"},
     -- [300025] = {"Fast Hatter Badge", "toggle"},
     -- [300026] = {"Hover Badge", "toggle"},
-    [300027] = {"hookshot", "toggle"},
+    [2000300027] = {"hookshot", "toggle"},
     -- [300028] = {"Item Magnet Badge", "toggle"},
-    [300029] = {"nobonk", "toggle"},
+    [2000300029] = {"nobonk", "toggle"},
     -- [300030] = {"Compass Badge", "toggle"},
-    [300031] = {"scooter", "toggle"},
+    [2000300031] = {"scooter", "toggle"},
     -- [300043] = {"Badge Pin", "toggle"},
 
     -- Other
     -- [300032] = {"Rift Token", "toggle"},
-    [300033] = {"umbrella", "toggle"},
+    [2000300033] = {"umbrella", "toggle"},
 
     -- Garbage items
     --[[[300034] = {"25 Pons", "toggle"},
@@ -78,8 +78,8 @@ ITEM_MAPPING = {
 ]]--
 
     -- Ziplines
-    [300204] = {"birdzipline", "toggle"},
-    [300205] = {"cakezipline", "toggle"},
-    [300206] = {"windmillzipline", "toggle"},
-    [300207] = {"bellzipline", "toggle"},
+    [2000300204] = {"birdzipline", "toggle"},
+    [2000300205] = {"cakezipline", "toggle"},
+    [2000300206] = {"windmillzipline", "toggle"},
+    [2000300207] = {"bellzipline", "toggle"},
 }
