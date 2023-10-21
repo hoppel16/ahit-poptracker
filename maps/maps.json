@@ -6,6 +6,12 @@
     "img": "images/maps/Spaceship.png"
   },
   {
+    "name": "deathwish",
+    "location_size": 48,
+    "location_border_thickness": 3,
+    "img": "images/maps/DeathWish.png"
+  },
+  {
     "name": "mafiatown",
     "location_size": 15,
     "location_border_thickness": 1,

@@ -63,32 +63,90 @@
               }
             },
             {
+              "title": "Death Wish",
+              "icon": "images/icons/DeathWish_Stamp.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "deathwish"
+                ]
+              }
+            },
+            {
               "title": "Mafia Town",
               "icon": "images/icons/Mafia_Goon.png",
               "content": {
-                "type": "map",
-                "maps": [
-                  "mafiatown"
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Mafia Town",
+                    "icon": "images/icons/Mafia_Goon.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "mafiatown"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Mafia HQ",
+                    "icon": "images/icons/Mafia_Boss.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "mafiahq"
+                      ]
+                    }
+                  }
                 ]
               }
             },
             {
-              "title": "Dead Bird Studio",
-              "icon": "images/icons/Conductor.png",
+              "title": "Battle of the Birds",
+              "icon": "images/icons/Bird_Award.png",
               "content": {
-                "type": "map",
-                "maps": [
-                  "deadbirdstudio"
-                ]
-              }
-            },
-            {
-              "title": "DBS Basement",
-              "icon": "images/icons/DJ_Grooves.png",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "basement"
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Dead Bird Studio",
+                    "icon": "images/icons/Bird_Award.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "deadbirdstudio"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Conductor's Train",
+                    "icon": "images/icons/Conductor.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "train"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "The Moon",
+                    "icon": "images/icons/DJ_Grooves.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "moon"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "DBS Basement",
+                    "icon": "images/icons/HatKid_Detective.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "basement"
+                      ]
+                    }
+                  }
                 ]
               }
             },
@@ -96,9 +154,28 @@
               "title": "Subcon Forest",
               "icon": "images/icons/Snatcher.png",
               "content": {
-                "type": "map",
-                "maps": [
-                  "subcon"
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Subcon Forest",
+                    "icon": "images/icons/Snatcher.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "subcon"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Queen Vanessa's Manor",
+                    "icon": "images/icons/Vanessa.png",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "manor"
+                      ]
+                    }
+                  }
                 ]
               }
             },
@@ -110,6 +187,48 @@
                 "maps": [
                   "alpine"
                 ]
+              }
+            },
+            {
+              "title": "Time's End",
+              "icon": "images/icons/Mustache_Girl.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "attic"
+                ]
+              }
+            },
+            {
+              "title": "Arctic Cruise",
+              "icon": "images/icons/Cruise_Seal.png",
+              "content": {
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Arctic Cruise",
+                    "icon": "images/icons/Cruise_Seal.png",
+                    "content": {
+                      "type": "map",
+                      "maps": []
+                    }
+                  },
+                  {
+                    "title": "Rock the Boat",
+                    "content": {
+                      "type": "map",
+                      "maps": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "title": "Nyakuza Metro",
+              "icon": "images/icons/Nyakuza_Emblem.png",
+              "content": {
+                "type": "map",
+                "maps": []
               }
             }
           ]

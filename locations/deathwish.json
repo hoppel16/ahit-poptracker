@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Death Wish",
+    "children": [
+      {
+        "name": "Beat the Heat",
+        "sections": [
+          {
+              "name": "Main Objective"
+          },
+          {
+              "name": "All Clear"
+          }
+        ],
+        "map_locations": [
+          {
+              "map": "deathwish",
+              "x": 634,
+              "y": 425
+          }
+        ]
+      },
+      {
+        "name": "Speedrun Well",
+        "sections": [
+          {
+              "name": "Main Objective"
+          },
+          {
+              "name": "All Clear"
+          }
+        ],
+        "map_locations": [
+          {
+              "map": "deathwish",
+              "x": 390,
+              "y": 330
+          }
+        ]
+      },
+      {
+        "name": "Snatcher Coins in Battle of the Birds",
+        "sections": [
+          {
+              "name": "Main Objective"
+          },
+          {
+              "name": "All Clear"
+          }
+        ],
+        "map_locations": [
+          {
+              "map": "deathwish",
+              "x": 130,
+              "y": 750
+          }
+        ]
+      },
+      {
+        "name": "10 Seconds Until Self-Destruct",
+        "sections": [
+          {
+              "name": "Main Objective"
+          },
+          {
+              "name": "All Clear"
+          }
+        ],
+        "map_locations": [
+          {
+              "map": "deathwish",
+              "x": 150,
+              "y": 640
+          }
+        ]
+      },
+    ]
+  }
+]
