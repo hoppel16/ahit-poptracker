@@ -4,6 +4,8 @@ ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 CUR_INDEX = -1
 --SLOT_DATA = nil
 
+map_key = ""
+
 --I initialise HatOrder in onClear but need to read the table during item checks
 HatOrder = {}
 
@@ -81,8 +83,13 @@ function onClear(slot_data)
     --reset HatOrder
     HatOrder = {}
 
-    --Archipelago:SetNotify({"events"}) --change to whatever
-    --Archipelago:Get({"events"})
+    print("AUTO MAP SWITCHING -------------------------")
+    map_key = string.format("ahit_currentmap_%s", Archipelago.PlayerNumber)
+
+    print(map_key)
+    Archipelago:SetNotify({map_key})
+    Archipelago:Get({map_key})
+    print("AUTO MAP SWITCHING -------------------------")
 
     if slot_data == nil  then
         print("welp")
@@ -276,11 +283,20 @@ function onLocation(location_id, location_name)
     end
 end
 
+--called when map is changed
+function onMapChange(key, value, old)
+    print("got  " .. key .. " = " .. tostring(value) .. " (was " .. tostring(old) .. ")")
+end
+
 --called when Get("events") returns
 --function onEventsLaunch()
 --end
 
 Archipelago:AddClearHandler("clear handler", onClear)
+Archipelago:AddRetrievedHandler(map_key, onMapChange)
+Archipelago:AddSetReplyHandler(map_key, onMapChange)
+-- Archipelago:AddRetrievedHandler(string.format("ahit_currentmap_%s", Archipelago.PlayerNumber), onMapChange)
+-- Archipelago:AddSetReplyHandler(string.format("ahit_currentmap_%s", Archipelago.PlayerNumber), onMapChange)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
 Archipelago:AddSetReplyHandler("event handler", onEvent)

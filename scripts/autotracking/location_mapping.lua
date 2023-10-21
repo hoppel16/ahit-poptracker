@@ -49,24 +49,24 @@ LOCATION_MAPPING = {
     [2000304979] = {"@Mafia Town/Mafia HQ/Secret Room"},
     [2000303243] = {"@Mafia Town/Mafia HQ/Bathroom Stall Chest"},
 
-    [2000304874] = {"@Dead Bird Studio/Up the Ladder/Yarn"},
-    [2000303901] = {"@Dead Bird Studio/DJ Grooves Sign Chest/Yarn"},
-    [2000305024] = {"@Dead Bird Studio/Red Building Top/Yarn"},
-    [2000305248] = {"@Dead Bird Studio/Behind Water Tower/Yarn"},
-    [2000305247] = {"@Dead Bird Studio/Side of House/Yarn"},
-    [2000303898] = {"@Dead Bird Studio/Tightrope Chest/Relic"},
-    [2000303899] = {"@Dead Bird Studio/Teepee Chest/Relic"},
-    [2000303900] = {"@Dead Bird Studio/Conductor Chest/Token"},
+    [2000304874] = {"@Before Lever/Up the Ladder/Yarn"},
+    [2000303901] = {"@After Lever/DJ Grooves Sign Chest/Yarn"},
+    [2000305024] = {"@Before Lever/Red Building Top/Yarn"},
+    [2000305248] = {"@Before Lever/Behind Water Tower/Yarn"},
+    [2000305247] = {"@Before Lever/Side of House/Yarn"},
+    [2000303898] = {"@After Lever/Tightrope Chest/Relic"},
+    [2000303899] = {"@After Lever/Teepee Chest/Relic"},
+    [2000303900] = {"@After Lever/Conductor Chest/Token"},
 
-    [2000305313] = {"@Dead Bird Studio/The Conductor's Films/Cafeteria"},
-    [2000305090] = {"@Dead Bird Studio/The Conductor's Films/Luggage Room Top"},
-    [2000305091] = {"@Dead Bird Studio/The Conductor's Films/Luggage Room Bottom"},
-    [2000305701] = {"@Dead Bird Studio/The Conductor's Films/Raven Suite Room"},
-    [2000305312] = {"@Dead Bird Studio/The Conductor's Films/Raven Suite Top"},
-    [2000303963] = {"@Dead Bird Studio/The Conductor's Films/Lounge Chest"},
+    [2000305313] = {"@Before Lever/The Conductor's Films/Cafeteria"},
+    [2000305090] = {"@Before Lever/The Conductor's Films/Luggage Room Top"},
+    [2000305091] = {"@Before Lever/The Conductor's Films/Luggage Room Bottom"},
+    [2000305701] = {"@Before Lever/The Conductor's Films/Raven Suite Room"},
+    [2000305312] = {"@Before Lever/The Conductor's Films/Raven Suite Top"},
+    [2000303963] = {"@Before Lever/The Conductor's Films/Lounge Chest"},
 
-    [2000304307] = {"@Dead Bird Studio/DJ Groove's Films/Behind Badge Seller"},
-    [2000304530] = {"@Dead Bird Studio/DJ Groove's Films/Hats Buy Building"},
+    [2000304307] = {"@Before Lever/DJ Groove's Films/Behind Badge Seller"},
+    [2000304530] = {"@Before Lever/DJ Groove's Films/Hats Buy Building"},
 
     [2000305432] = {"@DBS Basement/Window Platform/Yarn"},
     [2000305059] = {"@DBS Basement/Cardboard Conductor/Yarn"},
@@ -175,16 +175,16 @@ LOCATION_MAPPING = {
     [2000312484] = {"@Mafia Town/Sewers/Time Rift"},
     [2000311855] = {"@Mafia Town/Mafia of Cooks/Time Rift"},
 
-    [2000311383] = {"@Dead Bird Studio/Act Completion/Dead Bird Studio"},
-    [2000311544] = {"@Dead Bird Studio/The Conductor's Films/Murder on the Owl Express"},
-    [2000311587] = {"@Dead Bird Studio/DJ Groove's Films/Picture Perfect"},
-    [2000312481] = {"@Dead Bird Studio/The Conductor's Films/Train Rush"},
-    [2000311157] = {"@Dead Bird Studio/DJ Groove's Films/The Big Parade"},
-    [2000311488] = {"@Dead Bird Studio/Act Completion/Award Ceremony"},
+    [2000311383] = {"@Before Lever/Act Completion/Dead Bird Studio"},
+    [2000311544] = {"@Before Lever/The Conductor's Films/Murder on the Owl Express"},
+    [2000311587] = {"@Before Lever/DJ Groove's Films/Picture Perfect"},
+    [2000312481] = {"@Before Lever/The Conductor's Films/Train Rush"},
+    [2000311157] = {"@Before Lever/DJ Groove's Films/The Big Parade"},
+    [2000311488] = {"@Before Lever/Act Completion/Award Ceremony"},
     [2000312253] = {"@DBS Basement/Act Completion/Time Piece"},
-    [2000312807] = {"@Dead Bird Studio/The Conductor's Films/Time Rift"},
-    [2000312785] = {"@Dead Bird Studio/DJ Groove's Films/Time Rift"},
-    [2000312577] = {"@Dead Bird Studio/Dead Bird Studio (Rift)/Time Piece"},
+    [2000312807] = {"@Before Lever/The Conductor's Films/Time Rift"},
+    [2000312785] = {"@Before Lever/DJ Groove's Films/Time Rift"},
+    [2000312577] = {"@Before Lever/Dead Bird Studio (Rift)/Time Piece"},
 
     [2000312317] = {"@Yellow Firewall/Contractual Obligations/Time Piece"},
     [2000311160] = {"@Yellow Firewall/Subcon Well/Time Piece"},
@@ -217,14 +217,14 @@ LOCATION_MAPPING = {
     [2000345093] = {"@Mafia Town/Mafia of Cooks/Pages"}, --Top of Boat"
     [2000345094] = {"@Mafia Town/Mafia of Cooks/Pages"}, --Below Dock"
 
-    [2000345449] = {"@Dead Bird Studio/Dead Bird Studio (Rift)/Pages"}, -- Behind Cardboard Planet
-    [2000345447] = {"@Dead Bird Studio/Dead Bird Studio (Rift)/Pages"}, --Near Time Rift Gate"
-    [2000345448] = {"@Dead Bird Studio/Dead Bird Studio (Rift)/Pages"}, --Top of Metal Bar"
-    [2000345450] = {"@Dead Bird Studio/Dead Bird Studio (Rift)/Pages"}, --Lava Lamp"
-    [2000345451] = {"@Dead Bird Studio/Dead Bird Studio (Rift)/Pages"}, --Above Horse Picture"
-    [2000345452] = {"@Dead Bird Studio/Dead Bird Studio (Rift)/Pages"}, --Green Screen"
-    [2000345453] = {"@Dead Bird Studio/Dead Bird Studio (Rift)/Pages"}, --In The Corner"
-    [2000345445] = {"@Dead Bird Studio/Dead Bird Studio (Rift)/Pages"}, --Above TV Room"
+    [2000345449] = {"@Before Lever/Dead Bird Studio (Rift)/Pages"}, -- Behind Cardboard Planet
+    [2000345447] = {"@Before Lever/Dead Bird Studio (Rift)/Pages"}, --Near Time Rift Gate"
+    [2000345448] = {"@Before Lever/Dead Bird Studio (Rift)/Pages"}, --Top of Metal Bar"
+    [2000345450] = {"@Before Lever/Dead Bird Studio (Rift)/Pages"}, --Lava Lamp"
+    [2000345451] = {"@Before Lever/Dead Bird Studio (Rift)/Pages"}, --Above Horse Picture"
+    [2000345452] = {"@Before Lever/Dead Bird Studio (Rift)/Pages"}, --Green Screen"
+    [2000345453] = {"@Before Lever/Dead Bird Studio (Rift)/Pages"}, --In The Corner"
+    [2000345445] = {"@Before Lever/Dead Bird Studio (Rift)/Pages"}, --Above TV Room"
 
     [2000345373] = {"@Green Firewall/Sleepy Subcon/Pages"}, --Behind Entrance Area"
     [2000345327] = {"@Green Firewall/Sleepy Subcon/Pages"}, --Near Wrecking Ball"
@@ -248,15 +248,15 @@ LOCATION_MAPPING = {
     [2000300203] = {"@Subcon Forest/Snatcher/Contracts"}, --Snatcher's Contract - Mail Delivery Service"
 
     -- shop_locations
-    [2000301003] = {"@Shops/Badge Seller/Scammed"},
-    [2000301004] = {"@Shops/Badge Seller/Scammed"},
-    [2000301005] = {"@Shops/Badge Seller/Scammed"},
-    [2000301006] = {"@Shops/Badge Seller/Scammed"},
-    [2000301007] = {"@Shops/Badge Seller/Scammed"},
-    [2000301008] = {"@Shops/Badge Seller/Scammed"},
-    [2000301009] = {"@Shops/Badge Seller/Scammed"},
-    [2000301010] = {"@Shops/Badge Seller/Scammed"},
-    [2000301011] = {"@Shops/Badge Seller/Scammed"},
-    [2000301012] = {"@Shops/Badge Seller/Scammed"},
+    [2000301003] = {"@Mafia Town/Badge Seller/Scammed"},
+    -- [2000301004] = {"@Shops/Badge Seller/Scammed"},
+    -- [2000301005] = {"@Shops/Badge Seller/Scammed"},
+    -- [2000301006] = {"@Shops/Badge Seller/Scammed"},
+    -- [2000301007] = {"@Shops/Badge Seller/Scammed"},
+    -- [2000301008] = {"@Shops/Badge Seller/Scammed"},
+    -- [2000301009] = {"@Shops/Badge Seller/Scammed"},
+    -- [2000301010] = {"@Shops/Badge Seller/Scammed"},
+    -- [2000301011] = {"@Shops/Badge Seller/Scammed"},
+    -- [2000301012] = {"@Shops/Badge Seller/Scammed"},
     [2000301013] = {"@Shops/Mafia Boss/Scammed"}
 }
