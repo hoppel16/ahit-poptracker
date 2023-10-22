@@ -249,14 +249,14 @@ LOCATION_MAPPING = {
 
     -- shop_locations
     [2000301003] = {"@Mafia Town/Badge Seller/Scammed"},
-    -- [2000301004] = {"@Shops/Badge Seller/Scammed"},
-    -- [2000301005] = {"@Shops/Badge Seller/Scammed"},
-    -- [2000301006] = {"@Shops/Badge Seller/Scammed"},
-    -- [2000301007] = {"@Shops/Badge Seller/Scammed"},
-    -- [2000301008] = {"@Shops/Badge Seller/Scammed"},
-    -- [2000301009] = {"@Shops/Badge Seller/Scammed"},
-    -- [2000301010] = {"@Shops/Badge Seller/Scammed"},
-    -- [2000301011] = {"@Shops/Badge Seller/Scammed"},
-    -- [2000301012] = {"@Shops/Badge Seller/Scammed"},
+    [2000301004] = {"@Mafia Town/Badge Seller/Scammed"},
+    [2000301005] = {"@Mafia Town/Badge Seller/Scammed"},
+    [2000301006] = {"@Mafia Town/Badge Seller/Scammed"},
+    [2000301007] = {"@Mafia Town/Badge Seller/Scammed"},
+    [2000301008] = {"@Mafia Town/Badge Seller/Scammed"},
+    [2000301009] = {"@Mafia Town/Badge Seller/Scammed"},
+    [2000301010] = {"@Mafia Town/Badge Seller/Scammed"},
+    [2000301011] = {"@Mafia Town/Badge Seller/Scammed"},
+    [2000301012] = {"@Mafia Town/Badge Seller/Scammed"},
     [2000301013] = {"@Shops/Mafia Boss/Scammed"}
 }
