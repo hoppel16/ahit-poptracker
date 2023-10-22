@@ -31,6 +31,7 @@ Tracker:AddLocations("locations/deadbirdstudio.json")
 Tracker:AddLocations("locations/basement.json")
 Tracker:AddLocations("locations/subcon.json")
 Tracker:AddLocations("locations/alpineskyline.json")
+Tracker:AddLocations("locations/nyakuza.json")
 
 -- Layout
 Tracker:AddLayouts("layouts/items.json")

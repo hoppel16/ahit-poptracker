@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Nyakuza Metro",
+        "children": [
+            {
+                "name": "Nyakuza Metro Intro",
+                "sections": [
+                    {
+                        "name": "Time Piece"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "nyakuza",
+                        "x": 680,
+                        "y": 670
+                    }
+                ]
+            }
+        ]
+    }
+]

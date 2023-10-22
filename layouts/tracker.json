@@ -53,6 +53,16 @@
           "type": "tabbed",
           "tabs": [
             {
+              "title": "Nyakuza Metro",
+              "icon": "images/icons/Nomad.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "nyakuza"
+                ]
+              }
+            },
+            {
               "title": "Spaceship",
               "icon": "images/icons/Rumbi.png",
               "content": {
