@@ -215,6 +215,14 @@ function onClear(slot_data)
         end
     end
 
+    if slot_data['BadgeSellerItemCount'] then
+        local obj = Tracker:FindObjectForCode("@Mafia Town/Badge Seller/Scammed")
+        local val = slot_data['BadgeSellerItemCount']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
     -- ahit important slot_data variables
     --[[ 
     slot_data["RandomizeHatOrder"]  --not handling this atm, assuming it's on
