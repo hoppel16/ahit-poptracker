@@ -13,6 +13,7 @@ end
 
 -- Utility Script for helper functions etc.
 ScriptHost:LoadScript("scripts/utils.lua")
+ScriptHost:LoadScript("scripts/act.lua")
 
 -- TODO: Add Logic
 -- Logic

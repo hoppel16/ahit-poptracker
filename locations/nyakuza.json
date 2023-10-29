@@ -16,6 +16,21 @@
                         "y": 670
                     }
                 ]
+            },
+            {
+                "name": "Main Station Dining Area",
+                "sections": [
+                    {
+                        "name": "Time Piece"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "nyakuza",
+                        "x": 680,
+                        "y": 670
+                    }
+                ]
             }
         ]
     }

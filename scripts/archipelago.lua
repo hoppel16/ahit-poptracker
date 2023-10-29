@@ -1,12 +1,73 @@
+local Act = require("act")
+
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 
 CUR_INDEX = -1
 --SLOT_DATA = nil
 
--- Setup for auto map switching
-map_key = ""
+chapter_costs = {}
 
+-- Set up the default chapter information
+
+
+local chapter_act_info = {
+    Spaceship_WaterRift_Gallery = Act.new(-1),
+    Spaceship_WaterRift_MailRoom = Act.new(-1),
+
+    chapter1_tutorial = Act.new(1, {"intro"}),
+    chapter1_barrelboss = Act.new(1, {"chapter1_tutorial"}),
+    chapter1_cannon_repair = Act.new(1, {"chapter1_tutorial"}),
+    chapter1_boss = Act.new(1, {"chapter1_barrelboss", "chapter1_cannon_repair"}),
+    harbor_impossible_race = Act.new(1, {"mafiatown_lava", "mafiatown_goldenvault"}),
+    mafiatown_lava = Act.new(1, {"chapter1_boss"}),
+    mafiatown_goldenvault = Act.new(1, {"chapter1_boss"}),
+    TimeRift_Cave_Mafia = Act.new(0),
+    TimeRift_Water_Mafia_Easy = Act.new(0),
+    TimeRift_Water_Mafia_Hard = Act.new(0),
+
+    DeadBirdStudio = Act.new(2, {"intro"}),
+    chapter3_murder = Act.new(2, {"DeadBirdStudio"}),
+    moon_camerasnap = Act.new(2, {"DeadBirdStudio"}),
+    trainwreck_selfdestruct = Act.new(2, {"chapter3_murder", "moon_camerasnap"}),
+    moon_parade = Act.new(2, {"chapter3_murder", "moon_camerasnap"}),
+    award_ceremony = Act.new(2, {"trainwreck_selfdestruct", "moon_parade"}),
+    chapter3_secret_finale = Act.new(2, {"trainwreck_selfdestruct", "moon_parade"}),
+    TimeRift_Cave_BirdBasement = Act.new(0),
+    TimeRift_Water_TWreck_Panels = Act.new(0),
+    TimeRift_Water_TWreck_Parade = Act.new(0),
+
+    subcon_village_icewall = Act.new(3, {"intro"}),
+    subcon_cave = Act.new(3),
+    chapter2_toiletboss = Act.new(3),
+    vanessa_manor_attic = Act.new(3),
+    subcon_maildelivery = Act.new(3),
+    snatcher_boss = Act.new(3, {"subcon_village_icewall", "subcon_cave", "chapter2_toiletboss", "vanessa_manor_attic", "subcon_maildelivery"}),
+    TimeRift_Cave_Raccoon = Act.new(0),
+    TimeRift_Water_Subcon_Hookshot = Act.new(0),
+    TimeRift_Water_Subcon_Dwellers = Act.new(0),
+
+    AlpineFreeRoam = Act.new(4, {"intro"}),
+    AlpineSkyline_Finale = Act.new(4),
+    TimeRift_Cave_Alps = Act.new(0),
+    TimeRift_Water_Alp_Goats = Act.new(0),
+    TimeRift_Water_AlpineSkyline_Cats = Act.new(0),
+
+    TheFinale_FinalBoss = Act.new(5, {"intro"}),
+    TimeRift_Cave_Tour = Act.new(0),
+
+    Cruise_Boarding = Act.new(6, {"intro"}),
+    Cruise_Working = Act.new(6, {"Cruise_Boarding"}),
+    Cruise_Sinking = Act.new(6, {"Cruise_Working"}),
+    Cruise_WaterRift_Slide = Act.new(0),
+    Cruise_CaveRift_Aquarium = Act.new(0),
+
+    MetroFreeRoam = Act.new(7, {"intro"}),
+    Metro_Escape = Act.new(7),
+    Metro_CaveRift_RumbiFactory = Act.new(0)
+}
+
+-- Setup for auto map switching
 map_table = {
     hub_spaceship = "Spaceship",
 
@@ -115,16 +176,6 @@ function onClear(slot_data)
     --reset HatOrder
     HatOrder = {}
 
-    map_key = string.format("ahit_currentmap_%s", Archipelago.PlayerNumber)
-
-    Archipelago:SetNotify({map_key})
-    Archipelago:Get({map_key})
-
-    if slot_data == nil  then
-        print("welp")
-        return
-    end
-
     if slot_data['Hat1'] then
         SprintHatCost = slot_data['SprintYarnCost']
         BrewingHatCost = slot_data['BrewingYarnCost']
@@ -157,6 +208,18 @@ function onClear(slot_data)
         print("Hat5: "..slot_data['Hat5'])
         print(dump_table(HatOrder))
         ]]
+    end
+
+    --set data storage keys
+    map_key = string.format("ahit_currentmap_%s", Archipelago.PlayerNumber)
+    completed_acts_key = string.format("ahit_clearedacts_%s", Archipelago.PlayerNumber)
+
+    Archipelago:SetNotify({map_key, completed_acts_key})
+    Archipelago:Get({map_key, completed_acts_key})
+
+    if slot_data == nil  then
+        print("welp")
+        return
     end
 
     if slot_data['ShuffleStorybookPages'] then
@@ -223,6 +286,19 @@ function onClear(slot_data)
         end
     end
 
+    -- set hash table to randomized acts
+    for chapter_number = 1,7 do
+        if slot_data[string.format('Chapter%dCost', chapter_number)] then
+            chapter_costs[chapter_number] = slot_data[string.format('Chapter%dCost', chapter_number)]
+        end
+    end
+
+    for key, act in pairs(chapter_act_info) do
+        if act and slot_data[key] then
+            act:setActName(slot_data[key])
+        end
+    end
+
     -- ahit important slot_data variables
     --[[ 
     slot_data["RandomizeHatOrder"]  --not handling this atm, assuming it's on
@@ -265,6 +341,98 @@ function updateYarn(yarn)
     end
 end
 
+--called when map is changed
+function changedMap(current_map, previous_map)
+    -- should start disabled?
+    -- add button to disable auto switching
+    internal_map_name = map_table[current_map]
+    
+    if internal_map_name == nil then
+        print("Could not find map name; Setting to Spaceship")
+        internal_map_name = "Spaceship"
+    end
+    Tracker:UiHint("ActivateTab", internal_map_name)
+end
+
+--funky time
+function updateAccessibleLevels(completed_acts)
+    local chapter_counts = {
+        [1] = 0,
+        [2] = 0,
+        [3] = 0,
+        [6] = 0
+    }
+    
+    for key, act in pairs(chapter_act_info) do
+        if act.act_name ~= "" then
+            local allRequirementsMet = true
+
+            if act.act_requirements and act.act_requirements[1] ~= "" then
+                for _, act_requirement in ipairs(act.act_requirements) do
+                    --handle intro levels
+                    local timepieces = Tracker:FindObjectForCode("timepiece")
+                    if act_requirement == "intro" and chapter_costs[act.chapter] <= timepieces.AcquiredCount then
+                        break
+                    end
+
+                    --handle normal level unlocks
+                    if act:getActRequirements() and not containsItem(completed_acts, act_requirement) then
+                        allRequirementsMet = false
+                        break
+                    end
+                end
+            
+                if allRequirementsMet and act then
+                    act:setIsAccessible(true)
+                    print(act.act_name .. " is accessible at location " .. key)
+                end
+            end
+
+            --increase completion amounts of chapters for time rifts
+            if act.chapter and act.act_name then
+                for _, completed_act in pairs(completed_acts) do
+                    if act.act_name == completed_act then
+                        if chapter_counts[act.chapter] then
+                            chapter_counts[act.chapter] = chapter_counts[act.chapter] + 1
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    --toggle timerifts based on completion count of chapters
+    if chapter_counts[1] >= 4 then
+        TimeRift_Water_Mafia_Easy:setIsAccessible(true)
+    end
+
+    if chapter_counts[1] >= 6 then
+        TimeRift_Water_Mafia_Hard:setIsAccessible(true)
+    end
+
+    if chapter_counts[2] >= 3 then
+        TimeRift_Water_TWreck_Panels:setIsAccessible(true)
+    end
+
+    if chapter_counts[2] >= 5 then
+        TimeRift_Water_TWreck_Parade:setIsAccessible(true)
+    end
+
+    if chapter_counts[3] >= 3 then
+        TimeRift_Water_Subcon_Hookshot:setIsAccessible(true)
+    end
+
+    if chapter_counts[3] >= 5 then
+        TimeRift_Water_Subcon_Dwellers:setIsAccessible(true)
+    end
+
+    if chapter_counts[6] >= 2 then
+        Cruise_WaterRift_Slide:setIsAccessible(true)
+    end
+end
+
+--Tracker Handlers
+
 function onItem(index, item_id, item_name, player_number)
     if index <= CUR_INDEX then
         return
@@ -290,6 +458,8 @@ function onItem(index, item_id, item_name, player_number)
             obj.AcquiredCount = obj.AcquiredCount + obj.Increment
             if v[1] == 'yarn' then --extra handling for hat autotracking
                 updateYarn(obj)
+            elseif v[1] == 'timepiece' then
+                updateAccessibleLevels({})
             end
         elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
             print(string.format("onItem: unknown item type %s for code %s", v[2], v[1]))
@@ -320,25 +490,17 @@ function onLocation(location_id, location_name)
     end
 end
 
---called when map is changed
-function onMapChange(key, current_map, previous_map)
-    internal_map_name = map_table[current_map]
-    
-    if internal_map_name == nil then
-        print("Could not find map name; Setting to Spaceship")
-        internal_map_name = "Spaceship"
+function onEvent(key, new_value, old_value)
+    if key == map_key then
+        changedMap(new_value, old_value)
+    elseif key == completed_acts_key then
+        print(dump_table(new_value))
+        updateAccessibleLevels(new_value)
     end
-    Tracker:UiHint("ActivateTab", internal_map_name)
 end
 
---called when Get("events") returns
---function onEventsLaunch()
---end
-
 Archipelago:AddClearHandler("clear handler", onClear)
-Archipelago:AddRetrievedHandler(map_key, onMapChange)
-Archipelago:AddSetReplyHandler(map_key, onMapChange)
+Archipelago:AddRetrievedHandler("event handler", onEvent)
+Archipelago:AddSetReplyHandler("event launch handler", onEvent)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
---Archipelago:AddSetReplyHandler("event handler", onEvent)
---Archipelago:AddRetrievedHandler("event launch handler", onEventsLaunch)
