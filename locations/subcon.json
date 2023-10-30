@@ -650,8 +650,7 @@
     "access_rules": [
       "paintings_off",
       "paintings_on, green",
-      "moderate",
-      "expert"
+      "moderate"
     ],
     "children": [
       {

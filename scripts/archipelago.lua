@@ -10,10 +10,9 @@ chapter_costs = {}
 
 -- Set up the default chapter information
 
-
 local chapter_act_info = {
-    Spaceship_WaterRift_Gallery = Act.new(-1),
-    Spaceship_WaterRift_MailRoom = Act.new(-1),
+    Spaceship_WaterRift_Gallery = Act.new(0),
+    Spaceship_WaterRift_MailRoom = Act.new(0),
 
     chapter1_tutorial = Act.new(1, {"intro"}),
     chapter1_barrelboss = Act.new(1, {"chapter1_tutorial"}),
@@ -22,9 +21,9 @@ local chapter_act_info = {
     harbor_impossible_race = Act.new(1, {"mafiatown_lava", "mafiatown_goldenvault"}),
     mafiatown_lava = Act.new(1, {"chapter1_boss"}),
     mafiatown_goldenvault = Act.new(1, {"chapter1_boss"}),
-    TimeRift_Cave_Mafia = Act.new(0),
-    TimeRift_Water_Mafia_Easy = Act.new(0),
-    TimeRift_Water_Mafia_Hard = Act.new(0),
+    TimeRift_Cave_Mafia = Act.new(1),
+    TimeRift_Water_Mafia_Easy = Act.new(-1),
+    TimeRift_Water_Mafia_Hard = Act.new(-1),
 
     DeadBirdStudio = Act.new(2, {"intro"}),
     chapter3_murder = Act.new(2, {"DeadBirdStudio"}),
@@ -33,9 +32,9 @@ local chapter_act_info = {
     moon_parade = Act.new(2, {"chapter3_murder", "moon_camerasnap"}),
     award_ceremony = Act.new(2, {"trainwreck_selfdestruct", "moon_parade"}),
     chapter3_secret_finale = Act.new(2, {"trainwreck_selfdestruct", "moon_parade"}),
-    TimeRift_Cave_BirdBasement = Act.new(0),
-    TimeRift_Water_TWreck_Panels = Act.new(0),
-    TimeRift_Water_TWreck_Parade = Act.new(0),
+    TimeRift_Cave_BirdBasement = Act.new(2),
+    TimeRift_Water_TWreck_Panels = Act.new(-2),
+    TimeRift_Water_TWreck_Parade = Act.new(-2),
 
     subcon_village_icewall = Act.new(3, {"intro"}),
     subcon_cave = Act.new(3),
@@ -43,15 +42,15 @@ local chapter_act_info = {
     vanessa_manor_attic = Act.new(3),
     subcon_maildelivery = Act.new(3),
     snatcher_boss = Act.new(3, {"subcon_village_icewall", "subcon_cave", "chapter2_toiletboss", "vanessa_manor_attic", "subcon_maildelivery"}),
-    TimeRift_Cave_Raccoon = Act.new(0),
-    TimeRift_Water_Subcon_Hookshot = Act.new(0),
-    TimeRift_Water_Subcon_Dwellers = Act.new(0),
+    TimeRift_Cave_Raccoon = Act.new(3),
+    TimeRift_Water_Subcon_Hookshot = Act.new(-3),
+    TimeRift_Water_Subcon_Dwellers = Act.new(-3),
 
     AlpineFreeRoam = Act.new(4, {"intro"}),
     AlpineSkyline_Finale = Act.new(4),
-    TimeRift_Cave_Alps = Act.new(0),
-    TimeRift_Water_Alp_Goats = Act.new(0),
-    TimeRift_Water_AlpineSkyline_Cats = Act.new(0),
+    TimeRift_Cave_Alps = Act.new(4),
+    TimeRift_Water_Alp_Goats = Act.new(4),
+    TimeRift_Water_AlpineSkyline_Cats = Act.new(-4),
 
     TheFinale_FinalBoss = Act.new(5, {"intro"}),
     TimeRift_Cave_Tour = Act.new(0),
@@ -59,12 +58,12 @@ local chapter_act_info = {
     Cruise_Boarding = Act.new(6, {"intro"}),
     Cruise_Working = Act.new(6, {"Cruise_Boarding"}),
     Cruise_Sinking = Act.new(6, {"Cruise_Working"}),
-    Cruise_WaterRift_Slide = Act.new(0),
-    Cruise_CaveRift_Aquarium = Act.new(0),
+    Cruise_WaterRift_Slide = Act.new(-6),
+    Cruise_CaveRift_Aquarium = Act.new(6),
 
     MetroFreeRoam = Act.new(7, {"intro"}),
     Metro_Escape = Act.new(7),
-    Metro_CaveRift_RumbiFactory = Act.new(0)
+    Metro_CaveRift_RumbiFactory = Act.new(7)
 }
 
 -- Setup for auto map switching
@@ -288,8 +287,9 @@ function onClear(slot_data)
 
     -- set hash table to randomized acts
     for chapter_number = 1,7 do
-        if slot_data[string.format('Chapter%dCost', chapter_number)] then
-            chapter_costs[chapter_number] = slot_data[string.format('Chapter%dCost', chapter_number)]
+        local chapter = string.format('Chapter%dCost', chapter_number)
+        if slot_data[chapter] and slot_data[chapter] >= 0 then
+            chapter_costs[chapter_number] = slot_data[chapter]
         end
     end
 
@@ -355,7 +355,86 @@ function changedMap(current_map, previous_map)
 end
 
 --funky time
-function updateAccessibleLevels(completed_acts)
+function updateAccessibleLevelsByTimepieces()
+    local timepieces = Tracker:FindObjectForCode("timepiece")
+    local chapters_to_keep = {}
+
+    for chapter, cost in ipairs(chapter_costs) do
+        if cost <= timepieces.AcquiredCount then
+            for key, act in pairs(chapter_act_info) do
+                if act.chapter == chapter and act.act_requirements[1] == "intro" and act.act_name ~= "" then
+                    act:setIsAccessible(true)
+                    print(act.act_name .. " is accessible at location " .. key)
+                end
+
+
+            end
+        else
+            chapters_to_keep[chapter] = cost
+        end
+    end
+    chapter_costs = chapters_to_keep
+end
+
+function updateAccessibleLevelsByRelics(relic_type, relic_count)
+    local relic_chapter
+    local relic_chapter_number
+
+    if relic_type == "burgerrelic" and relic_count >= 2 then
+        relic_chapter = "TimeRift_Cave_Mafia"
+        relic_chapter_number = 1
+    elseif relic_type == "trainrelic" and relic_count >= 2 then
+        relic_chapter = "TimeRift_Cave_BirdBasement"
+        relic_chapter_number = 2
+    elseif relic_type == "uforelic" and relic_count >= 4 then
+        relic_chapter = "TimeRift_Cave_Raccoon"
+        relic_chapter_number = 3
+    elseif relic_type == "crayonrelic" and relic_count >= 4 then
+        relic_chapter = "TimeRift_Cave_Alps"
+        relic_chapter_number = 4
+    elseif relic_type == "cakerelic" and relic_count >= 4 then
+        relic_chapter = "Cruise_CaveRift_Aquarium"
+        relic_chapter_number = 6
+    elseif relic_type == "jewelryrelic" and relic_count >= 4 then
+        relic_chapter = "Metro_CaveRift_RumbiFactory"
+        relic_chapter_number = 7
+    end
+
+    -- Funky stuff required for checking if you can reach the portal
+    if relic_chapter then
+        local canAccess = false
+
+        for _, act in pairs(chapter_act_info) do
+            if relic_chapter_number == 2 and act.chapter == relic_chapter_number and act.act_name == "DeadBirdStudio" then
+                canAccess = true
+                break
+            elseif relic_chapter_number == 3 and act.chapter == relic_chapter_number then
+                local paintings = Tracker:FindObjectForCode("paintings")
+                local difficulty = Tracker:FindObjectForCode("difficulty")
+                if (act.act_name == "snatcher_boss" and difficulty.CurrentStage == 4) or act.act_name ~= "snatcher_boss" then
+                    if paintings.CurrentStage == 0 or paintings.CurrentStage == 4 or difficulty.CurrentStage >= 0 then
+                        canAccess = true
+                    end
+                end
+                break
+            elseif relic_chapter_number == 6 and act.chapter == relic_chapter_number and act.act_name == "Cruise_Boarding" then
+                canAccess = true
+                break
+            elseif act.isAccessible and act.chapter == relic_chapter_number then
+                canAccess = true
+                break
+            end
+
+        end
+
+        if canAccess then
+            chapter_act_info[relic_chapter]:setIsAccessible(true)
+            print(chapter_act_info[relic_chapter]:getActName() .. " is accessible at location " .. relic_chapter)
+        end
+    end
+end
+
+function updateAccessibleLevelsByCompletedLevels(completed_acts)
     local chapter_counts = {
         [1] = 0,
         [2] = 0,
@@ -369,12 +448,6 @@ function updateAccessibleLevels(completed_acts)
 
             if act.act_requirements and act.act_requirements[1] ~= "" then
                 for _, act_requirement in ipairs(act.act_requirements) do
-                    --handle intro levels
-                    local timepieces = Tracker:FindObjectForCode("timepiece")
-                    if act_requirement == "intro" and chapter_costs[act.chapter] <= timepieces.AcquiredCount then
-                        break
-                    end
-
                     --handle normal level unlocks
                     if act:getActRequirements() and not containsItem(completed_acts, act_requirement) then
                         allRequirementsMet = false
@@ -402,32 +475,34 @@ function updateAccessibleLevels(completed_acts)
     end
 
     --toggle timerifts based on completion count of chapters
+
+    --TODO: need to check to make sure that I also have a level where that rift is located and the means to get to it
     if chapter_counts[1] >= 4 then
-        TimeRift_Water_Mafia_Easy:setIsAccessible(true)
+        chapter_act_info["TimeRift_Water_Mafia_Easy"]:setIsAccessible(true)
     end
 
     if chapter_counts[1] >= 6 then
-        TimeRift_Water_Mafia_Hard:setIsAccessible(true)
+        chapter_act_info["TimeRift_Water_Mafia_Hard"]:setIsAccessible(true)
     end
 
     if chapter_counts[2] >= 3 then
-        TimeRift_Water_TWreck_Panels:setIsAccessible(true)
+        chapter_act_info["TimeRift_Water_TWreck_Panels"]:setIsAccessible(true)
     end
 
     if chapter_counts[2] >= 5 then
-        TimeRift_Water_TWreck_Parade:setIsAccessible(true)
+        chapter_act_info["TimeRift_Water_TWreck_Parade"]:setIsAccessible(true)
     end
 
     if chapter_counts[3] >= 3 then
-        TimeRift_Water_Subcon_Hookshot:setIsAccessible(true)
+        chapter_act_info["TimeRift_Water_Subcon_Hookshot"]:setIsAccessible(true)
     end
 
     if chapter_counts[3] >= 5 then
-        TimeRift_Water_Subcon_Dwellers:setIsAccessible(true)
+        chapter_act_info["TimeRift_Water_Subcon_Dwellers"]:setIsAccessible(true)
     end
 
     if chapter_counts[6] >= 2 then
-        Cruise_WaterRift_Slide:setIsAccessible(true)
+        chapter_act_info["Cruise_WaterRift_Slide"]:setIsAccessible(true)
     end
 end
 
@@ -459,7 +534,9 @@ function onItem(index, item_id, item_name, player_number)
             if v[1] == 'yarn' then --extra handling for hat autotracking
                 updateYarn(obj)
             elseif v[1] == 'timepiece' then
-                updateAccessibleLevels({})
+                updateAccessibleLevelsByTimepieces()
+            elseif string.find(v[1], "relic") then
+                updateAccessibleLevelsByRelics(v[1], obj.CurrentStage)
             end
         elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
             print(string.format("onItem: unknown item type %s for code %s", v[2], v[1]))
@@ -494,8 +571,9 @@ function onEvent(key, new_value, old_value)
     if key == map_key then
         changedMap(new_value, old_value)
     elseif key == completed_acts_key then
-        print(dump_table(new_value))
-        updateAccessibleLevels(new_value)
+        updateAccessibleLevelsByCompletedLevels(new_value)
+        updateAccessibleLevelsByTimepieces()
+        updateAccessibleLevelsByRelics("burgerrelic", 2)
     end
 end
 

@@ -221,5 +221,35 @@
     "type": "toggle",
     "img": "images/ziplines/windmill_zipline.png",
     "codes": "windmillzipline"
+  },
+  {
+    "name": "Burger Relic",
+    "type": "progressive",
+    "codes": "burgerrelic"
+  },
+  {
+    "name": "Train Relic",
+    "type": "progressive",
+    "codes": "trainrelic"
+  },
+  {
+    "name": "UFO Relic",
+    "type": "progressive",
+    "codes": "uforelic"
+  },
+  {
+    "name": "Crayon Relic",
+    "type": "progressive",
+    "codes": "crayonrelic"
+  },
+  {
+    "name": "Cake Relic",
+    "type": "progressive",
+    "codes": "cakerelic"
+  },
+  {
+    "name": "Jewelry Relic",
+    "type": "progressive",
+    "codes": "jewelryrelic"
   }
 ]
