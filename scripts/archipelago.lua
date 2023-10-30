@@ -471,38 +471,36 @@ function updateAccessibleLevelsByCompletedLevels(completed_acts)
                     end
                 end
             end
+
+            --check if rift requirements are met
+            if act.isAccessible and act.chapter == 1 then
+                if chapter_counts[1] >= 6 then
+                    chapter_act_info["TimeRift_Water_Mafia_Hard"]:setIsAccessible(true)
+                elseif chapter_counts[1] >= 4 then
+                    chapter_act_info["TimeRift_Water_Mafia_Easy"]:setIsAccessible(true)
+                end
+            end
+        
+            if act.isAccessible and act.act_name == "chapter3_murder" and chapter_counts[2] >= 3 then
+                chapter_act_info["TimeRift_Water_TWreck_Panels"]:setIsAccessible(true)
+            end
+        
+            if act.isAccessible and (act.act_name == "moon_camerasnap" or act.act_name == "moon_parade") andchapter_counts[2] >= 5 then
+                chapter_act_info["TimeRift_Water_TWreck_Parade"]:setIsAccessible(true)
+            end
+        
+            if chapter_counts[3] >= 3 then
+                chapter_act_info["TimeRift_Water_Subcon_Hookshot"]:setIsAccessible(true)
+            end
+        
+            if chapter_counts[3] >= 5 then
+                chapter_act_info["TimeRift_Water_Subcon_Dwellers"]:setIsAccessible(true)
+            end
+        
+            if chapter_counts[6] >= 2 then
+                chapter_act_info["Cruise_WaterRift_Slide"]:setIsAccessible(true)
+            end
         end
-    end
-
-    --toggle timerifts based on completion count of chapters
-
-    --TODO: need to check to make sure that I also have a level where that rift is located and the means to get to it
-    if chapter_counts[1] >= 4 then
-        chapter_act_info["TimeRift_Water_Mafia_Easy"]:setIsAccessible(true)
-    end
-
-    if chapter_counts[1] >= 6 then
-        chapter_act_info["TimeRift_Water_Mafia_Hard"]:setIsAccessible(true)
-    end
-
-    if chapter_counts[2] >= 3 then
-        chapter_act_info["TimeRift_Water_TWreck_Panels"]:setIsAccessible(true)
-    end
-
-    if chapter_counts[2] >= 5 then
-        chapter_act_info["TimeRift_Water_TWreck_Parade"]:setIsAccessible(true)
-    end
-
-    if chapter_counts[3] >= 3 then
-        chapter_act_info["TimeRift_Water_Subcon_Hookshot"]:setIsAccessible(true)
-    end
-
-    if chapter_counts[3] >= 5 then
-        chapter_act_info["TimeRift_Water_Subcon_Dwellers"]:setIsAccessible(true)
-    end
-
-    if chapter_counts[6] >= 2 then
-        chapter_act_info["Cruise_WaterRift_Slide"]:setIsAccessible(true)
     end
 end
 
