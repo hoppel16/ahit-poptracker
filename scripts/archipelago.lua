@@ -590,7 +590,6 @@ function onEvent(key, new_value, old_value)
         changedMap(new_value, old_value)
     elseif key == completed_acts_key then
         updateAccessibleLevelsByCompletedLevels(new_value)
-        updateAccessibleLevelsByTimepieces()
     end
 end
 
