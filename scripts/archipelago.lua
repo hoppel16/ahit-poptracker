@@ -135,6 +135,7 @@ end
 function onClear(slot_data)
     --SLOT_DATA = slot_data
     CUR_INDEX = -1
+
     -- reset locations
     for _, v in pairs(LOCATION_MAPPING) do
         if v[1] then
@@ -175,6 +176,11 @@ function onClear(slot_data)
     --reset HatOrder
     HatOrder = {}
 
+    if slot_data == nil  then
+        print("welp")
+        return
+    end
+    
     if slot_data['Hat1'] then
         SprintHatCost = slot_data['SprintYarnCost']
         BrewingHatCost = slot_data['BrewingYarnCost']
@@ -215,11 +221,6 @@ function onClear(slot_data)
 
     Archipelago:SetNotify({map_key, completed_acts_key})
     Archipelago:Get({map_key, completed_acts_key})
-
-    if slot_data == nil  then
-        print("welp")
-        return
-    end
 
     if slot_data['ShuffleStorybookPages'] then
         local obj = Tracker:FindObjectForCode("pages")
