@@ -366,8 +366,12 @@ function updateAccessibleLevelsByTimepieces()
                     act:setIsAccessible(true)
                     print(act.act_name .. " is accessible at location " .. key)
                 end
+            end
 
-
+            if chapter == 2 and Tracker:FindObjectForCode("brewer").Active then
+                chapter_act_info["Spaceship_WaterRift_Gallery"].setIsAccessible(true)
+            elseif chapter == 3 and Tracker:FindObjectForCode("dweller").Active then
+                chapter_act_info["Spaceship_WaterRift_MailRoom"].setIsAccessible(true)
             end
         else
             chapters_to_keep[chapter] = cost
@@ -405,19 +409,20 @@ function updateAccessibleLevelsByRelics(relic_type, relic_count)
         local canAccess = false
 
         for _, act in pairs(chapter_act_info) do
-            if relic_chapter_number == 2 and act.chapter == relic_chapter_number and act.act_name == "DeadBirdStudio" then
+            if relic_chapter_number == 2 and act.chapter == relic_chapter_number and act.act_name == "DeadBirdStudio" and act.isAccessible then
                 canAccess = true
                 break
-            elseif relic_chapter_number == 3 and act.chapter == relic_chapter_number then
+            elseif relic_chapter_number == 3 and act.chapter == relic_chapter_number and act.isAccessible then
                 local paintings = Tracker:FindObjectForCode("paintings")
                 local difficulty = Tracker:FindObjectForCode("difficulty")
+
                 if (act.act_name == "snatcher_boss" and difficulty.CurrentStage == 4) or act.act_name ~= "snatcher_boss" then
                     if paintings.CurrentStage == 0 or paintings.CurrentStage == 4 or difficulty.CurrentStage >= 0 then
                         canAccess = true
                     end
                 end
                 break
-            elseif relic_chapter_number == 6 and act.chapter == relic_chapter_number and act.act_name == "Cruise_Boarding" then
+            elseif relic_chapter_number == 6 and act.chapter == relic_chapter_number and act.act_name == "Cruise_Boarding" and act.isAccessible then
                 canAccess = true
                 break
             elseif act.isAccessible and act.chapter == relic_chapter_number then
@@ -481,23 +486,28 @@ function updateAccessibleLevelsByCompletedLevels(completed_acts)
                 end
             end
         
-            if act.isAccessible and act.act_name == "chapter3_murder" and chapter_counts[2] >= 3 then
+            if chapter_counts[2] >= 3 and act.isAccessible and act.act_name == "chapter3_murder" then
                 chapter_act_info["TimeRift_Water_TWreck_Panels"]:setIsAccessible(true)
             end
         
-            if act.isAccessible and (act.act_name == "moon_camerasnap" or act.act_name == "moon_parade") andchapter_counts[2] >= 5 then
+            if chapter_counts[2] >= 5 and act.isAccessible and (act.act_name == "moon_camerasnap" or act.act_name == "moon_parade") then
                 chapter_act_info["TimeRift_Water_TWreck_Parade"]:setIsAccessible(true)
             end
         
-            if chapter_counts[3] >= 3 then
-                chapter_act_info["TimeRift_Water_Subcon_Hookshot"]:setIsAccessible(true)
+            if (act.act_name == "snatcher_boss" and difficulty.CurrentStage == 4) or (act.act_name ~= "snatcher_boss" and act.chapter == 3) and act.isAccessible then
+                local paintings = Tracker:FindObjectForCode("paintings")
+                local difficulty = Tracker:FindObjectForCode("difficulty")
+
+                if chapter_counts[3] >= 3 and (paintings.CurrentStage == 0 or paintings.CurrentStage == 2 or difficulty.CurrentStage >= 0)  then
+                    chapter_act_info["TimeRift_Water_Subcon_Hookshot"]:setIsAccessible(true)
+                end
+
+                if chapter_counts[3] >= 5 and (paintings.CurrentStage == 0 or paintings.CurrentStage == 4 or difficulty.CurrentStage >= 0)  then
+                    chapter_act_info["TimeRift_Water_Subcon_Dwellers"]:setIsAccessible(true)
+                end
             end
         
-            if chapter_counts[3] >= 5 then
-                chapter_act_info["TimeRift_Water_Subcon_Dwellers"]:setIsAccessible(true)
-            end
-        
-            if chapter_counts[6] >= 2 then
+            if chapter_counts[6] >= 2 and act.isAccessible and act.act_name == "Cruise_Boarding" then
                 chapter_act_info["Cruise_WaterRift_Slide"]:setIsAccessible(true)
             end
         end

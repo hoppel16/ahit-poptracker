@@ -237,6 +237,7 @@
           {
             "name": "Time Piece",
             "access_rules": [
+              "dweller",
               "brewer, expert",
               "sprint, expert",
               "timestop, umbrella_on, umbrella, expert"

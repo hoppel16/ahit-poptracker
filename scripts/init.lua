@@ -15,7 +15,6 @@ end
 ScriptHost:LoadScript("scripts/utils.lua")
 ScriptHost:LoadScript("scripts/act.lua")
 
--- TODO: Add Logic
 -- Logic
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 
