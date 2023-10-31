@@ -368,9 +368,12 @@ function updateAccessibleLevelsByTimepieces()
                 end
             end
 
-            if chapter == 2 and Tracker:FindObjectForCode("brewer").Active then
+            local brewer = Tracker:FindObjectForCode("brewer")
+            local dweller = Tracker:FindObjectForCode("dweller")
+
+            if chapter == 2 and brewer.Active then
                 chapter_act_info["Spaceship_WaterRift_Gallery"].setIsAccessible(true)
-            elseif chapter == 3 and Tracker:FindObjectForCode("dweller").Active then
+            elseif chapter == 3 and dweller.Active then
                 chapter_act_info["Spaceship_WaterRift_MailRoom"].setIsAccessible(true)
             end
         else
@@ -493,11 +496,11 @@ function updateAccessibleLevelsByCompletedLevels(completed_acts)
             if chapter_counts[2] >= 5 and act.isAccessible and (act.act_name == "moon_camerasnap" or act.act_name == "moon_parade") then
                 chapter_act_info["TimeRift_Water_TWreck_Parade"]:setIsAccessible(true)
             end
-        
-            if (act.act_name == "snatcher_boss" and difficulty.CurrentStage == 4) or (act.act_name ~= "snatcher_boss" and act.chapter == 3) and act.isAccessible then
-                local paintings = Tracker:FindObjectForCode("paintings")
-                local difficulty = Tracker:FindObjectForCode("difficulty")
+            
+            local paintings = Tracker:FindObjectForCode("paintings")
+            local difficulty = Tracker:FindObjectForCode("difficulty")
 
+            if (act.act_name == "snatcher_boss" and difficulty.CurrentStage == 4) or (act.act_name ~= "snatcher_boss" and act.chapter == 3) and act.isAccessible then
                 if chapter_counts[3] >= 3 and (paintings.CurrentStage == 0 or paintings.CurrentStage == 2 or difficulty.CurrentStage >= 0)  then
                     chapter_act_info["TimeRift_Water_Subcon_Hookshot"]:setIsAccessible(true)
                 end
@@ -581,7 +584,6 @@ function onEvent(key, new_value, old_value)
     elseif key == completed_acts_key then
         updateAccessibleLevelsByCompletedLevels(new_value)
         updateAccessibleLevelsByTimepieces()
-        updateAccessibleLevelsByRelics("burgerrelic", 2)
     end
 end
 
