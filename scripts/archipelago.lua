@@ -361,6 +361,7 @@ function updateAccessibleLevelsByTimepieces()
 
     for chapter, cost in ipairs(chapter_costs) do
         if cost <= timepieces.AcquiredCount then
+            --unlock the intro levels if we meet the chapter cost and the act name isnt empty
             for key, act in pairs(chapter_act_info) do
                 if act.chapter == chapter and act.act_requirements[1] == "intro" and act.act_name ~= "" then
                     act:setIsAccessible(true)
@@ -368,6 +369,7 @@ function updateAccessibleLevelsByTimepieces()
                 end
             end
 
+            --unlock the rifts behind the chapter doors if you have the required item
             local brewer = Tracker:FindObjectForCode("brewer")
             local dweller = Tracker:FindObjectForCode("dweller")
 
@@ -387,6 +389,7 @@ function updateAccessibleLevelsByRelics(relic_type, relic_count)
     local relic_chapter
     local relic_chapter_number
 
+    --convert relic type to the internal chapter name only if we have the correct amount of relics
     if relic_type == "burgerrelic" and relic_count >= 2 then
         relic_chapter = "TimeRift_Cave_Mafia"
         relic_chapter_number = 1
@@ -412,7 +415,10 @@ function updateAccessibleLevelsByRelics(relic_type, relic_count)
         local canAccess = false
 
         for _, act in pairs(chapter_act_info) do
-            if relic_chapter_number == 2 and act.chapter == relic_chapter_number and act.act_name == "DeadBirdStudio" and act.isAccessible then
+            --chapters 2 and 6 rifts can only be accessed from one specific act
+            --chapter 3 rift has an act that makes it only accessible if on expert difficulty, otherwise it needs either painting shuffle to be off or on a specific stage or for the expert diffuclty to be enabled
+            --chapters 1, 4, and 7 can be accessed from any of their acts
+            if relic_chapter_number == 2 and act.act_name == "DeadBirdStudio" and act.isAccessible then
                 canAccess = true
                 break
             elseif relic_chapter_number == 3 and act.chapter == relic_chapter_number and act.isAccessible then
@@ -425,7 +431,7 @@ function updateAccessibleLevelsByRelics(relic_type, relic_count)
                     end
                 end
                 break
-            elseif relic_chapter_number == 6 and act.chapter == relic_chapter_number and act.act_name == "Cruise_Boarding" and act.isAccessible then
+            elseif relic_chapter_number == 6 and act.act_name == "Cruise_Boarding" and act.isAccessible then
                 canAccess = true
                 break
             elseif act.isAccessible and act.chapter == relic_chapter_number then
