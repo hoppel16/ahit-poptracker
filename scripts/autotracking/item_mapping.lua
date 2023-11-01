@@ -15,18 +15,18 @@ ITEM_MAPPING = {
     [2000300053] = {"timestop", "toggle"},
 
     -- Relics
-    [2000300006] = {"burgerrelic", "progressive"}, --Burger Patty
-    [2000300007] = {"burgerrelic", "progressive"}, --Burger Cushion
-    [2000300008] = {"trainrelic", "progressive"}, --Mountain Set
-    [2000300009] = {"trainrelic", "progressive"}, --Train
-    [2000300010] = {"uforelic", "progressive"}, --UFO
-    [2000300011] = {"uforelic", "progressive"}, --Cow
-    [2000300012] = {"uforelic", "progressive"}, --Cool Cow
-    [2000300013] = {"uforelic", "progressive"}, --Tin-foil Hat Cow
-    [2000300014] = {"crayonrelic", "progressive"}, --Crayon Box
-    [2000300015] = {"crayonrelic", "progressive"}, --Red Crayon
-    [2000300016] = {"crayonrelic", "progressive"}, --Blue Crayon
-    [2000300017] = {"crayonrelic", "progressive"}, --Green Crayon
+    [2000300006] = {"burgerrelic", "consumable"}, --Burger Patty
+    [2000300007] = {"burgerrelic", "consumable"}, --Burger Cushion
+    [2000300008] = {"trainrelic", "consumable"}, --Mountain Set
+    [2000300009] = {"trainrelic", "consumable"}, --Train
+    [2000300010] = {"uforelic", "consumable"}, --UFO
+    [2000300011] = {"uforelic", "consumable"}, --Cow
+    [2000300012] = {"uforelic", "consumable"}, --Cool Cow
+    [2000300013] = {"uforelic", "consumable"}, --Tin-foil Hat Cow
+    [2000300014] = {"crayonrelic", "consumable"}, --Crayon Box
+    [2000300015] = {"crayonrelic", "consumable"}, --Red Crayon
+    [2000300016] = {"crayonrelic", "consumable"}, --Blue Crayon
+    [2000300017] = {"crayonrelic", "consumable"}, --Green Crayon
 
     -- Badges
     -- [2000300024] = {"Projectile Badge", "toggle"},
@@ -55,14 +55,14 @@ ITEM_MAPPING = {
     -- [2000300041] = {"Parade Trap", "toggle"},
 
     -- DLC1 items
-    [2000300018] = {"cakerelic", "progressive"}, --Cake Stand
-    [2000300019] = {"cakerelic", "progressive"}, --Cake
-    [2000300020] = {"cakerelic", "progressive"}, --Cake Slice
-    [2000300021] = {"cakerelic", "progressive"}, --Shortcake
+    [2000300018] = {"cakerelic", "consumable"}, --Cake Stand
+    [2000300019] = {"cakerelic", "consumable"}, --Cake
+    [2000300020] = {"cakerelic", "consumable"}, --Cake Slice
+    [2000300021] = {"cakerelic", "consumable"}, --Shortcake
 
     -- DLC2 items
-    [2000300022] = {"jewelryrelic", "toggle"}, --Necklace Bust
-    [2000300023] = {"jewelryrelic", "toggle"}, --Necklace
+    [2000300022] = {"jewelryrelic", "consumable"}, --Necklace Bust
+    [2000300023] = {"jewelryrelic", "consumable"}, --Necklace
 
     -- Death Wish items
     -- [2000300038] = {"One-Hit Hero Badge", "toggle"},

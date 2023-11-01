@@ -555,7 +555,7 @@ function onItem(index, item_id, item_name, player_number)
             elseif v[1] == 'timepiece' then
                 updateAccessibleLevelsByTimepieces()
             elseif string.find(v[1], "relic") then
-                updateAccessibleLevelsByRelics(v[1], obj.CurrentStage)
+                updateAccessibleLevelsByRelics(v[1], obj.AcquiredCount)
             end
         elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
             print(string.format("onItem: unknown item type %s for code %s", v[2], v[1]))
