@@ -1,6 +1,9 @@
 [
   {
     "name": "Mafia Town",
+    "access_rules": [
+      "$canAccessChapter|1"
+    ],
     "children": [
       {
         "name": "Welcome to Mafia Town",

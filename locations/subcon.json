@@ -1,6 +1,9 @@
 [
   {
     "name": "Subcon Forest",
+    "access_rules": [
+      "$canAccessChapter|3"
+    ],
     "children": [
       {
         "name": "Snatcher",
@@ -147,10 +150,10 @@
   {
     "name": "Yellow Firewall",
     "access_rules": [
-      "paintings_off",
-      "paintings_on, yellow",
-      "moderate, nobonk",
-      "expert"
+      "paintings_off, $canAccessChapter|3",
+      "paintings_on, yellow, $canAccessChapter|3",
+      "moderate, nobonk, $canAccessChapter|3",
+      "expert, $canAccessChapter|3"
     ],
     "children": [
       {
@@ -436,10 +439,10 @@
   {
     "name": "Blue Firewall",
     "access_rules": [
-      "paintings_off",
-      "paintings_on, blue",
-      "moderate, nobonk",
-      "expert"
+      "paintings_off, $canAccessChapter|3",
+      "paintings_on, blue, $canAccessChapter|3",
+      "moderate, nobonk, $canAccessChapter|3",
+      "expert, $canAccessChapter|3"
     ],
     "children": [
       {
@@ -648,9 +651,9 @@
   {
     "name": "Green Firewall",
     "access_rules": [
-      "paintings_off",
-      "paintings_on, green",
-      "moderate"
+      "paintings_off, $canAccessChapter|3",
+      "paintings_on, green, $canAccessChapter|3",
+      "moderate, $canAccessChapter|3"
     ],
     "children": [
       {

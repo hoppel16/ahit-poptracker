@@ -257,5 +257,10 @@
     "type": "consumable",
     "codes": "jewelryrelic",
     "max_quantity": 2
+  },
+  {
+    "name": "Force Update",
+    "type": "toggle",
+    "codes": "update"
   }
 ]

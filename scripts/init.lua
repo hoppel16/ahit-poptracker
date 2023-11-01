@@ -15,6 +15,7 @@ end
 ScriptHost:LoadScript("scripts/utils.lua")
 
 -- Logic
+ScriptHost:LoadScript("scripts/logic/logic_but_different.lua")
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 
 -- Items
