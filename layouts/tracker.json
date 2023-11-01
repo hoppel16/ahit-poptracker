@@ -87,16 +87,6 @@
                         "mafiatown"
                       ]
                     }
-                  },
-                  {
-                    "title": "Mafia HQ",
-                    "icon": "images/icons/Mafia_Boss.png",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "mafiahq"
-                      ]
-                    }
                   }
                 ]
               }
@@ -114,26 +104,6 @@
                       "type": "map",
                       "maps": [
                         "deadbirdstudio"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Conductor's Train",
-                    "icon": "images/icons/Conductor.png",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "train"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "The Moon",
-                    "icon": "images/icons/DJ_Grooves.png",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "moon"
                       ]
                     }
                   },
@@ -165,16 +135,6 @@
                         "subcon"
                       ]
                     }
-                  },
-                  {
-                    "title": "Queen Vanessa's Manor",
-                    "icon": "images/icons/Vanessa.png",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "manor"
-                      ]
-                    }
                   }
                 ]
               }
@@ -190,16 +150,6 @@
               }
             },
             {
-              "title": "Time's End",
-              "icon": "images/icons/Mustache_Girl.png",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "attic"
-                ]
-              }
-            },
-            {
               "title": "Arctic Cruise",
               "icon": "images/icons/Cruise_Seal.png",
               "content": {
@@ -208,13 +158,6 @@
                   {
                     "title": "Arctic Cruise",
                     "icon": "images/icons/Cruise_Seal.png",
-                    "content": {
-                      "type": "map",
-                      "maps": []
-                    }
-                  },
-                  {
-                    "title": "Rock the Boat",
                     "content": {
                       "type": "map",
                       "maps": []
