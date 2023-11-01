@@ -220,7 +220,7 @@ function onClear(slot_data)
     end
 
     if slot_data['BadgeSellerItemCount'] then
-        local obj = Tracker:FindObjectForCode("@Mafia Town/Badge Seller/Scammed")
+        local obj = Tracker:FindObjectForCode("@Shops/Badge Seller/Scammed")
         local val = slot_data['BadgeSellerItemCount']
         if obj then
             obj.AvailableChestCount = val
@@ -235,6 +235,7 @@ function onClear(slot_data)
         end
     end
 
+    -- there is an arguement that key and act should be swapped (i dont know if its worth it though)
     for key, act in pairs(chapter_act_info) do
         if act and slot_data[key] then
             act:setActName(slot_data[key])

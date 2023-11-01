@@ -7,6 +7,9 @@
     "children": [
       {
         "name": "Welcome to Mafia Town",
+        "access_rules": [
+          "$canAccessAct|chapter1_tutorial"
+        ],
         "sections": [
           {
             "name": "Umbrella"
@@ -25,6 +28,9 @@
       },
       {
         "name": "Barrel Battle",
+        "access_rules": [
+          "$canAccessAct|chapter1_barrelboss"
+        ],
         "sections": [
           {
             "name": "Time Piece"
@@ -40,6 +46,9 @@
       },
       {
         "name": "Mafia HQ",
+        "access_rules": [
+          "$canAccessAct|chapter1_boss"
+        ],
         "sections": [
           {
             "name": "Time Piece"
@@ -63,7 +72,13 @@
             "name": "Bathroom Stall Chest"
           },
           {
-            "name": "Behind HQ Chest"
+            "name": "Behind HQ Chest",
+            "access_rules": [
+              "$canAccessAct|chapter1_boss",
+              "$canAccessAct|mafiatown_lava",
+              "$canAccessAct|harbor_impossible_race",
+              "$canAccessAct|mafiatown_goldenvault"
+            ]
           }
         ],
         "map_locations": [
@@ -80,10 +95,10 @@
           {
             "name": "Cheating the Race",
             "access_rules": [
-              "withtimestop, timestop",
-              "withscooter, sprint, scooter",
-              "withsprint, sprint",
-              "withnothing"
+              "withtimestop, timestop, $canAccessAct|harbor_impossible_race",
+              "withscooter, sprint, scooter, $canAccessAct|harbor_impossible_race",
+              "withsprint, sprint, $canAccessAct|harbor_impossible_race",
+              "withnothing, $canAccessAct|harbor_impossible_race"
             ]
           },
           {
@@ -104,11 +119,14 @@
           {
             "name": "Heating Up Mafia Town",
             "access_rules": [
-              "umbrella"
+              "umbrella, $canAccessAct|mafiatown_lava"
             ]
           },
           {
-            "name": "She Came from Outer Space"
+            "name": "She Came from Outer Space",
+            "access_rules": [
+              "$canAccessAct|chapter1_cannon_repair"
+            ]
           }
         ],
         "map_locations": [
@@ -123,7 +141,10 @@
         "name": "The Golden Vault",
         "sections": [
           {
-            "name": "Time Piece"
+            "name": "Time Piece",
+            "access_rules": [
+              "$canAccessAct|mafiatown_goldenvault"
+            ]
           }
         ],
         "map_locations": [
@@ -138,7 +159,10 @@
         "name": "Bazaar",
         "sections": [
           {
-            "name": "Time Rift"
+            "name": "Time Rift",
+            "access_rules": [
+              "$canAccessAct|TimeRift_Water_Mafia_Hard"
+            ]
           }
         ],
         "map_locations": [
@@ -154,8 +178,7 @@
         "sections": [
           {
             "name": "Scammed",
-            "item_count": 10,
-            "clear_as_group": false
+            "ref":"Shops/Badge Seller/Scammed"
           }
         ],
         "map_locations": [
@@ -170,7 +193,10 @@
         "name": "Sewers",
         "sections": [
           {
-            "name": "Time Rift"
+            "name": "Time Rift",
+            "access_rules": [
+              "$canAccessAct|TimeRift_Water_Mafia_Easy"
+            ]
           }
         ],
         "map_locations": [
@@ -183,6 +209,9 @@
       },
       {
         "name": "Mafia of Cooks",
+        "access_rules": [
+          "$canAccessAct|TimeRift_Cave_Mafia"
+        ],
         "sections": [
           {
             "name": "Time Rift"
@@ -236,6 +265,9 @@
       },
       {
         "name": "Old Man",
+        "access_rules": [
+          "$canAccessChapter|1|chapter1_cannon_repair"
+        ],
         "sections": [
           {
             "name": "Yarn"
@@ -398,7 +430,8 @@
         "name": "Above Boats",
         "access_rules": [
           "expert",
-          "hookshot"
+          "hookshot",
+          "$canAccessAct|mafiatown_lava"
         ],
         "sections": [
           {
@@ -430,6 +463,9 @@
       },
       {
         "name": "Old Man 2",
+        "access_rules": [
+          "$canAccessChapter|1|chapter1_cannon_repair"
+        ],
         "sections": [
           {
             "name": "Seaside Spaghetti"
@@ -488,7 +524,7 @@
           },
           {
             "name": "Badge Seller",
-            "ref":"Mafia Town/Badge Seller/Scammed"
+            "ref":"Shops/Badge Seller/Scammed"
           }
         ],
         "map_locations": [
@@ -583,7 +619,8 @@
       {
         "name": "Secret Cave",
         "access_rules": [
-          "brewer"
+          "brewer",
+          "$canAccessAct|mafiatown_lava"
         ],
         "sections": [
           {
@@ -727,6 +764,9 @@
       },
       {
         "name": "Mafia Geek Platform",
+        "access_rules": [
+          "$canAccessChapter|1|chapter1_cannon_repair"
+        ],
         "sections": [
           {
             "name": "Token"

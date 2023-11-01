@@ -1,6 +1,9 @@
 [
   {
     "name": "Dead Bird Basement",
+    "access_rules": [
+      "$canAccessAct|chapter3_secret_finale"
+    ],
     "children": [
       {
         "name": "Small Room",
