@@ -224,32 +224,38 @@
   },
   {
     "name": "Burger Relic",
-    "type": "progressive",
-    "codes": "burgerrelic"
+    "type": "consumable",
+    "codes": "burgerrelic",
+    "max_quantity": 2
   },
   {
     "name": "Train Relic",
-    "type": "progressive",
-    "codes": "trainrelic"
+    "type": "consumable",
+    "codes": "trainrelic",
+    "max_quantity": 2
   },
   {
     "name": "UFO Relic",
-    "type": "progressive",
-    "codes": "uforelic"
+    "type": "consumable",
+    "codes": "uforelic",
+    "max_quantity": 4
   },
   {
     "name": "Crayon Relic",
-    "type": "progressive",
-    "codes": "crayonrelic"
+    "type": "consumable",
+    "codes": "crayonrelic",
+    "max_quantity": 4
   },
   {
     "name": "Cake Relic",
-    "type": "progressive",
-    "codes": "cakerelic"
+    "type": "consumable",
+    "codes": "cakerelic",
+    "max_quantity": 4
   },
   {
     "name": "Jewelry Relic",
-    "type": "progressive",
-    "codes": "jewelryrelic"
+    "type": "consumable",
+    "codes": "jewelryrelic",
+    "max_quantity": 2
   }
 ]

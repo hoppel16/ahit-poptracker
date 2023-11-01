@@ -67,7 +67,7 @@ local chapter_act_info = {
 }
 
 -- Setup for auto map switching
-map_table = {
+local map_table = {
     hub_spaceship = "Spaceship",
 
     mafia_town = "Mafia Town",
@@ -297,6 +297,7 @@ function onClear(slot_data)
     for key, act in pairs(chapter_act_info) do
         if act and slot_data[key] then
             act:setActName(slot_data[key])
+            act:setIsAccessible(false)
         end
     end
 
