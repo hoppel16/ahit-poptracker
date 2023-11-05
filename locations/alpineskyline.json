@@ -1,6 +1,10 @@
 [
   {
     "name": "Goat Village",
+    "access_rules": [
+      "$canAccessAct|AlpineFreeRoam",
+      "$canAccessAct|AlpineSkyline_Finale"
+    ],
     "children": [
       {
         "name": "Goat Village",
@@ -38,6 +42,9 @@
       },
       {
         "name": "Alpine Skyline (Rift)",
+        "access_rules": [
+          "$canAccessAct|TimeRift_Cave_Alps"
+        ],
         "sections": [
           {
             "name": "Time Rift"
@@ -64,8 +71,10 @@
   {
     "name": "Birdhouse Zipline",
     "access_rules": [
-      "hookshot, ziplines_off",
-      "hookshot, ziplines_on, birdzipline"
+      "hookshot, ziplines_off, $canAccessAct|AlpineFreeRoam",
+      "hookshot, ziplines_on, birdzipline, $canAccessAct|AlpineFreeRoam",
+      "hookshot, ziplines_off, $canAccessAct|AlpineSkyline_Finale",
+      "hookshot, ziplines_on, birdzipline, $canAccessAct|AlpineSkyline_Finale"
     ],
     "children": [
       {
@@ -136,7 +145,8 @@
         "name": "Bird House",
         "access_rules": [
           "moderate",
-          "brewer"
+          "brewer",
+          "$canAccessAct|AlpineFreeRoam"
         ],
         "sections": [
           {
@@ -178,8 +188,8 @@
   {
     "name": "Twilight Bell Zipline",
     "access_rules": [
-      "hookshot, ziplines_off",
-      "hookshot, ziplines_on, bellzipline"
+      "hookshot, ziplines_off, $canAccessAct|AlpineFreeRoam",
+      "hookshot, ziplines_on, bellzipline, $canAccessAct|AlpineFreeRoam"
     ],
     "children": [
       {
@@ -204,9 +214,9 @@
       {
         "name": "The Twilight Bell (Rift)",
         "access_rules": [
-          "expert",
-          "hard, sprint, scooter",
-          "dweller"
+          "expert, $canAccessAct|TimeRift_Water_Alp_Goats",
+          "hard, sprint, scooter, $canAccessAct|TimeRift_Water_Alp_Goats",
+          "dweller, $canAccessAct|TimeRift_Water_Alp_Goats"
         ],
         "sections": [
           {
@@ -257,8 +267,10 @@
   {
     "name": "Lava Cake Zipline",
     "access_rules": [
-      "hookshot, ziplines_off",
-      "hookshot, ziplines_on, cakezipline"
+      "hookshot, ziplines_off, $canAccessAct|AlpineFreeRoam",
+      "hookshot, ziplines_on, cakezipline, $canAccessAct|AlpineFreeRoam",
+      "hookshot, ziplines_off, $canAccessAct|AlpineSkyline_Finale",
+      "hookshot, ziplines_on, birdzipline, $canAccessAct|AlpineSkyline_Finale"
     ],
     "children": [
       {
@@ -318,6 +330,9 @@
       },
       {
         "name": "Lava Cake",
+        "access_rules": [
+          "$canAccessAct|AlpineFreeRoam"
+        ],
         "sections": [
           {
             "name": "Center Fence Cage"
@@ -348,8 +363,10 @@
   {
     "name": "Windmill Zipline",
     "access_rules": [
-      "hookshot, ziplines_off",
-      "hookshot, ziplines_on, windmillzipline"
+      "hookshot, ziplines_off, $canAccessAct|AlpineFreeRoam",
+      "hookshot, ziplines_on, windmillzipline, $canAccessAct|AlpineFreeRoam",
+      "hookshot, ziplines_off, $canAccessAct|AlpineSkyline_Finale",
+      "hookshot, ziplines_on, birdzipline, $canAccessAct|AlpineSkyline_Finale"
     ],
     "children": [
       {
@@ -385,9 +402,9 @@
       {
         "name": "Curly Tail Trail",
         "access_rules": [
-          "expert",
-          "hard, sprint",
-          "ice"
+          "expert, $canAccessAct|TimeRift_Water_AlpineSkyline_Cats",
+          "hard, sprint, $canAccessAct|TimeRift_Water_AlpineSkyline_Cats",
+          "ice, $canAccessAct|TimeRift_Water_AlpineSkyline_Cats"
         ],
         "sections": [
           {
@@ -404,6 +421,9 @@
       },
       {
         "name": "The Windmill",
+        "access_rules": [
+          "$canAccessAct|AlpineFreeRoam"
+        ],
         "sections": [
           {
             "name": "Entrance"
@@ -439,6 +459,9 @@
     "children": [
       {
         "name": "Goat Refinery",
+        "access_rules": [
+          "$canAccessAct|AlpineFreeRoam"
+        ],
         "sections": [
           {
             "name": "Yarn"
@@ -455,8 +478,8 @@
       {
         "name": "The Illness has Spread",
         "access_rules": [
-          "hookshot, ziplines_off",
-          "hookshot, ziplines_on, birdzipline, cakezipline, windmillzipline"
+          "hookshot, ziplines_off, $canAccessAct|AlpineSkyline_Finale",
+          "hookshot, ziplines_on, birdzipline, cakezipline, windmillzipline, $canAccessAct|AlpineSkyline_Finale"
         ],
         "sections": [
           {

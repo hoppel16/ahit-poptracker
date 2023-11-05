@@ -47,8 +47,8 @@
         "margin": "0,0",
         "h_alignment": "left",
         "rows": [
-          ["pages", "contract", "umbrella_logic"],
-          ["ctrlogic", "difficulty", "ziplines_logic"]
+          ["pages", "contract", "umbrella_logic", "painting_skips"],
+          ["ctrlogic", "difficulty", "ziplines_logic", "ticket_skips"]
         ]
       }
     ]
@@ -67,6 +67,24 @@
         "rows": [
           ["bellzipline", "birdzipline"],
           ["windmillzipline", "cakezipline"]
+        ]
+      }
+    ]
+  },
+  "tickets_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "2,2",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "3, 10",
+        "item_size": 5,
+        "margin": "0, 0",
+        "h_alignment": "left",
+        "rows": [
+          ["yellowticket", "pinkticket"],
+          ["blueticket", "greenticket"]
         ]
       }
     ]

@@ -21,10 +21,13 @@ function dump_table(o, depth)
 end
 
 function containsItem(list, item)
-    for _, value in pairs(list) do
-        if value == item then
-            return true
+    if list and item then
+        for _, value in pairs(list) do
+            if value == item then
+                return true
+            end
         end
     end
+    
     return false
 end

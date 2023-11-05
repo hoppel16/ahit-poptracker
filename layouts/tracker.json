@@ -40,6 +40,15 @@
             },
             {
               "type": "group",
+              "header": "Tickets",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "key": "tickets_grid"
+              }
+            },
+            {
+              "type": "group",
               "header": "Settings",
               "dock": "Right",
               "content": {

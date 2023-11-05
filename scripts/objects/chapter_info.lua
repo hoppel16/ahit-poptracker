@@ -49,8 +49,8 @@ chapter_act_info = {
     Cruise_Boarding = Act.new(6, {"intro"}),
     Cruise_Working = Act.new(6, {"Cruise_Boarding"}),
     Cruise_Sinking = Act.new(6, {"Cruise_Working"}),
-    Cruise_WaterRift_Slide = Act.new(-6),
     Cruise_CaveRift_Aquarium = Act.new(6),
+    Cruise_WaterRift_Slide = Act.new(-6),
 
     MetroFreeRoam = Act.new(7, {"intro"}),
     Metro_Escape = Act.new(7),

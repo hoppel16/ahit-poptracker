@@ -223,6 +223,60 @@
     "codes": "windmillzipline"
   },
   {
+    "name": "Yellow Ticket",
+    "type": "toggle",
+    "img": "images/tickets/MetroTicket_Yellow.png",
+    "codes": "yellowticket"
+  },
+  {
+    "name": "Pink Ticket",
+    "type": "toggle",
+    "img": "images/tickets/MetroTicket_Red.png",
+    "codes": "pinkticket"
+  },
+  {
+    "name": "Blue Ticket",
+    "type": "toggle",
+    "img": "images/tickets/MetroTicket_Blue.png",
+    "codes": "blueticket"
+  },
+  {
+    "name": "Green Ticket",
+    "type": "toggle",
+    "img": "images/tickets/MetroTicket_Green.png",
+    "codes": "greenticket"
+  },
+  {
+    "name": "No Painting Skips",
+    "type": "toggle",
+    "img": "images/settings/soul.png",
+    "codes": "painting_skips"
+  },
+  {
+    "name": "No Ticket Skips",
+    "type": "progressive",
+    "codes": "ticket_skips",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/settings/MetroGuide.png",
+        "img_mods": "@disabled",
+        "codes": "ticket_skips_off",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/MetroGuide.png",
+        "codes": "ticket_skips_on",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/MetroFood_Burger.png",
+        "codes": "ticket_skips_rush_hour",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Burger Relic",
     "type": "consumable",
     "codes": "burgerrelic",

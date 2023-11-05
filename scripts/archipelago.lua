@@ -8,6 +8,33 @@ CUR_INDEX = -1
 
 chapter_costs = {}
 
+-- Locations for time pieces that need to be collected to unlock finales
+local subcon_timepieces = {
+    contractual_obligations = "@Yellow Firewall/Contractual Obligations/Time Piece",
+    subcon_well = "@Yellow Firewall/Subcon Well/Time Piece",
+    toilet_of_doom = "@Boss Arena Area/Boss Arena/Toilet of Doom",
+    queen_vanessas_manor = "@Yellow Firewall/Queen Vanessa's Manor/Time Piece",
+    mail_delivery_service = "@Subcon Forest/Snatcher/Mail Delivery Service"
+}
+
+local apline_timepieces = {
+    birdhouse = "@Birdhouse Zipline/Bird House/Time Piece",
+    lava_cake = "@Lava Cake Zipline/Lava Cake/Time Piece",
+    twilight_bell = "@Twilight Bell Zipline/The Twilight Bell/Time Piece",
+    windmill = "@Windmill Zipline/The Windmill/Time Piece"
+}
+
+local nyakuza_timepieces = {
+    intro = "@Nyakuza Metro/Nyakuza Metro Intro/Time Piece",
+    yellow_station = "@Nyakuza Metro/Yellow Overpass Station/Time Piece",
+    yellow_manhole = "@Nyakuza Metro/Yellow Overpass Manhole/Time Piece",
+    green_station = "@Nyakuza Metro/Green Clean Station/Time Piece",
+    green_manhole = "@Nyakuza Metro/Green Clean Manhole/Time Piece",
+    bluefin_tunnel = "@Nyakuza Metro/Bluefin Tunnel/Time Piece",
+    pink_station = "@Nyakuza Metro/Pink Paw Station/Time Piece",
+    pink_manhole = "@Nyakuza Metro/Pink Paw Manhole/Time Piece"
+}
+
 -- Setup for auto map switching
 local map_table = {
     hub_spaceship = "Spaceship",
@@ -37,7 +64,7 @@ local map_table = {
     -- ship_main = "Boat",
     -- ship_sinking = "Boat",
 
-    -- DLC_Metro = "Nyakuza Metro"
+    DLC_Metro = "Nyakuza Metro"
 }
 
 --I initialise HatOrder in onClear but need to read the table during item checks
@@ -121,6 +148,8 @@ function onClear(slot_data)
         print("welp")
         return
     end
+
+    print(dump_table(slot_data))
     
     if slot_data['Hat1'] then
         SprintHatCost = slot_data['SprintYarnCost']
@@ -219,9 +248,105 @@ function onClear(slot_data)
         end
     end
 
+    if slot_data['NoPaintingSkips'] then
+        local obj = Tracker:FindObjectForCode("painting_skips")
+        local val = slot_data['NoPaintingSkips']
+        if obj then
+            obj.Active = val
+        end
+    end
+
+    if slot_data['NoTicketSkips'] then
+        local obj = Tracker:FindObjectForCode("ticket_skips")
+        local val = slot_data['NoTicketSkips']
+        if obj then
+            obj.CurrentStage = val
+        end
+    end
+
     if slot_data['BadgeSellerItemCount'] then
         local obj = Tracker:FindObjectForCode("@Shops/Badge Seller/Scammed")
         local val = slot_data['BadgeSellerItemCount']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
+    if slot_data['Hat_NPC_NyakuzaShop_0'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Main Station Thugs/Thug A")
+        local val = slot_data['Hat_NPC_NyakuzaShop_0']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
+    if slot_data['Hat_NPC_NyakuzaShop_1'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Main Station Thugs/Thug B")
+        local val = slot_data['Hat_NPC_NyakuzaShop_1']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
+    if slot_data['Hat_NPC_NyakuzaShop_2'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Main Station Thugs/Thug C")
+        local val = slot_data['Hat_NPC_NyakuzaShop_2']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
+    if slot_data['Hat_NPC_NyakuzaShop_13'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Yellow Overpass Thug A/Scammed")
+        local val = slot_data['Hat_NPC_NyakuzaShop_13']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
+    if slot_data['Hat_NPC_NyakuzaShop_5'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Yellow Overpass Thug B/Scammed")
+        local val = slot_data['Hat_NPC_NyakuzaShop_5']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
+    if slot_data['Hat_NPC_NyakuzaShop_14'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Yellow Overpass Thug C/Scammed")
+        local val = slot_data['Hat_NPC_NyakuzaShop_14']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
+    if slot_data['Hat_NPC_NyakuzaShop_4'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Green Clean Thug A/Scammed")
+        local val = slot_data['Hat_NPC_NyakuzaShop_4']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
+    if slot_data['Hat_NPC_NyakuzaShop_6'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Green Clean Thug B/Scammed")
+        local val = slot_data['Hat_NPC_NyakuzaShop_6']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
+    if slot_data['Hat_NPC_NyakuzaShop_7'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Bluefin Tunnel Thug/Scammed")
+        local val = slot_data['Hat_NPC_NyakuzaShop_7']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
+    if slot_data['Hat_NPC_NyakuzaShop_12'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Pink Paw Station Thug/Scammed")
+        local val = slot_data['Hat_NPC_NyakuzaShop_12']
         if obj then
             obj.AvailableChestCount = val
         end
@@ -426,7 +551,7 @@ function updateAccessibleLevelsByCompletedLevels(completed_acts)
             end
 
             --increase completion amounts of chapters for time rifts
-            if act.chapter and act.act_name then
+            if act.chapter and act.act_name and completed_acts then
                 for _, completed_act in pairs(completed_acts) do
                     if act.act_name == completed_act then
                         if chapter_counts[act.chapter] then
@@ -474,6 +599,33 @@ function updateAccessibleLevelsByCompletedLevels(completed_acts)
 
     local update = Tracker:FindObjectForCode("update")
     update.Active = not update.Active
+end
+
+--Handles the unique finale conditions for chapter 3, 4, and 7
+function updateAccessibleLevelsByFinale(chapter)
+    local chapter_to_check
+    local finale
+
+    if chapter == 3 then
+        chapter_to_check = subcon_timepieces
+        finale = "snatcher_boss"
+    elseif chapter == 4 then
+        chapter_to_check = apline_timepieces
+        finale = "AlpineSkyline_Finale"
+    elseif chapter == 7 then
+        chapter_to_check = nyakuza_timepieces
+        finale = "Metro_Escape"
+    end
+
+    for _, timepiece in pairs(chapter_to_check) do
+        local obj = Tracker:FindObjectForCode(timepiece)
+        if obj.AvailableChestCount > 0 then
+            print("Found uncollected time piece at " .. timepiece)
+            return
+        end
+    end
+
+    chapter_act_info[finale]:setIsAccessible(true)
 end
 
 --Tracker Handlers
@@ -525,6 +677,16 @@ function onLocation(location_id, location_name)
         return
     end
     local obj = Tracker:FindObjectForCode(v[1])
+
+    --handle check for rush hour
+    if containsItem(subcon_timepieces, v[1]) then
+        updateAccessibleLevelsByFinale(3)
+    elseif containsItem(apline_timepieces, v[1]) then
+        updateAccessibleLevelsByFinale(4)
+    elseif containsItem(nyakuza_timepieces, v[1]) then
+        updateAccessibleLevelsByFinale(7)
+    end
+
     if obj then
         if v[1]:sub(1, 1) == "@" then
             obj.AvailableChestCount = obj.AvailableChestCount - 1
