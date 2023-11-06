@@ -77,7 +77,8 @@
             {
                 "name": "Green Clean Manhole",
                 "access_rules": [
-                    "ice, dweller"
+                    "ice, dweller",
+                    "ice, hard"
                 ],
                 "sections": [
                     {
@@ -94,6 +95,11 @@
             },
             {
                 "name": "Bluefin Tunnel",
+                "access_rules": [
+                    "blueticket",
+                    "greenticket",
+                    "moderate"
+                ],
                 "sections": [
                     {
                         "name": "Time Piece"
@@ -110,7 +116,10 @@
             {
                 "name": "Pink Paw Station",
                 "access_rules": [
-                    "hookshot, dweller"
+                    "hookshot, dweller, pinkticket",
+                    "hookshot, dweller, blueticket",
+                    "hookshot, dweller, yellowticket",
+                    "hookshot, dweller, moderate"
                 ],
                 "sections": [
                     {
@@ -128,7 +137,10 @@
             {
                 "name": "Pink Paw Manhole",
                 "access_rules": [
-                    "ice"
+                    "ice, pinkticket",
+                    "ice, yellowticket",
+                    "ice, blueticket",
+                    "ice, moderate"
                 ],
                 "sections": [
                     {
@@ -219,6 +231,11 @@
             },
             {
                 "name": "Bluefin Tunnel - Cat Vacuum",
+                "access_rules": [
+                    "blueticket",
+                    "greenticket",
+                    "moderate"
+                ],
                 "sections": [
                     {
                         "name": "Relic"
@@ -235,7 +252,10 @@
             {
                 "name": "Pink Paw Station - Cat Vacuum",
                 "access_rules": [
-                    "dweller, hookshot"
+                    "dweller, hookshot, pinkticket",
+                    "dweller, hookshot, blueticket",
+                    "dweller, hookshot, yellowticket",
+                    "moderate"
                 ],
                 "sections": [
                     {
@@ -253,7 +273,10 @@
             {
                 "name": "Pink Paw Station - Behind Fan",
                 "access_rules": [
-                    "dweller, timestop, hookshot"
+                    "dweller, timestop, hookshot, pinkticket",
+                    "dweller, timestop, hookshot, blueticket",
+                    "dweller, timestop, hookshot, yellowticket",
+                    "moderate"
                 ],
                 "sections": [
                     {
@@ -279,7 +302,12 @@
             {
                 "name": "Rush Hour",
                 "access_rules": [
-                    "ice, brewer, hookshot"
+                    "ice, brewer, hookshot, pinkticket, yellowticket, blueticket",
+                    "ice, brewer, pinkticket, yellowticket, blueticket, moderate",
+                    "brewer, pinkticket, yellowticket, blueticket, hard",
+                    "brewer, hard, ticket_skips_off",
+                    "expert, pinkticket, yellowticket, blueticket",
+                    "expert, ticket_skips_off"
                 ],
                 "sections": [
                     {
@@ -305,7 +333,8 @@
             {
                 "name": "Pink Ticket Booth",
                 "access_rules": [
-                    "dweller, hookshot"
+                    "dweller, hookshot, pinkticket",
+                    "moderate"
                 ],
                 "sections": [
                     {
@@ -337,6 +366,11 @@
             },
             {
                 "name": "Blue Ticket Booth",
+                "access_rules": [
+                    "blueticket",
+                    "greenticket",
+                    "moderate"
+                ],
                 "sections": [
                     {
                         "name": "Blue Ticket"
@@ -448,7 +482,8 @@
             {
                 "name": "Green Clean Thug B",
                 "access_rules": [
-                    "ice"
+                    "ice",
+                    "yellowticket"
                 ],
                 "sections": [
                     {
@@ -467,6 +502,11 @@
             },
             {
                 "name": "Bluefin Tunnel Thug",
+                "access_rules": [
+                    "blueticket",
+                    "greenticket",
+                    "moderate"
+                ],
                 "sections": [
                     {
                         "name": "Scammed",
@@ -485,7 +525,10 @@
             {
                 "name": "Pink Paw Station Thug",
                 "access_rules": [
-                    "dweller, hookshot"
+                    "dweller, hookshot, pinkticket",
+                    "dweller, hookshot, blueticket",
+                    "dweller, hookshot, yellowticket",
+                    "moderate"
                 ],
                 "sections": [
                     {

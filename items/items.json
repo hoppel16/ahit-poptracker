@@ -248,9 +248,20 @@
   },
   {
     "name": "No Painting Skips",
-    "type": "toggle",
-    "img": "images/settings/soul.png",
-    "codes": "painting_skips"
+    "type": "progressive",
+    "codes": "painting_skips",
+    "stages": [
+      {
+        "img": "images/settings/soul.png",
+        "img_mods": "@disabled",
+        "codes": "painting_skips_off"
+      },
+      {
+        "img": "images/settings/soul.png",
+        "codes": "painting_skips_on",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "No Ticket Skips",

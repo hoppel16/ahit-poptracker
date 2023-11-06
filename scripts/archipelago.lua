@@ -252,7 +252,7 @@ function onClear(slot_data)
         local obj = Tracker:FindObjectForCode("painting_skips")
         local val = slot_data['NoPaintingSkips']
         if obj then
-            obj.Active = val
+            obj.CurrentStage = val
         end
     end
 

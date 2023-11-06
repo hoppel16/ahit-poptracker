@@ -431,7 +431,8 @@
         "access_rules": [
           "expert",
           "hookshot",
-          "$canAccessAct|mafiatown_lava"
+          "$canAccessAct|mafiatown_lava",
+          "moderate, ice"
         ],
         "sections": [
           {
@@ -556,7 +557,8 @@
       {
         "name": "Hot Air Balloon",
         "access_rules": [
-          "ice"
+          "ice",
+          "expert"
         ],
         "sections": [
           {
@@ -713,7 +715,8 @@
       {
         "name": "Top of Lighthouse",
         "access_rules": [
-          "hookshot"
+          "hookshot",
+          "expert"
         ],
         "sections": [
           {

@@ -26,7 +26,7 @@ function canAccessMainSubcon()
   local difficulty = Tracker:FindObjectForCode("difficulty")
 
   for key, act in pairs(chapter_act_info) do
-    if act.chapter == 3 and act.isAccessible and (act.act_name ~= "snatcher_boss" or difficulty == 4) then
+    if act.chapter == 3 and act.isAccessible and (act.act_name ~= "snatcher_boss" or difficulty == 3) then
       return true
     end
   end
