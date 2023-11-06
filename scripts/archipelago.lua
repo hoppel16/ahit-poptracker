@@ -226,7 +226,7 @@ function onClear(slot_data)
         local obj = Tracker:FindObjectForCode("umbrella_logic")
         local val = slot_data['UmbrellaLogic']
         if obj then
-            obj.Active = val
+            obj.CurrentStage = val
         end
     end
 

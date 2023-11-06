@@ -64,6 +64,11 @@ ITEM_MAPPING = {
     [2000300022] = {"jewelryrelic", "consumable"}, --Necklace Bust
     [2000300023] = {"jewelryrelic", "consumable"}, --Necklace
 
+    [2000300045] = {"yellowticket", "toggle"},
+    [2000300046] = {"greenticket", "toggle"},
+    [2000300047] = {"blueticket", "toggle"},
+    [2000300048] = {"pinkticket", "toggle"},
+
     -- Death Wish items
     -- [2000300038] = {"One-Hit Hero Badge", "toggle"},
     -- [2000300042] = {"Camera Badge", "toggle"},

@@ -45,8 +45,10 @@ function canAccessChapter(chapter_to_access, exception)
   end
 
   for key, act in pairs(chapter_act_info) do
-    if chapter_to_access and act.chapter == tonumber(chapter_to_access) and act.isAccessible and act.act_name ~= exception then
-      return true
+    if chapter_to_access and act.isAccessible and act.act_name ~= exception then
+      if chapter_act_info[act.act_name].chapter == tonumber(chapter_to_access) then
+        return true
+      end
     end
   end
 
