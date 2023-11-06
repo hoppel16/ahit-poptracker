@@ -69,10 +69,10 @@ ITEM_MAPPING = {
     -- [2000300042] = {"Camera Badge", "toggle"},
 
     --Contracts
-    -- [2000300200] = {"Snatcher's Contract - The Subcon Well", "toggle"},
-    -- [2000300201] = {"Snatcher's Contract - Toilet of Doom", "toggle"},
-    -- [2000300202] = {"Snatcher's Contract - Queen Vanessa's Manor", "toggle"},
-    -- [2000300203] = {"Snatcher's Contract - Mail Delivery Service", "toggle"}
+    [2000300200] = {"wellcontract", "toggle"},
+    [2000300201] = {"toiletcontract", "toggle"},
+    [2000300202] = {"manorcontract", "toggle"},
+    [2000300203] = {"mailcontract", "toggle"},
 
     -- Ziplines
     [2000300204] = {"birdzipline", "toggle"},

@@ -324,6 +324,26 @@
     "max_quantity": 2
   },
   {
+    "name": "Subcon Well Contract",
+    "type": "toggle",
+    "codes": "wellcontract"
+  },
+  {
+    "name": "Toilet of Doom Contract",
+    "type": "toggle",
+    "codes": "toiletcontract"
+  },
+  {
+    "name": "Queen Vanessa's Manor Contract",
+    "type": "toggle",
+    "codes": "manorcontract"
+  },
+  {
+    "name": "Mail Delivery Service Contract",
+    "type": "toggle",
+    "codes": "mailcontract"
+  },
+  {
     "name": "Force Update",
     "type": "toggle",
     "codes": "update"

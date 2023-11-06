@@ -23,7 +23,8 @@
             {
                 "name": "Yellow Overpass Station",
                 "access_rules": [
-                    "hookshot"
+                    "hookshot",
+                    "moderate"
                 ],
                 "sections": [
                     {
@@ -259,7 +260,7 @@
                 ],
                 "sections": [
                     {
-                        "name": "Relic"
+                        "name": "Rift Token"
                     }
                 ],
                 "map_locations": [
@@ -280,7 +281,7 @@
                 ],
                 "sections": [
                     {
-                        "name": "Relic"
+                        "name": "Rift Token"
                     }
                 ],
                 "map_locations": [

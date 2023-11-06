@@ -148,8 +148,6 @@ function onClear(slot_data)
         print("welp")
         return
     end
-
-    print(dump_table(slot_data))
     
     if slot_data['Hat1'] then
         SprintHatCost = slot_data['SprintYarnCost']
@@ -252,7 +250,7 @@ function onClear(slot_data)
         local obj = Tracker:FindObjectForCode("painting_skips")
         local val = slot_data['NoPaintingSkips']
         if obj then
-            obj.CurrentStage = val
+            obj.CurrentStage = val + 1
         end
     end
 
@@ -355,6 +353,7 @@ function onClear(slot_data)
     -- set hash table to randomized acts
     for chapter_number = 1,7 do
         local chapter = string.format('Chapter%dCost', chapter_number)
+        
         if slot_data[chapter] and slot_data[chapter] >= 0 then
             chapter_costs[chapter_number] = slot_data[chapter]
         end
@@ -367,33 +366,8 @@ function onClear(slot_data)
             act:setIsAccessible(false)
         end
     end
-
-    -- ahit important slot_data variables
-    --[[ 
-    slot_data["RandomizeHatOrder"]  --not handling this atm, assuming it's on
-    ["Hat5"]
-    ["Hat2"]
-    ["Hat4"]
-    ["Hat1"]
-    ["Hat3"]
-    ["SprintYarnCost"]
-    ["BrewingYarnCost"]
-    ["IceYarnCost"]
-    ["DwellerYarnCost"]
-    ["TimeStopYarnCost"]
-
-    ["ShuffleActContracts"]  --not handling this atm, assuming it's on
-    ["ShuffleStorybookPages"]  --not handling this atm, assuming it's on
-    ["CTRWithSprint"]
-    ["SDJLogic"]
-
-    -- I think the above marked variables don't even need handling, they'd
-    -- still get tracked but are just hidden from view - so no changes necessary
-    -- also I believe the Hat1..5 slot data still exists with hat rando off 
-    -- (just populated 0..4) so that would still work too
-    ]]--
-
-    --print(dump_table(slot_data))
+    
+    updateAccessibleLevelsByTimepieces()
 end
 
 -- There's no explicit event on receiving hats so I fetched the hat order and cost
@@ -626,6 +600,26 @@ function updateAccessibleLevelsByFinale(chapter)
     end
 
     chapter_act_info[finale]:setIsAccessible(true)
+
+    local update = Tracker:FindObjectForCode("update")
+    update.Active = not update.Active
+end
+
+function updateAccessibleLevelsByContract(contract)
+    local contract_act
+
+    if string.find(contract, "The Subcon Well") then
+        contract_act = "subcon_cave"
+    elseif string.find(contract, "Toilet of Doom") then
+        contract_act = "chapter2_toiletboss"
+    elseif string.find(contract, "Queen Vanessa's Manor") then
+        contract_act = "vanessa_manor_attic"
+    elseif string.find(contract, "Mail Delivery Service") then
+        contract_act = "subcon_maildelivery"
+    end
+
+    local update = Tracker:FindObjectForCode("update")
+    update.Active = not update.Active
 end
 
 --Tracker Handlers
@@ -645,6 +639,9 @@ function onItem(index, item_id, item_name, player_number)
     if obj then
         if v[2] == "toggle" then
             obj.Active = true
+            if string.find(v[1], "Contract") then
+                updateAccessibleLevelsByContract(v[1])
+            end
         elseif v[2] == "progressive" then
             if obj.Active then
                 obj.CurrentStage = obj.CurrentStage + 1
