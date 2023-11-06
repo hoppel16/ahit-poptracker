@@ -40,6 +40,15 @@
             },
             {
               "type": "group",
+              "header": "Tickets",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "key": "tickets_grid"
+              }
+            },
+            {
+              "type": "group",
               "header": "Settings",
               "dock": "Right",
               "content": {
@@ -109,6 +118,16 @@
                 "type": "map",
                 "maps": [
                   "alpine"
+                ]
+              }
+            },
+            {
+              "title": "Nyakuza Metro",
+              "icon": "images/icons/Nyakuza_Emblem.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "nyakuza"
                 ]
               }
             }

@@ -20,6 +20,10 @@
           {
             "type": "layout",
             "key": "ziplines_grid"
+          },
+          {
+            "type": "layout",
+            "key": "tickets_grid"
           }
         ]
       }

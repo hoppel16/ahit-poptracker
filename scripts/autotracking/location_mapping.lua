@@ -58,15 +58,15 @@ LOCATION_MAPPING = {
     [2000303899] = {"@After Lever/Teepee Chest/Relic"},
     [2000303900] = {"@After Lever/Conductor Chest/Token"},
 
-    [2000305313] = {"@Before Lever/The Conductor's Films/Cafeteria"},
-    [2000305090] = {"@Before Lever/The Conductor's Films/Luggage Room Top"},
-    [2000305091] = {"@Before Lever/The Conductor's Films/Luggage Room Bottom"},
-    [2000305701] = {"@Before Lever/The Conductor's Films/Raven Suite Room"},
-    [2000305312] = {"@Before Lever/The Conductor's Films/Raven Suite Top"},
-    [2000303963] = {"@Before Lever/The Conductor's Films/Lounge Chest"},
+    [2000305313] = {"@Films/The Conductor's Films/Cafeteria"},
+    [2000305090] = {"@Films/The Conductor's Films/Luggage Room Top"},
+    [2000305091] = {"@Films/The Conductor's Films/Luggage Room Bottom"},
+    [2000305701] = {"@Films/The Conductor's Films/Raven Suite Room"},
+    [2000305312] = {"@Films/The Conductor's Films/Raven Suite Top"},
+    [2000303963] = {"@Films/The Conductor's Films/Lounge Chest"},
 
-    [2000304307] = {"@Before Lever/DJ Groove's Films/Behind Badge Seller"},
-    [2000304530] = {"@Before Lever/DJ Groove's Films/Hats Buy Building"},
+    [2000304307] = {"@Films/DJ Groove's Films/Behind Badge Seller"},
+    [2000304530] = {"@Films/DJ Groove's Films/Hats Buy Building"},
 
     [2000305432] = {"@Dead Bird Basement/Window Platform/Yarn"},
     [2000305059] = {"@Dead Bird Basement/Cardboard Conductor/Yarn"},
@@ -116,7 +116,7 @@ LOCATION_MAPPING = {
     [2000324856] = {"@Blue Firewall/Noose Treehouse/Relic"},
     [2000324465] = {"@Yellow Firewall/Ice Cube Shack/Token"},
     [2000323734] = {"@Blue Firewall/Long Tree Climb Chest/Yarn"},
-    [2000323735] = {"@Yellow Firewall/Boss Arena Chest/Yarn"},
+    [2000323735] = {"@Boss Arena Area/Boss Arena Chest/Yarn"},
     [2000324114] = {"@Yellow Firewall/Subcon Well/Hookshot Badge Chest"},
     [2000324612] = {"@Yellow Firewall/Subcon Well/Above Chest"},
     [2000324311] = {"@Yellow Firewall/Subcon Well/On Pipe"},
@@ -160,6 +160,14 @@ LOCATION_MAPPING = {
 
     [2000304108] = {"@Spaceship/Time's End/Frozen Item"},
 
+    -- 304000 range - Nyakuza Metro
+    [2000304105] = {"@Nyakuza Metro/Main Station Dining Area/Rift Token"},
+    [2000304104] = {"@Nyakuza Metro/Top of the Ramen Shop/Rift Token"},
+    [2000305413] = {"@Nyakuza Metro/Yellow Overpass Station - Brewing Crate/Relic"},
+    [2000305111] = {"@Nyakuza Metro/Bluefin Tunnel - Cat Vacuum/Relic"},
+    [2000305110] = {"@Nyakuza Metro/Pink Paw Station - Cat Vacuum/Rift Token"},
+    [2000304106] = {"@Nyakuza Metro/Pink Paw Station - Behind Fan/Rift Token"},
+
     -- 310000 range - Act Completions
     [2000312758] = {"@Time Rifts/The Gallery/Time Rift"},
     [2000312838] = {"@Time Rifts/The Lab/Time Rift"},
@@ -175,23 +183,23 @@ LOCATION_MAPPING = {
     [2000312484] = {"@Mafia Town/Sewers/Time Rift"},
     [2000311855] = {"@Mafia Town/Mafia of Cooks/Time Rift"},
 
-    [2000311383] = {"@Before Lever/Act Completion/Dead Bird Studio"},
-    [2000311544] = {"@Before Lever/The Conductor's Films/Murder on the Owl Express"},
-    [2000311587] = {"@Before Lever/DJ Groove's Films/Picture Perfect"},
-    [2000312481] = {"@Before Lever/The Conductor's Films/Train Rush"},
-    [2000311157] = {"@Before Lever/DJ Groove's Films/The Big Parade"},
-    [2000311488] = {"@Before Lever/Act Completion/Award Ceremony"},
+    [2000311383] = {"@Act Completions/Act Completion/Dead Bird Studio"},
+    [2000311544] = {"@Films/The Conductor's Films/Murder on the Owl Express"},
+    [2000311587] = {"@Films/DJ Groove's Films/Picture Perfect"},
+    [2000312481] = {"@Films/The Conductor's Films/Train Rush"},
+    [2000311157] = {"@Films/DJ Groove's Films/The Big Parade"},
+    [2000311488] = {"@Act Completions/Act Completion/Award Ceremony"},
     [2000312253] = {"@Dead Bird Basement/Act Completion/Time Piece"},
-    [2000312807] = {"@Before Lever/The Conductor's Films/Time Rift"},
-    [2000312785] = {"@Before Lever/DJ Groove's Films/Time Rift"},
+    [2000312807] = {"@Films/The Conductor's Films/Time Rift"},
+    [2000312785] = {"@Films/DJ Groove's Films/Time Rift"},
     [2000312577] = {"@Before Lever/Dead Bird Studio (Rift)/Time Piece"},
 
     [2000312317] = {"@Yellow Firewall/Contractual Obligations/Time Piece"},
     [2000311160] = {"@Yellow Firewall/Subcon Well/Time Piece"},
-    [2000311984] = {"@Yellow Firewall/Boss Arena/Toilet of Doom"},
+    [2000311984] = {"@Boss Arena Area/Boss Arena/Toilet of Doom"},
     [2000312017] = {"@Yellow Firewall/Queen Vanessa's Manor/Time Piece"},
     [2000312032] = {"@Subcon Forest/Snatcher/Mail Delivery Service"},
-    [2000311390] = {"@Yellow Firewall/Boss Arena/Your Contract has Expired"},
+    [2000311390] = {"@Boss Arena Area/Boss Arena/Your Contract has Expired"},
 
     [2000313069] = {"@Blue Firewall/Pipe/Time Rift"},
     [2000313056] = {"@Blue Firewall/Village/Time Rift"},
@@ -207,7 +215,18 @@ LOCATION_MAPPING = {
     [2000313335] = {"@Windmill Zipline/Curly Tail Trail/Time Rift"},
     [2000311777] = {"@Goat Village/Alpine Skyline (Rift)/Time Rift"},
 
-    --[311872] = {"@Time's End/Act Completion (Time's End - The Finale)"},
+    [2000311872] = {"@Spaceship/Time's End/Time Piece"},
+
+    [2000311138] = {"@Nyakuza Metro/Nyakuza Metro Intro/Time Piece"},
+    [2000311206] = {"@Nyakuza Metro/Yellow Overpass Station/Time Piece"},
+    [2000311387] = {"@Nyakuza Metro/Yellow Overpass Manhole/Time Piece"},
+    [2000311207] = {"@Nyakuza Metro/Green Clean Station/Time Piece"},
+    [2000311388] = {"@Nyakuza Metro/Green Clean Manhole/Time Piece"},
+    [2000311208] = {"@Nyakuza Metro/Bluefin Tunnel/Time Piece"},
+    [2000311209] = {"@Nyakuza Metro/Pink Paw Station/Time Piece"},
+    [2000311389] = {"@Nyakuza Metro/Pink Paw Manhole/Time Piece"},
+    [2000311210] = {"@Finale/Rush Hour/Time Piece"},
+    [2000312736] = {"@Nyakuza Metro/Rumbi Factory/Time Rift"},
 
     -- Storybook pages
     [2000345091] = {"@Mafia Town/Mafia of Cooks/Pages"}, --Fish Pile"
@@ -241,6 +260,18 @@ LOCATION_MAPPING = {
     [2000345015] = {"@Goat Village/Alpine Skyline (Rift)/Pages"}, --Page: Waterfall Wooden Pillar
     [2000345014] = {"@Goat Village/Alpine Skyline (Rift)/Pages"}, --Page: Lonely Birdhouse Top
     [2000345013] = {"@Goat Village/Alpine Skyline (Rift)/Pages"}, --Page: Below Aqueduct
+
+    [2000345891] = {"@Nyakuza Metro/Rumbi Factory/Pages"},
+    [2000345888] = {"@Nyakuza Metro/Rumbi Factory/Pages"},
+    [2000345892] = {"@Nyakuza Metro/Rumbi Factory/Pages"},
+    [2000345889] = {"@Nyakuza Metro/Rumbi Factory/Pages"},
+    [2000345884] = {"@Nyakuza Metro/Rumbi Factory/Pages"},
+    [2000345885] = {"@Nyakuza Metro/Rumbi Factory/Pages"},
+    [2000345890] = {"@Nyakuza Metro/Rumbi Factory/Pages"},
+    [2000345887] = {"@Nyakuza Metro/Rumbi Factory/Pages"},
+    [2000345886] = {"@Nyakuza Metro/Rumbi Factory/Pages"},
+    [2000345883] = {"@Nyakuza Metro/Rumbi Factory/Pages"},
+
     -- Contracts
     [2000300200] = {"@Subcon Forest/Snatcher/Contracts"}, --Snatcher's Contract - The Subcon Well"
     [2000300201] = {"@Subcon Forest/Snatcher/Contracts"}, --Snatcher's Contract - Toilet of Doom"
@@ -248,15 +279,80 @@ LOCATION_MAPPING = {
     [2000300203] = {"@Subcon Forest/Snatcher/Contracts"}, --Snatcher's Contract - Mail Delivery Service"
 
     -- shop_locations
-    [2000301003] = {"@Mafia Town/Badge Seller/Scammed"},
-    [2000301004] = {"@Mafia Town/Badge Seller/Scammed"},
-    [2000301005] = {"@Mafia Town/Badge Seller/Scammed"},
-    [2000301006] = {"@Mafia Town/Badge Seller/Scammed"},
-    [2000301007] = {"@Mafia Town/Badge Seller/Scammed"},
-    [2000301008] = {"@Mafia Town/Badge Seller/Scammed"},
-    [2000301009] = {"@Mafia Town/Badge Seller/Scammed"},
-    [2000301010] = {"@Mafia Town/Badge Seller/Scammed"},
-    [2000301011] = {"@Mafia Town/Badge Seller/Scammed"},
-    [2000301012] = {"@Mafia Town/Badge Seller/Scammed"},
-    [2000301013] = {"@Shops/Mafia Boss/Scammed"}
+    [2000301003] = {"@Shops/Badge Seller/Scammed"},
+    [2000301004] = {"@Shops/Badge Seller/Scammed"},
+    [2000301005] = {"@Shops/Badge Seller/Scammed"},
+    [2000301006] = {"@Shops/Badge Seller/Scammed"},
+    [2000301007] = {"@Shops/Badge Seller/Scammed"},
+    [2000301008] = {"@Shops/Badge Seller/Scammed"},
+    [2000301009] = {"@Shops/Badge Seller/Scammed"},
+    [2000301010] = {"@Shops/Badge Seller/Scammed"},
+    [2000301011] = {"@Shops/Badge Seller/Scammed"},
+    [2000301012] = {"@Shops/Badge Seller/Scammed"},
+    [2000301013] = {"@Shops/Mafia Boss/Scammed"},
+
+    [2000301014] = {"@Nyakuza Metro/Yellow Overpass Station/Yellow Metro Ticket"},
+    [2000301015] = {"@Nyakuza Shops/Green Ticket Booth/Green Ticket"},
+    [2000301016] = {"@Nyakuza Shops/Blue Ticket Booth/Blue Ticket"},
+    [2000301017] = {"@Nyakuza Shops/Pink Ticket Booth/Pink Ticket"},
+
+    [2000301048] = {"@Nyakuza Shops/Main Station Thugs/Thug A"},
+    [2000301049] = {"@Nyakuza Shops/Main Station Thugs/Thug A"},
+    [2000301050] = {"@Nyakuza Shops/Main Station Thugs/Thug A"},
+    [2000301051] = {"@Nyakuza Shops/Main Station Thugs/Thug A"},
+    [2000301052] = {"@Nyakuza Shops/Main Station Thugs/Thug A"},
+
+    [2000301053] = {"@Nyakuza Shops/Main Station Thugs/Thug B"},
+    [2000301054] = {"@Nyakuza Shops/Main Station Thugs/Thug B"},
+    [2000301055] = {"@Nyakuza Shops/Main Station Thugs/Thug B"},
+    [2000301056] = {"@Nyakuza Shops/Main Station Thugs/Thug B"},
+    [2000301057] = {"@Nyakuza Shops/Main Station Thugs/Thug B"},
+
+    [2000301058] = {"@Nyakuza Shops/Main Station Thugs/Thug C"},
+    [2000301059] = {"@Nyakuza Shops/Main Station Thugs/Thug C"},
+    [2000301060] = {"@Nyakuza Shops/Main Station Thugs/Thug C"},
+    [2000301061] = {"@Nyakuza Shops/Main Station Thugs/Thug C"},
+    [2000301062] = {"@Nyakuza Shops/Main Station Thugs/Thug C"},
+
+    [2000301018] = {"@Nyakuza Shops/Yellow Overpass Thug A/Scammed"},
+    [2000301019] = {"@Nyakuza Shops/Yellow Overpass Thug A/Scammed"},
+    [2000301020] = {"@Nyakuza Shops/Yellow Overpass Thug A/Scammed"},
+    [2000301021] = {"@Nyakuza Shops/Yellow Overpass Thug A/Scammed"},
+    [2000301022] = {"@Nyakuza Shops/Yellow Overpass Thug A/Scammed"},
+
+    [2000301043] = {"@Nyakuza Shops/Yellow Overpass Thug B/Scammed"},
+    [2000301044] = {"@Nyakuza Shops/Yellow Overpass Thug B/Scammed"},
+    [2000301045] = {"@Nyakuza Shops/Yellow Overpass Thug B/Scammed"},
+    [2000301046] = {"@Nyakuza Shops/Yellow Overpass Thug B/Scammed"},
+    [2000301047] = {"@Nyakuza Shops/Yellow Overpass Thug B/Scammed"},
+
+    [2000301063] = {"@Nyakuza Shops/Yellow Overpass Thug C/Scammed"},
+    [2000301064] = {"@Nyakuza Shops/Yellow Overpass Thug C/Scammed"},
+    [2000301065] = {"@Nyakuza Shops/Yellow Overpass Thug C/Scammed"},
+    [2000301066] = {"@Nyakuza Shops/Yellow Overpass Thug C/Scammed"},
+    [2000301067] = {"@Nyakuza Shops/Yellow Overpass Thug C/Scammed"},
+
+    [2000301033] = {"@Nyakuza Shops/Green Clean Thug A/Scammed"},
+    [2000301034] = {"@Nyakuza Shops/Green Clean Thug A/Scammed"},
+    [2000301035] = {"@Nyakuza Shops/Green Clean Thug A/Scammed"},
+    [2000301036] = {"@Nyakuza Shops/Green Clean Thug A/Scammed"},
+    [2000301037] = {"@Nyakuza Shops/Green Clean Thug A/Scammed"},
+
+    [2000301028] = {"@Nyakuza Shops/Green Clean Thug B/Scammed"},
+    [2000301029] = {"@Nyakuza Shops/Green Clean Thug B/Scammed"},
+    [2000301030] = {"@Nyakuza Shops/Green Clean Thug B/Scammed"},
+    [2000301031] = {"@Nyakuza Shops/Green Clean Thug B/Scammed"},
+    [2000301032] = {"@Nyakuza Shops/Green Clean Thug B/Scammed"},
+    
+    [2000301023] = {"@Nyakuza Shops/Bluefin Tunnel Thug/Scammed"},
+    [2000301024] = {"@Nyakuza Shops/Bluefin Tunnel Thug/Scammed"},
+    [2000301025] = {"@Nyakuza Shops/Bluefin Tunnel Thug/Scammed"},
+    [2000301026] = {"@Nyakuza Shops/Bluefin Tunnel Thug/Scammed"},
+    [2000301027] = {"@Nyakuza Shops/Bluefin Tunnel Thug/Scammed"},
+    
+    [2000301038] = {"@Nyakuza Shops/Pink Paw Station Thug/Scammed"},
+    [2000301039] = {"@Nyakuza Shops/Pink Paw Station Thug/Scammed"},
+    [2000301040] = {"@Nyakuza Shops/Pink Paw Station Thug/Scammed"},
+    [2000301041] = {"@Nyakuza Shops/Pink Paw Station Thug/Scammed"},
+    [2000301042] = {"@Nyakuza Shops/Pink Paw Station Thug/Scammed"}
 }

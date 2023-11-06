@@ -221,5 +221,131 @@
     "type": "toggle",
     "img": "images/ziplines/windmill_zipline.png",
     "codes": "windmillzipline"
+  },
+  {
+    "name": "Yellow Ticket",
+    "type": "toggle",
+    "img": "images/tickets/MetroTicket_Yellow.png",
+    "codes": "yellowticket"
+  },
+  {
+    "name": "Pink Ticket",
+    "type": "toggle",
+    "img": "images/tickets/MetroTicket_Red.png",
+    "codes": "pinkticket"
+  },
+  {
+    "name": "Blue Ticket",
+    "type": "toggle",
+    "img": "images/tickets/MetroTicket_Blue.png",
+    "codes": "blueticket"
+  },
+  {
+    "name": "Green Ticket",
+    "type": "toggle",
+    "img": "images/tickets/MetroTicket_Green.png",
+    "codes": "greenticket"
+  },
+  {
+    "name": "No Painting Skips",
+    "type": "progressive",
+    "codes": "painting_skips",
+    "stages": [
+      {
+        "img": "images/settings/soul.png",
+        "img_mods": "@disabled",
+        "codes": "painting_skips_off"
+      },
+      {
+        "img": "images/settings/soul.png",
+        "codes": "painting_skips_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "No Ticket Skips",
+    "type": "progressive",
+    "codes": "ticket_skips",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/settings/MetroGuide.png",
+        "img_mods": "@disabled",
+        "codes": "ticket_skips_off",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/MetroGuide.png",
+        "codes": "ticket_skips_on",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/MetroFood_Burger.png",
+        "codes": "ticket_skips_rush_hour",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Burger Relic",
+    "type": "consumable",
+    "codes": "burgerrelic",
+    "max_quantity": 2
+  },
+  {
+    "name": "Train Relic",
+    "type": "consumable",
+    "codes": "trainrelic",
+    "max_quantity": 2
+  },
+  {
+    "name": "UFO Relic",
+    "type": "consumable",
+    "codes": "uforelic",
+    "max_quantity": 4
+  },
+  {
+    "name": "Crayon Relic",
+    "type": "consumable",
+    "codes": "crayonrelic",
+    "max_quantity": 4
+  },
+  {
+    "name": "Cake Relic",
+    "type": "consumable",
+    "codes": "cakerelic",
+    "max_quantity": 4
+  },
+  {
+    "name": "Jewelry Relic",
+    "type": "consumable",
+    "codes": "jewelryrelic",
+    "max_quantity": 2
+  },
+  {
+    "name": "Subcon Well Contract",
+    "type": "toggle",
+    "codes": "wellcontract"
+  },
+  {
+    "name": "Toilet of Doom Contract",
+    "type": "toggle",
+    "codes": "toiletcontract"
+  },
+  {
+    "name": "Queen Vanessa's Manor Contract",
+    "type": "toggle",
+    "codes": "manorcontract"
+  },
+  {
+    "name": "Mail Delivery Service Contract",
+    "type": "toggle",
+    "codes": "mailcontract"
+  },
+  {
+    "name": "Force Update",
+    "type": "toggle",
+    "codes": "update"
   }
 ]

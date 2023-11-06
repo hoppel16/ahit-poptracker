@@ -15,67 +15,69 @@ ITEM_MAPPING = {
     [2000300053] = {"timestop", "toggle"},
 
     -- Relics
---[[
-    [300006] = {"Relic (Burger Patty)", "toggle"},
-    [300007] = {"Relic (Burger Cushion)", "toggle"},
-    [300008] = {"Relic (Mountain Set)", "toggle"},
-    [300009] = {"Relic (Train)", "toggle"},
-    [300010] = {"Relic (UFO)", "toggle"},
-    [300011] = {"Relic (Cow)", "toggle"},
-    [300012] = {"Relic (Cool Cow)", "toggle"},
-    [300013] = {"Relic (Tin-foil Hat Cow)", "toggle"},
-    [300014] = {"Relic (Crayon Box)", "toggle"},
-    [300015] = {"Relic (Red Crayon)", "toggle"},
-    [300016] = {"Relic (Blue Crayon)", "toggle"},
-    [300017] = {"Relic (Green Crayon)", "toggle"},
-]]--
+    [2000300006] = {"burgerrelic", "consumable"}, --Burger Patty
+    [2000300007] = {"burgerrelic", "consumable"}, --Burger Cushion
+    [2000300008] = {"trainrelic", "consumable"}, --Mountain Set
+    [2000300009] = {"trainrelic", "consumable"}, --Train
+    [2000300010] = {"uforelic", "consumable"}, --UFO
+    [2000300011] = {"uforelic", "consumable"}, --Cow
+    [2000300012] = {"uforelic", "consumable"}, --Cool Cow
+    [2000300013] = {"uforelic", "consumable"}, --Tin-foil Hat Cow
+    [2000300014] = {"crayonrelic", "consumable"}, --Crayon Box
+    [2000300015] = {"crayonrelic", "consumable"}, --Red Crayon
+    [2000300016] = {"crayonrelic", "consumable"}, --Blue Crayon
+    [2000300017] = {"crayonrelic", "consumable"}, --Green Crayon
 
     -- Badges
-    -- [300024] = {"Projectile Badge", "toggle"},
-    -- [300025] = {"Fast Hatter Badge", "toggle"},
-    -- [300026] = {"Hover Badge", "toggle"},
+    -- [2000300024] = {"Projectile Badge", "toggle"},
+    -- [2000300025] = {"Fast Hatter Badge", "toggle"},
+    -- [2000300026] = {"Hover Badge", "toggle"},
     [2000300027] = {"hookshot", "toggle"},
-    -- [300028] = {"Item Magnet Badge", "toggle"},
+    -- [2000300028] = {"Item Magnet Badge", "toggle"},
     [2000300029] = {"nobonk", "toggle"},
-    -- [300030] = {"Compass Badge", "toggle"},
+    -- [2000300030] = {"Compass Badge", "toggle"},
     [2000300031] = {"scooter", "toggle"},
-    -- [300043] = {"Badge Pin", "toggle"},
+    -- [2000300043] = {"Badge Pin", "toggle"},
 
     -- Other
-    -- [300032] = {"Rift Token", "toggle"},
+    -- [2000300032] = {"Rift Token", "toggle"},
     [2000300033] = {"umbrella", "toggle"},
 
     -- Garbage items
-    --[[[300034] = {"25 Pons", "toggle"},
-    [300035] = {"50 Pons", "toggle"},
-    [300036] = {"100 Pons", "toggle"},
-    [300037] = {"Health Pon", "toggle"},
+    -- [2000300034] = {"25 Pons", "toggle"},
+    -- [2000300035] = {"50 Pons", "toggle"},
+    -- [2000300036] = {"100 Pons", "toggle"},
+    -- [2000300037] = {"Health Pon", "toggle"},
 
     -- Traps
-    [300039] = {"Baby Trap", "toggle"},
-    [300040] = {"Laser Trap", "toggle"},
-    [300041] = {"Parade Trap", "toggle"},
+    -- [2000300039] = {"Baby Trap", "toggle"},
+    -- [2000300040] = {"Laser Trap", "toggle"},
+    -- [2000300041] = {"Parade Trap", "toggle"},
 
     -- DLC1 items
-    [300018] = {"Relic (Cake Stand)", "toggle"},
-    [300019] = {"Relic (Cake)", "toggle"},
-    [300020] = {"Relic (Cake Slice)", "toggle"},
-    [300021] = {"Relic (Shortcake)", "toggle"},
+    [2000300018] = {"cakerelic", "consumable"}, --Cake Stand
+    [2000300019] = {"cakerelic", "consumable"}, --Cake
+    [2000300020] = {"cakerelic", "consumable"}, --Cake Slice
+    [2000300021] = {"cakerelic", "consumable"}, --Shortcake
 
     -- DLC2 items
-    [300022] = {"Relic (Necklace Bust)", "toggle"},
-    [300023] = {"Relic (Necklace)", "toggle"},
+    [2000300022] = {"jewelryrelic", "consumable"}, --Necklace Bust
+    [2000300023] = {"jewelryrelic", "consumable"}, --Necklace
+
+    [2000300045] = {"yellowticket", "toggle"},
+    [2000300046] = {"greenticket", "toggle"},
+    [2000300047] = {"blueticket", "toggle"},
+    [2000300048] = {"pinkticket", "toggle"},
 
     -- Death Wish items
-    [300038] = {"One-Hit Hero Badge", "toggle"},
-    [300042] = {"Camera Badge", "toggle"},
+    -- [2000300038] = {"One-Hit Hero Badge", "toggle"},
+    -- [2000300042] = {"Camera Badge", "toggle"},
 
     --Contracts
-    [300200] = {"Snatcher's Contract - The Subcon Well", "toggle"},
-    [300201] = {"Snatcher's Contract - Toilet of Doom", "toggle"},
-    [300202] = {"Snatcher's Contract - Queen Vanessa's Manor", "toggle"},
-    [300203] = {"Snatcher's Contract - Mail Delivery Service", "toggle"}
-]]--
+    [2000300200] = {"wellcontract", "toggle"},
+    [2000300201] = {"toiletcontract", "toggle"},
+    [2000300202] = {"manorcontract", "toggle"},
+    [2000300203] = {"mailcontract", "toggle"},
 
     -- Ziplines
     [2000300204] = {"birdzipline", "toggle"},

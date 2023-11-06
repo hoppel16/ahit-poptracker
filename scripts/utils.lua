@@ -19,3 +19,15 @@ function dump_table(o, depth)
         return tostring(o)
     end
 end
+
+function containsItem(list, item)
+    if list and item then
+        for _, value in pairs(list) do
+            if value == item then
+                return true
+            end
+        end
+    end
+    
+    return false
+end

@@ -1,13 +1,42 @@
+require("objects/chapter_info")
+
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 
 CUR_INDEX = -1
 --SLOT_DATA = nil
 
--- Setup for auto map switching
-map_key = ""
+chapter_costs = {}
 
-map_table = {
+-- Locations for time pieces that need to be collected to unlock finales
+local subcon_timepieces = {
+    contractual_obligations = "@Yellow Firewall/Contractual Obligations/Time Piece",
+    subcon_well = "@Yellow Firewall/Subcon Well/Time Piece",
+    toilet_of_doom = "@Boss Arena Area/Boss Arena/Toilet of Doom",
+    queen_vanessas_manor = "@Yellow Firewall/Queen Vanessa's Manor/Time Piece",
+    mail_delivery_service = "@Subcon Forest/Snatcher/Mail Delivery Service"
+}
+
+local apline_timepieces = {
+    birdhouse = "@Birdhouse Zipline/Bird House/Time Piece",
+    lava_cake = "@Lava Cake Zipline/Lava Cake/Time Piece",
+    twilight_bell = "@Twilight Bell Zipline/The Twilight Bell/Time Piece",
+    windmill = "@Windmill Zipline/The Windmill/Time Piece"
+}
+
+local nyakuza_timepieces = {
+    intro = "@Nyakuza Metro/Nyakuza Metro Intro/Time Piece",
+    yellow_station = "@Nyakuza Metro/Yellow Overpass Station/Time Piece",
+    yellow_manhole = "@Nyakuza Metro/Yellow Overpass Manhole/Time Piece",
+    green_station = "@Nyakuza Metro/Green Clean Station/Time Piece",
+    green_manhole = "@Nyakuza Metro/Green Clean Manhole/Time Piece",
+    bluefin_tunnel = "@Nyakuza Metro/Bluefin Tunnel/Time Piece",
+    pink_station = "@Nyakuza Metro/Pink Paw Station/Time Piece",
+    pink_manhole = "@Nyakuza Metro/Pink Paw Manhole/Time Piece"
+}
+
+-- Setup for auto map switching
+local map_table = {
     hub_spaceship = "Spaceship",
 
     mafia_town = "Mafia Town",
@@ -35,14 +64,13 @@ map_table = {
     -- ship_main = "Boat",
     -- ship_sinking = "Boat",
 
-    -- DLC_Metro = "Nyakuza Metro"
+    DLC_Metro = "Nyakuza Metro"
 }
 
 --I initialise HatOrder in onClear but need to read the table during item checks
 HatOrder = {}
 
-FLAG_CODES = {
-}
+FLAG_CODES = {}
 
 function has_value (t, val)
     for i, v in ipairs(t) do
@@ -75,6 +103,7 @@ end
 function onClear(slot_data)
     --SLOT_DATA = slot_data
     CUR_INDEX = -1
+
     -- reset locations
     for _, v in pairs(LOCATION_MAPPING) do
         if v[1] then
@@ -115,16 +144,11 @@ function onClear(slot_data)
     --reset HatOrder
     HatOrder = {}
 
-    map_key = string.format("ahit_currentmap_%s", Archipelago.PlayerNumber)
-
-    Archipelago:SetNotify({map_key})
-    Archipelago:Get({map_key})
-
     if slot_data == nil  then
         print("welp")
         return
     end
-
+    
     if slot_data['Hat1'] then
         SprintHatCost = slot_data['SprintYarnCost']
         BrewingHatCost = slot_data['BrewingYarnCost']
@@ -158,6 +182,13 @@ function onClear(slot_data)
         print(dump_table(HatOrder))
         ]]
     end
+
+    --set data storage keys
+    map_key = string.format("ahit_currentmap_%s", Archipelago.PlayerNumber)
+    completed_acts_key = string.format("ahit_clearedacts_%s", Archipelago.PlayerNumber)
+
+    Archipelago:SetNotify({map_key, completed_acts_key})
+    Archipelago:Get({map_key, completed_acts_key})
 
     if slot_data['ShuffleStorybookPages'] then
         local obj = Tracker:FindObjectForCode("pages")
@@ -195,7 +226,7 @@ function onClear(slot_data)
         local obj = Tracker:FindObjectForCode("umbrella_logic")
         local val = slot_data['UmbrellaLogic']
         if obj then
-            obj.Active = val
+            obj.CurrentStage = val
         end
     end
 
@@ -215,40 +246,128 @@ function onClear(slot_data)
         end
     end
 
+    if slot_data['NoPaintingSkips'] then
+        local obj = Tracker:FindObjectForCode("painting_skips")
+        local val = slot_data['NoPaintingSkips']
+        if obj then
+            obj.CurrentStage = val + 1
+        end
+    end
+
+    if slot_data['NoTicketSkips'] then
+        local obj = Tracker:FindObjectForCode("ticket_skips")
+        local val = slot_data['NoTicketSkips']
+        if obj then
+            obj.CurrentStage = val
+        end
+    end
+
     if slot_data['BadgeSellerItemCount'] then
-        local obj = Tracker:FindObjectForCode("@Mafia Town/Badge Seller/Scammed")
+        local obj = Tracker:FindObjectForCode("@Shops/Badge Seller/Scammed")
         local val = slot_data['BadgeSellerItemCount']
         if obj then
             obj.AvailableChestCount = val
         end
     end
 
-    -- ahit important slot_data variables
-    --[[ 
-    slot_data["RandomizeHatOrder"]  --not handling this atm, assuming it's on
-    ["Hat5"]
-    ["Hat2"]
-    ["Hat4"]
-    ["Hat1"]
-    ["Hat3"]
-    ["SprintYarnCost"]
-    ["BrewingYarnCost"]
-    ["IceYarnCost"]
-    ["DwellerYarnCost"]
-    ["TimeStopYarnCost"]
+    if slot_data['Hat_NPC_NyakuzaShop_0'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Main Station Thugs/Thug A")
+        local val = slot_data['Hat_NPC_NyakuzaShop_0']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
 
-    ["ShuffleActContracts"]  --not handling this atm, assuming it's on
-    ["ShuffleStorybookPages"]  --not handling this atm, assuming it's on
-    ["CTRWithSprint"]
-    ["SDJLogic"]
+    if slot_data['Hat_NPC_NyakuzaShop_1'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Main Station Thugs/Thug B")
+        local val = slot_data['Hat_NPC_NyakuzaShop_1']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
 
-    -- I think the above marked variables don't even need handling, they'd
-    -- still get tracked but are just hidden from view - so no changes necessary
-    -- also I believe the Hat1..5 slot data still exists with hat rando off 
-    -- (just populated 0..4) so that would still work too
-    ]]--
+    if slot_data['Hat_NPC_NyakuzaShop_2'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Main Station Thugs/Thug C")
+        local val = slot_data['Hat_NPC_NyakuzaShop_2']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
 
-    --print(dump_table(slot_data))
+    if slot_data['Hat_NPC_NyakuzaShop_13'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Yellow Overpass Thug A/Scammed")
+        local val = slot_data['Hat_NPC_NyakuzaShop_13']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
+    if slot_data['Hat_NPC_NyakuzaShop_5'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Yellow Overpass Thug B/Scammed")
+        local val = slot_data['Hat_NPC_NyakuzaShop_5']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
+    if slot_data['Hat_NPC_NyakuzaShop_14'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Yellow Overpass Thug C/Scammed")
+        local val = slot_data['Hat_NPC_NyakuzaShop_14']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
+    if slot_data['Hat_NPC_NyakuzaShop_4'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Green Clean Thug A/Scammed")
+        local val = slot_data['Hat_NPC_NyakuzaShop_4']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
+    if slot_data['Hat_NPC_NyakuzaShop_6'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Green Clean Thug B/Scammed")
+        local val = slot_data['Hat_NPC_NyakuzaShop_6']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
+    if slot_data['Hat_NPC_NyakuzaShop_7'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Bluefin Tunnel Thug/Scammed")
+        local val = slot_data['Hat_NPC_NyakuzaShop_7']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
+    if slot_data['Hat_NPC_NyakuzaShop_12'] then
+        local obj = Tracker:FindObjectForCode("@Nyakuza Shops/Pink Paw Station Thug/Scammed")
+        local val = slot_data['Hat_NPC_NyakuzaShop_12']
+        if obj then
+            obj.AvailableChestCount = val
+        end
+    end
+
+    -- set hash table to randomized acts
+    for chapter_number = 1,7 do
+        local chapter = string.format('Chapter%dCost', chapter_number)
+        
+        if slot_data[chapter] and slot_data[chapter] >= 0 then
+            chapter_costs[chapter_number] = slot_data[chapter]
+        end
+    end
+
+    -- there is an arguement that key and act should be swapped (i dont know if its worth it though)
+    for key, act in pairs(chapter_act_info) do
+        if act and slot_data[key] then
+            act:setActName(slot_data[key])
+            act:setIsAccessible(false)
+        end
+    end
+    
+    updateAccessibleLevelsByTimepieces()
 end
 
 -- There's no explicit event on receiving hats so I fetched the hat order and cost
@@ -265,6 +384,246 @@ function updateYarn(yarn)
     end
 end
 
+--called when map is changed
+function changedMap(current_map, previous_map)
+    -- should start disabled?
+    -- add button to disable auto switching
+    internal_map_name = map_table[current_map]
+    
+    if internal_map_name == nil then
+        print("Could not find map name; Setting to Spaceship")
+        internal_map_name = "Spaceship"
+    end
+    Tracker:UiHint("ActivateTab", internal_map_name)
+end
+
+--funky time
+function updateAccessibleLevelsByTimepieces()
+    local timepieces = Tracker:FindObjectForCode("timepiece")
+    local chapters_to_keep = {}
+
+    for chapter, cost in ipairs(chapter_costs) do
+        if cost <= timepieces.AcquiredCount then
+            --unlock the intro levels if we meet the chapter cost and the act name isnt empty
+            for key, act in pairs(chapter_act_info) do
+                if act.chapter == chapter and act.act_requirements[1] == "intro" and act.act_name ~= "" then
+                    act:setIsAccessible(true)
+                    print(act.act_name .. " is accessible at location " .. key)
+                end
+            end
+
+            --unlock the rifts behind the chapter doors if you have the required item
+            local brewer = Tracker:FindObjectForCode("brewer")
+            local dweller = Tracker:FindObjectForCode("dweller")
+
+            if chapter == 2 and brewer.Active then
+                chapter_act_info["Spaceship_WaterRift_Gallery"].setIsAccessible(true)
+            elseif chapter == 3 and dweller.Active then
+                chapter_act_info["Spaceship_WaterRift_MailRoom"].setIsAccessible(true)
+            end
+        else
+            chapters_to_keep[chapter] = cost
+        end
+    end
+    chapter_costs = chapters_to_keep
+
+    local update = Tracker:FindObjectForCode("update")
+    update.Active = not update.Active
+end
+
+function updateAccessibleLevelsByRelics(relic_type, relic_count)
+    local relic_chapter
+    local relic_chapter_number
+
+    --convert relic type to the internal chapter name only if we have the correct amount of relics
+    if relic_type == "burgerrelic" and relic_count >= 2 then
+        relic_chapter = "TimeRift_Cave_Mafia"
+        relic_chapter_number = 1
+    elseif relic_type == "trainrelic" and relic_count >= 2 then
+        relic_chapter = "TimeRift_Cave_BirdBasement"
+        relic_chapter_number = 2
+    elseif relic_type == "uforelic" and relic_count >= 4 then
+        relic_chapter = "TimeRift_Cave_Raccoon"
+        relic_chapter_number = 3
+    elseif relic_type == "crayonrelic" and relic_count >= 4 then
+        relic_chapter = "TimeRift_Cave_Alps"
+        relic_chapter_number = 4
+    elseif relic_type == "cakerelic" and relic_count >= 4 then
+        relic_chapter = "Cruise_CaveRift_Aquarium"
+        relic_chapter_number = 6
+    elseif relic_type == "jewelryrelic" and relic_count >= 4 then
+        relic_chapter = "Metro_CaveRift_RumbiFactory"
+        relic_chapter_number = 7
+    end
+
+    -- Funky stuff required for checking if you can reach the portal
+    if relic_chapter then
+        local canAccess = false
+
+        for _, act in pairs(chapter_act_info) do
+            --chapters 2 and 6 rifts can only be accessed from one specific act
+            --chapter 3 rift has an act that makes it only accessible if on expert difficulty, otherwise it needs either painting shuffle to be off or on a specific stage or for the expert diffuclty to be enabled
+            --chapters 1, 4, and 7 can be accessed from any of their acts
+            if relic_chapter_number == 2 and act.act_name == "DeadBirdStudio" and act.isAccessible then
+                canAccess = true
+                break
+            elseif relic_chapter_number == 3 and act.chapter == relic_chapter_number and act.isAccessible then
+                local paintings = Tracker:FindObjectForCode("paintings")
+                local difficulty = Tracker:FindObjectForCode("difficulty")
+
+                if (act.act_name == "snatcher_boss" and difficulty.CurrentStage == 4) or act.act_name ~= "snatcher_boss" then
+                    if paintings.CurrentStage == 0 or paintings.CurrentStage == 4 or difficulty.CurrentStage >= 0 then
+                        canAccess = true
+                    end
+                end
+                break
+            elseif relic_chapter_number == 6 and act.act_name == "Cruise_Boarding" and act.isAccessible then
+                canAccess = true
+                break
+            elseif act.isAccessible and act.chapter == relic_chapter_number then
+                canAccess = true
+                break
+            end
+
+        end
+
+        if canAccess then
+            chapter_act_info[relic_chapter]:setIsAccessible(true)
+            print(chapter_act_info[relic_chapter]:getActName() .. " is accessible at location " .. relic_chapter)
+        end
+    end
+
+    local update = Tracker:FindObjectForCode("update")
+    update.Active = not update.Active
+end
+
+function updateAccessibleLevelsByCompletedLevels(completed_acts)
+    local chapter_counts = {
+        [1] = 0,
+        [2] = 0,
+        [3] = 0,
+        [6] = 0
+    }
+    
+    for key, act in pairs(chapter_act_info) do
+        if act.act_name ~= "" then
+            local allRequirementsMet = true
+
+            if act.act_requirements and act.act_requirements[1] ~= "" then
+                for _, act_requirement in ipairs(act.act_requirements) do
+                    --handle normal level unlocks
+                    if act:getActRequirements() and not containsItem(completed_acts, act_requirement) then
+                        allRequirementsMet = false
+                        break
+                    end
+                end
+            
+                if allRequirementsMet and act then
+                    act:setIsAccessible(true)
+                    print(act.act_name .. " is accessible at location " .. key)
+                end
+            end
+
+            --increase completion amounts of chapters for time rifts
+            if act.chapter and act.act_name and completed_acts then
+                for _, completed_act in pairs(completed_acts) do
+                    if act.act_name == completed_act then
+                        if chapter_counts[act.chapter] then
+                            chapter_counts[act.chapter] = chapter_counts[act.chapter] + 1
+                        end
+                    end
+                end
+            end
+
+            --check if rift requirements are met
+            if act.isAccessible and act.chapter == 1 then
+                if chapter_counts[1] >= 6 then
+                    chapter_act_info["TimeRift_Water_Mafia_Hard"]:setIsAccessible(true)
+                elseif chapter_counts[1] >= 4 then
+                    chapter_act_info["TimeRift_Water_Mafia_Easy"]:setIsAccessible(true)
+                end
+            end
+        
+            if chapter_counts[2] >= 3 and act.isAccessible and act.act_name == "chapter3_murder" then
+                chapter_act_info["TimeRift_Water_TWreck_Panels"]:setIsAccessible(true)
+            end
+        
+            if chapter_counts[2] >= 5 and act.isAccessible and (act.act_name == "moon_camerasnap" or act.act_name == "moon_parade") then
+                chapter_act_info["TimeRift_Water_TWreck_Parade"]:setIsAccessible(true)
+            end
+            
+            local paintings = Tracker:FindObjectForCode("paintings")
+            local difficulty = Tracker:FindObjectForCode("difficulty")
+
+            if (act.act_name == "snatcher_boss" and difficulty.CurrentStage == 4) or (act.act_name ~= "snatcher_boss" and act.chapter == 3) and act.isAccessible then
+                if chapter_counts[3] >= 3 and (paintings.CurrentStage == 0 or paintings.CurrentStage == 2 or difficulty.CurrentStage >= 0)  then
+                    chapter_act_info["TimeRift_Water_Subcon_Hookshot"]:setIsAccessible(true)
+                end
+
+                if chapter_counts[3] >= 5 and (paintings.CurrentStage == 0 or paintings.CurrentStage == 4 or difficulty.CurrentStage >= 0)  then
+                    chapter_act_info["TimeRift_Water_Subcon_Dwellers"]:setIsAccessible(true)
+                end
+            end
+        
+            if chapter_counts[6] >= 2 and act.isAccessible and act.act_name == "Cruise_Boarding" then
+                chapter_act_info["Cruise_WaterRift_Slide"]:setIsAccessible(true)
+            end
+        end
+    end
+
+    local update = Tracker:FindObjectForCode("update")
+    update.Active = not update.Active
+end
+
+--Handles the unique finale conditions for chapter 3, 4, and 7
+function updateAccessibleLevelsByFinale(chapter)
+    local chapter_to_check
+    local finale
+
+    if chapter == 3 then
+        chapter_to_check = subcon_timepieces
+        finale = "snatcher_boss"
+    elseif chapter == 4 then
+        chapter_to_check = apline_timepieces
+        finale = "AlpineSkyline_Finale"
+    elseif chapter == 7 then
+        chapter_to_check = nyakuza_timepieces
+        finale = "Metro_Escape"
+    end
+
+    for _, timepiece in pairs(chapter_to_check) do
+        local obj = Tracker:FindObjectForCode(timepiece)
+        if obj.AvailableChestCount > 0 then
+            print("Found uncollected time piece at " .. timepiece)
+            return
+        end
+    end
+
+    chapter_act_info[finale]:setIsAccessible(true)
+
+    local update = Tracker:FindObjectForCode("update")
+    update.Active = not update.Active
+end
+
+function updateAccessibleLevelsByContract(contract)
+    local contract_act
+
+    if string.find(contract, "The Subcon Well") then
+        contract_act = "subcon_cave"
+    elseif string.find(contract, "Toilet of Doom") then
+        contract_act = "chapter2_toiletboss"
+    elseif string.find(contract, "Queen Vanessa's Manor") then
+        contract_act = "vanessa_manor_attic"
+    elseif string.find(contract, "Mail Delivery Service") then
+        contract_act = "subcon_maildelivery"
+    end
+
+    local update = Tracker:FindObjectForCode("update")
+    update.Active = not update.Active
+end
+
+--Tracker Handlers
+
 function onItem(index, item_id, item_name, player_number)
     if index <= CUR_INDEX then
         return
@@ -280,6 +639,9 @@ function onItem(index, item_id, item_name, player_number)
     if obj then
         if v[2] == "toggle" then
             obj.Active = true
+            if string.find(v[1], "Contract") then
+                updateAccessibleLevelsByContract(v[1])
+            end
         elseif v[2] == "progressive" then
             if obj.Active then
                 obj.CurrentStage = obj.CurrentStage + 1
@@ -290,6 +652,10 @@ function onItem(index, item_id, item_name, player_number)
             obj.AcquiredCount = obj.AcquiredCount + obj.Increment
             if v[1] == 'yarn' then --extra handling for hat autotracking
                 updateYarn(obj)
+            elseif v[1] == 'timepiece' then
+                updateAccessibleLevelsByTimepieces()
+            elseif string.find(v[1], "relic") then
+                updateAccessibleLevelsByRelics(v[1], obj.AcquiredCount)
             end
         elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
             print(string.format("onItem: unknown item type %s for code %s", v[2], v[1]))
@@ -308,6 +674,16 @@ function onLocation(location_id, location_name)
         return
     end
     local obj = Tracker:FindObjectForCode(v[1])
+
+    --handle check for rush hour
+    if containsItem(subcon_timepieces, v[1]) then
+        updateAccessibleLevelsByFinale(3)
+    elseif containsItem(apline_timepieces, v[1]) then
+        updateAccessibleLevelsByFinale(4)
+    elseif containsItem(nyakuza_timepieces, v[1]) then
+        updateAccessibleLevelsByFinale(7)
+    end
+
     if obj then
         if v[1]:sub(1, 1) == "@" then
             obj.AvailableChestCount = obj.AvailableChestCount - 1
@@ -320,25 +696,16 @@ function onLocation(location_id, location_name)
     end
 end
 
---called when map is changed
-function onMapChange(key, current_map, previous_map)
-    internal_map_name = map_table[current_map]
-    
-    if internal_map_name == nil then
-        print("Could not find map name; Setting to Spaceship")
-        internal_map_name = "Spaceship"
+function onEvent(key, new_value, old_value)
+    if key == map_key then
+        changedMap(new_value, old_value)
+    elseif key == completed_acts_key then
+        updateAccessibleLevelsByCompletedLevels(new_value)
     end
-    Tracker:UiHint("ActivateTab", internal_map_name)
 end
 
---called when Get("events") returns
---function onEventsLaunch()
---end
-
 Archipelago:AddClearHandler("clear handler", onClear)
-Archipelago:AddRetrievedHandler(map_key, onMapChange)
-Archipelago:AddSetReplyHandler(map_key, onMapChange)
+Archipelago:AddRetrievedHandler("event handler", onEvent)
+Archipelago:AddSetReplyHandler("event launch handler", onEvent)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
---Archipelago:AddSetReplyHandler("event handler", onEvent)
---Archipelago:AddRetrievedHandler("event launch handler", onEventsLaunch)

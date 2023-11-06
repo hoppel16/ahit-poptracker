@@ -24,8 +24,10 @@
       {
         "name": "Time's End",
         "access_rules": [
-          "brewer, dweller, hookshot",
-          "brewer, dweller, hard"
+          "brewer, dweller, hookshot, $canAccessChapter|5",
+          "brewer, dweller, moderate, $canAccessChapter|5",
+          "ice, dweller, hard, $canAccessChapter|5",
+          "expert, $canAccessChapter|5"
         ],
         "sections": [
           {
@@ -51,7 +53,8 @@
       {
         "name": "The Gallery",
         "access_rules": [
-          "brewer"
+          "brewer, $canAccessAct|Spaceship_WaterRift_Gallery",
+          "moderate, $canAccessAct|Spaceship_WaterRift_Gallery"
         ],
         "sections": [
           {
@@ -69,7 +72,7 @@
       {
         "name": "The Lab",
         "access_rules": [
-          "dweller"
+          "$canAccessAct|Spaceship_WaterRift_MailRoom"
         ],
         "sections": [
           {
@@ -104,6 +107,23 @@
             "map": "spaceship",
             "x": 690,
             "y": 230
+          }
+        ]
+      },
+      {
+        "name": "Badge Seller",
+        "sections": [
+          {
+            "name": "Scammed",
+            "item_count": 10,
+            "clear_as_group": false,
+            "access_rules": [
+              "$canAccessChapter|1",
+              "$canAccessAct|DeadBirdStudio",
+              "$canAccessMainSubcon",
+              "$canAccessChapter|4",
+              "$canAccessChapter|6"
+            ]
           }
         ]
       }

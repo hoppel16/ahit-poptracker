@@ -34,5 +34,11 @@
     "location_size": 50,
     "location_border_thickness": 1,
     "img": "images/maps/AlpineSkyline.png"
+  },
+  {
+    "name": "nyakuza",
+    "location_size": 28,
+    "location_border_thickness": 1,
+    "img": "images/maps/NyakuzaMetro.png"
   }
 ]

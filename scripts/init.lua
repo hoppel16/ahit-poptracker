@@ -14,8 +14,8 @@ end
 -- Utility Script for helper functions etc.
 ScriptHost:LoadScript("scripts/utils.lua")
 
--- TODO: Add Logic
 -- Logic
+ScriptHost:LoadScript("scripts/logic/logic_but_different.lua")
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 
 -- Items
@@ -31,6 +31,7 @@ Tracker:AddLocations("locations/deadbirdstudio.json")
 Tracker:AddLocations("locations/basement.json")
 Tracker:AddLocations("locations/subcon.json")
 Tracker:AddLocations("locations/alpineskyline.json")
+Tracker:AddLocations("locations/nyakuza.json")
 
 -- Layout
 Tracker:AddLayouts("layouts/items.json")

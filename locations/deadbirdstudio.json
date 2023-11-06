@@ -1,13 +1,164 @@
 [
   {
+    "name": "Act Completions",
+    "children": [
+      {
+        "name": "Act Completion",
+        "sections": [
+          {
+            "name": "Dead Bird Studio",
+            "access_rules": [
+              "umbrella_off, $canAccessAct|DeadBirdStudio",
+              "umbrella_on, umbrella, $canAccessAct|DeadBirdStudio",
+              "umbrella_on, expert, $canAccessAct|DeadBirdStudio"
+            ]
+          },
+          {
+            "name": "Award Ceremony",
+            "access_rules": [
+              "$canAccessAct|award_ceremony"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 2900,
+            "y": 775
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Films",
+    "children": [
+      {
+        "name": "The Conductor's Films",
+        "sections": [
+          {
+            "name": "Murder on the Owl Express",
+            "access_rules": [
+              "$canAccessAct|chapter3_murder"
+            ]
+          },
+          {
+            "name": "Train Rush",
+            "access_rules": [
+              "hookshot, $canAccessAct|trainwreck_selfdestruct"
+            ]
+          },
+          {
+            "name": "Cafeteria",
+            "access_rules": [
+              "$canAccessAct|chapter3_murder"
+            ]
+          },
+          {
+            "name": "Luggage Room Top",
+            "access_rules": [
+              "$canAccessAct|chapter3_murder"
+            ]
+          },
+          {
+            "name": "Luggage Room Bottom",
+            "access_rules": [
+              "$canAccessAct|chapter3_murder"
+            ]
+          },
+          {
+            "name": "Raven Suite Room",
+            "access_rules": [
+              "brewer, $canAccessAct|chapter3_murder"
+            ]
+          },
+          {
+            "name": "Raven Suite Top",
+            "access_rules": [
+              "$canAccessAct|chapter3_murder"
+            ]
+          },
+          {
+            "name": "Lounge Chest",
+            "access_rules": [
+              "$canAccessAct|chapter3_murder"
+            ]
+          },
+          {
+            "name": "Time Rift",
+            "access_rules": [
+              "$canAccessAct|chapter3_murder"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 1440,
+            "y": 180
+          }
+        ]
+      },
+      {
+        "name": "DJ Groove's Films",
+        "sections": [
+          {
+            "name": "Picture Perfect",
+            "access_rules": [
+              "$canAccessAct|moon_camerasnap"
+            ]
+          },
+          {
+            "name": "The Big Parade",
+            "access_rules": [
+              "umbrella, $canAccessAct|moon_parade"
+            ]
+          },
+          {
+            "name": "Behind Badge Seller",
+            "access_rules": [
+              "$canAccessAct|moon_camerasnap",
+              "$canAccessAct|moon_parade"
+            ]
+          },
+          {
+            "name": "Hats Buy Building",
+            "access_rules": [
+              "$canAccessAct|moon_camerasnap",
+              "$canAccessAct|moon_parade"
+            ]
+          },
+          {
+            "name": "Time Rift",
+            "access_rules": [
+              "$canAccessAct|moon_camerasnap",
+              "$canAccessAct|moon_parade"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "deadbirdstudio",
+            "x": 1890,
+            "y": 180
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Before Lever",
+    "access_rules": [
+      "$canAccessAct|DeadBirdStudio",
+      "$canAccessAct|chapter3_secret_finale"
+    ],
     "children": [
       {
         "name": "Badge Seller",
         "sections": [
           {
             "name": "Scammed",
-            "ref": "Mafia Town/Badge Seller/Scammed"
+            "ref": "Shops/Badge Seller/Scammed"
           }
         ],
         "map_locations": [
@@ -80,6 +231,9 @@
       },
       {
         "name": "Dead Bird Studio (Rift)",
+        "access_rules": [
+          "$canAccessAct|TimeRift_Cave_BirdBasement"
+        ],
         "sections": [
           {
             "name": "Time Piece"
@@ -100,113 +254,16 @@
             "y": 365
           }
         ]
-      },
-      {
-        "name": "Act Completion",
-        "sections": [
-          {
-            "name": "Dead Bird Studio",
-            "access_rules": [
-              "umbrella_off",
-              "umbrella_on, umbrella",
-              "umbrella_on, expert"
-            ]
-          },
-          {
-            "name": "Award Ceremony"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 2900,
-            "y": 775
-          }
-        ]
-      },
-      {
-        "name": "The Conductor's Films",
-        "sections": [
-          {
-            "name": "Murder on the Owl Express"
-          },
-          {
-            "name": "Train Rush",
-            "access_rules": [
-              "hookshot"
-            ]
-          },
-          {
-            "name": "Cafeteria"
-          },
-          {
-            "name": "Luggage Room Top"
-          },
-          {
-            "name": "Luggage Room Bottom"
-          },
-          {
-            "name": "Raven Suite Room",
-            "access_rules": [
-              "brewer"
-            ]
-          },
-          {
-            "name": "Raven Suite Top"
-          },
-          {
-            "name": "Lounge Chest"
-          },
-          {
-            "name": "Time Rift"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 1440,
-            "y": 180
-          }
-        ]
-      },
-      {
-        "name": "DJ Groove's Films",
-        "sections": [
-          {
-            "name": "Picture Perfect"
-          },
-          {
-            "name": "The Big Parade",
-            "access_rules": [
-              "umbrella"
-            ]
-          },
-          {
-            "name": "Behind Badge Seller"
-          },
-          {
-            "name": "Hats Buy Building"
-          },
-          {
-            "name": "Time Rift"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "deadbirdstudio",
-            "x": 1890,
-            "y": 180
-          }
-        ]
       }
     ]
   },
   {
     "name": "After Lever",
     "access_rules": [
-      "umbrella_off",
-      "umbrella_on, umbrella",
-      "umbrella_on, expert"
+      "umbrella_off, $canAccessAct|DeadBirdStudio",
+      "umbrella_on, umbrella, $canAccessAct|DeadBirdStudio",
+      "umbrella_on, expert, $canAccessAct|DeadBirdStudio",
+      "umbrella_on, expert, $canAccessAct|chapter3_secret_finale"
     ],
     "children": [
       {

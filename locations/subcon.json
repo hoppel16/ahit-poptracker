@@ -1,6 +1,64 @@
 [
   {
+    "name": "Boss Arena Area",
+    "children": [
+      {
+        "name": "Boss Arena Chest",
+        "access_rules": [
+          "$canAccessAct|chapter2_toiletboss",
+          "$canAccessAct|snatcher_boss",
+          "hookshot, $canAccessMainSubcon",
+          "hard, nobonk, $canAccessMainSubcon",
+          "expert, $canAccessMainSubcon"
+        ],
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 75,
+            "y": 580
+          }
+        ]
+      },
+      {
+        "name": "Boss Arena",
+        "access_rules": [
+          "umbrella_off",
+          "umbrella_on, umbrella"
+        ],
+        "sections": [
+          {
+            "name": "Your Contract has Expired",
+            "access_rules": [
+              "$canAccessAct|snatcher_boss"
+            ]
+          },
+          {
+            "name": "Toilet of Doom",
+            "access_rules": [
+              "hookshot, $canAccessAct|chapter2_toiletboss"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 190,
+            "y": 520
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Subcon Forest",
+    "access_rules": [
+      "$canAccessMainSubcon"
+    ],
     "children": [
       {
         "name": "Snatcher",
@@ -33,7 +91,7 @@
         "sections": [
           {
             "name": "Scammed",
-            "ref": "Mafia Town/Badge Seller/Scammed"
+            "ref": "Shops/Badge Seller/Scammed"
           }
         ],
         "map_locations": [
@@ -68,7 +126,10 @@
         "name": "Cherry Bomb Bone Cage",
         "sections": [
           {
-            "name": "Yarn"
+            "name": "Yarn",
+            "access_rules": [
+              "$canAccessAct|subcon_village_icewall"
+            ]
           }
         ],
         "map_locations": [
@@ -147,14 +208,17 @@
   {
     "name": "Yellow Firewall",
     "access_rules": [
-      "paintings_off",
-      "paintings_on, yellow",
-      "moderate, nobonk",
-      "expert"
+      "paintings_off, $canAccessMainSubcon",
+      "paintings_on, yellow, $canAccessMainSubcon",
+      "moderate, nobonk, $canAccessMainSubcon, painting_skips_off",
+      "expert, $canAccessMainSubcon, painting_skips_off"
     ],
     "children": [
       {
         "name": "Contractual Obligations",
+        "access_rules": [
+          "$canAccessAct|subcon_village_icewall"
+        ],
         "sections": [
           {
             "name": "Time Piece"
@@ -165,52 +229,6 @@
             "map": "subcon",
             "x": 400,
             "y": 515
-          }
-        ]
-      },
-      {
-        "name": "Boss Arena Chest",
-        "access_rules": [
-          "hookshot",
-          "hard, nobonk",
-          "expert"
-        ],
-        "sections": [
-          {
-            "name": "Yarn"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "subcon",
-            "x": 75,
-            "y": 580
-          }
-        ]
-      },
-      {
-        "name": "Boss Arena",
-        "sections": [
-          {
-            "name": "Your Contract has Expired",
-            "access_rules": [
-              "umbrella_off",
-              "umbrella_on, expert",
-              "umbrella_on, umbrella"
-            ]
-          },
-          {
-            "name": "Toilet of Doom",
-            "access_rules": [
-              "hookshot"
-            ]
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "subcon",
-            "x": 190,
-            "y": 520
           }
         ]
       },
@@ -355,11 +373,11 @@
       {
         "name": "Subcon Well",
         "access_rules": [
-          "moderate",
-          "brewer",
-          "dweller",
-          "umbrella_off",
-          "umbrella_on, umbrella"
+          "moderate, $canAccessAct|subcon_cave",
+          "brewer, $canAccessAct|subcon_cave",
+          "dweller, $canAccessAct|subcon_cave",
+          "umbrella_off, $canAccessAct|subcon_cave",
+          "umbrella_on, umbrella, $canAccessAct|subcon_cave"
         ],
         "sections": [
           {
@@ -401,26 +419,41 @@
           "brewer",
           "umbrella_off",
           "umbrella_on, umbrella",
-          "expert"
+          "moderate"
         ],
         "sections": [
           {
             "name": "Rooftop"
           },
           {
-            "name": "Cellar"
+            "name": "Cellar",
+            "access_rules": [
+              "$canAccessAct|vanessa_manor_attic"
+            ]
           },
           {
-            "name": "Bedroom Chest"
+            "name": "Bedroom Chest",
+            "access_rules": [
+              "$canAccessAct|vanessa_manor_attic"
+            ]
           },
           {
-            "name": "Hall Chest"
+            "name": "Hall Chest",
+            "access_rules": [
+              "$canAccessAct|vanessa_manor_attic"
+            ]
           },
           {
-            "name": "Chandelier"
+            "name": "Chandelier",
+            "access_rules": [
+              "$canAccessAct|vanessa_manor_attic"
+            ]
           },
           {
-            "name": "Time Piece"
+            "name": "Time Piece",
+            "access_rules": [
+              "$canAccessAct|vanessa_manor_attic"
+            ]
           }
         ],
         "map_locations": [
@@ -436,10 +469,10 @@
   {
     "name": "Blue Firewall",
     "access_rules": [
-      "paintings_off",
-      "paintings_on, blue",
-      "moderate, nobonk",
-      "expert"
+      "paintings_off, $canAccessMainSubcon",
+      "paintings_on, blue, $canAccessMainSubcon",
+      "moderate, nobonk, $canAccessMainSubcon, painting_skips_off",
+      "expert, $canAccessMainSubcon, painting_skips_off"
     ],
     "children": [
       {
@@ -448,10 +481,10 @@
           {
             "name": "Time Rift",
             "access_rules": [
-              "expert",
-              "brewer",
-              "dweller",
-              "umbrella"
+              "expert, $canAccessAct|TimeRift_Water_Subcon_Dwellers",
+              "brewer, $canAccessAct|TimeRift_Water_Subcon_Dwellers",
+              "dweller, $canAccessAct|TimeRift_Water_Subcon_Dwellers",
+              "umbrella, $canAccessAct|TimeRift_Water_Subcon_Dwellers"
             ]
           }
         ],
@@ -469,7 +502,7 @@
           {
             "name": "Time Rift",
             "access_rules": [
-              "hookshot"
+              "hookshot, $canAccessAct|TimeRift_Water_Subcon_Hookshot"
             ]
           }
         ],
@@ -648,14 +681,16 @@
   {
     "name": "Green Firewall",
     "access_rules": [
-      "paintings_off",
-      "paintings_on, green",
-      "moderate",
-      "expert"
+      "paintings_off, $canAccessMainSubcon",
+      "paintings_on, green, $canAccessMainSubcon",
+      "moderate, $canAccessMainSubcon, painting_skips_off"
     ],
     "children": [
       {
         "name": "Sleepy Subcon",
+        "access_rules": [
+          "$canAccessAct|TimeRift_Cave_Raccoon"
+        ],
         "sections": [
           {
             "name": "Time Rift"
